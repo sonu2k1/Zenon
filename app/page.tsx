@@ -10,7 +10,7 @@ const solutions = [
   ["Gut Health", "Precision blends for better daily balance.", "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80", Leaf],
   ["Medical Nutrition", "Clinically informed nutrition for specific needs.", "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=80", Microscope],
   ["Botanical Science", "Modern delivery systems for heritage ingredients.", "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=80", Sparkles],
-  ["Kids Nutrition", "Thoughtfully developed, delightfully simple formats.", "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=80", Pill],
+  ["Kids Nutrition", "Thoughtfully developed, delightfully simple formats.", "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=80", Pill],
 ];
 const process = [["01", "Research & Development", "Insights that make an idea worth making.", Microscope], ["02", "Formulation", "Ingredients calibrated for efficacy and experience.", FlaskConical], ["03", "Testing & Quality", "Rigorous controls at every decision point.", ShieldCheck], ["04", "Manufacturing", "Repeatable quality at meaningful scale.", PackageCheck]];
 function Counter({ value, suffix, label }: { value: number; suffix: string; label: string }) { const ref=useRef(null); const visible=useInView(ref,{once:true}); const [count] = useState(value); return <motion.div ref={ref} initial={{opacity:0,y:12}} animate={visible ? {opacity:1,y:0} : {}} transition={{duration:.55}}><strong>{count}{suffix}</strong><span>{label}</span></motion.div> }
