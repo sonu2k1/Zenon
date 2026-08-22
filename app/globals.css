@@ -101,21 +101,40 @@ em {
 .navlinks {
   display: flex;
   align-items: center;
-  gap: 30px;
-  font-size: 13px;
-  font-weight: 700;
+  gap: 34px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .navlinks a {
-  color: var(--ink);
-  opacity: 0.82;
-  transition: opacity 0.2s ease, color 0.2s ease;
+  color: #102f35;
+  opacity: 0.8;
+  padding: 6px 0;
   position: relative;
+  transition: all 0.2s ease;
+  letter-spacing: -0.01em;
 }
 
 .navlinks a:hover {
   opacity: 1;
-  color: var(--moss);
+  color: #102f35;
+}
+
+.navlinks a.active {
+  opacity: 1;
+  color: #102f35;
+  font-weight: 700;
+}
+
+.navlinks a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #507b32;
+  border-radius: 2px;
 }
 
 .button {
