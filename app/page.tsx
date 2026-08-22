@@ -1,7 +1,7 @@
 "use client";
-import { motion, useInView } from "framer-motion";
+import { AnimatePresence, motion, useInView } from "framer-motion";
 import { ArrowDownRight, ArrowRight, Atom, Award, Beaker, Check, ChevronRight, CircleGauge, FlaskConical, Globe2, HeartPulse, Leaf, Menu, Microscope, PackageCheck, Pill, ShieldCheck, Sparkles, TestTube2, X } from "lucide-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const fade = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
 
@@ -11,6 +11,39 @@ const navItems = [
   { name: "Products", href: "#products" },
   { name: "R&D", href: "#rnd" },
   { name: "Contact Us", href: "#contact" },
+];
+
+const heroSlides = [
+  {
+    image: "/hero-lab.png",
+    alt: "Nutraceutical science and botanical formulation",
+    badgeTitle: "Formulated with purpose",
+    badgeSub: "Research. Precision. Scale.",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1800&q=85",
+    alt: "Modern biotechnology and life sciences laboratory",
+    badgeTitle: "Evidence-led R&D",
+    badgeSub: "Clinical trials & molecular validation",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1800&q=85",
+    alt: "Pharmaceutical research scientist formulation testing",
+    badgeTitle: "Advanced Bioavailability",
+    badgeSub: "Targeted delivery systems",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1800&q=85",
+    alt: "High grade pharmaceutical capsule and tablet production",
+    badgeTitle: "Pharmaceutical Grade",
+    badgeSub: "Rigorous quality & purity standards",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1581093458791-9d42e3c3eaa7?auto=format&fit=crop&w=1800&q=85",
+    alt: "High-tech manufacturing facility",
+    badgeTitle: "Precision Manufacturing",
+    badgeSub: "Global GMP compliant scale",
+  },
 ];
 
 const solutions = [
@@ -53,6 +86,14 @@ function Button({ children, dark = true }: { children: React.ReactNode; dark?: b
 export default function Home() {
   const [menu, setMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("Home");
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <main>
@@ -112,16 +153,39 @@ export default function Home() {
             <Button dark={false}>Our capabilities</Button>
           </motion.div>
         </div>
+        
         <div className="hero-image">
-          <img src="/hero-lab.png" alt="Nutraceutical science and manufacturing environment" />
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={heroSlides[currentSlide].image}
+              src={heroSlides[currentSlide].image}
+              alt={heroSlides[currentSlide].alt}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.7, ease: "easeInOut" }}
+              className="hero-carousel-img"
+            />
+          </AnimatePresence>
           <div className="hero-badge">
             <Atom />
             <span>
-              <b>Formulated with purpose</b>
-              <small>Research. Precision. Scale.</small>
+              <b>{heroSlides[currentSlide].badgeTitle}</b>
+              <small>{heroSlides[currentSlide].badgeSub}</small>
             </span>
           </div>
+          <div className="hero-dots">
+            {heroSlides.map((_, idx) => (
+              <button
+                key={idx}
+                aria-label={`Go to slide ${idx + 1}`}
+                className={`hero-dot ${currentSlide === idx ? "active" : ""}`}
+                onClick={() => setCurrentSlide(idx)}
+              />
+            ))}
+          </div>
         </div>
+
         <div className="orb orb-one" />
         <div className="orb orb-two" />
       </section>
