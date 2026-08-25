@@ -227,13 +227,13 @@ export default function ProductsPage() {
                       alt={prod.title}
                       style={{ width: "100%", height: "100%", objectFit: "cover" }}
                     />
-                    <div style={{ position: "absolute", top: "14px", right: "14px", background: "rgba(16, 47, 53, 0.85)", color: "white", padding: "4px 10px", borderRadius: "100px", fontSize: "11px", fontWeight: 700, letterSpacing: "0.04em", backdropFilter: "blur(6px)" }}>
+                    <div style={{ position: "absolute", top: "14px", right: "14px", background: "rgba(7, 21, 38, 0.9)", color: "white", border: "1px solid rgba(56, 189, 248, 0.3)", padding: "4px 10px", borderRadius: "100px", fontSize: "11px", fontWeight: 700, letterSpacing: "0.04em", backdropFilter: "blur(6px)" }}>
                       {prod.badge}
                     </div>
                   </div>
 
                   <div style={{ padding: "26px", flex: 1, display: "flex", flexDirection: "column" }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--moss)", marginBottom: "8px" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "#0066cc", marginBottom: "8px" }}>
                       <Icon size={18} />
                       <span style={{ fontSize: "12px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em" }}>
                         {prod.category}
@@ -244,19 +244,19 @@ export default function ProductsPage() {
                       {prod.title}
                     </h3>
 
-                    <p style={{ fontSize: "13px", color: "#546863", lineHeight: "1.6", marginBottom: "16px" }}>
+                    <p style={{ fontSize: "13px", color: "#475569", lineHeight: "1.6", marginBottom: "16px" }}>
                       {prod.tagline}
                     </p>
 
-                    <div style={{ background: "#f5f7f4", padding: "12px 14px", borderRadius: "10px", fontSize: "12px", marginBottom: "18px" }}>
+                    <div style={{ background: "#f0f7ff", border: "1px solid #dbeafe", padding: "12px 14px", borderRadius: "10px", fontSize: "12px", marginBottom: "18px" }}>
                       <div style={{ fontWeight: 700, color: "var(--ink)", marginBottom: "4px" }}>Key Actives:</div>
-                      <div style={{ color: "#4f6560" }}>{prod.keyActives}</div>
+                      <div style={{ color: "#0066cc", fontWeight: 600 }}>{prod.keyActives}</div>
                     </div>
 
                     <div style={{ marginTop: "auto" }}>
                       <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "18px" }}>
                         {prod.formats.map((fmt) => (
-                          <span key={fmt} style={{ background: "rgba(16, 110, 99, 0.08)", color: "var(--moss)", padding: "3px 8px", borderRadius: "6px", fontSize: "11px", fontWeight: 600 }}>
+                          <span key={fmt} style={{ background: "rgba(0, 102, 204, 0.08)", color: "#0066cc", padding: "3px 8px", borderRadius: "6px", fontSize: "11px", fontWeight: 700 }}>
                             {fmt}
                           </span>
                         ))}
@@ -280,12 +280,12 @@ export default function ProductsPage() {
       </section>
 
       {/* Dosage Delivery Technologies */}
-      <section style={{ background: "#edf2ee", padding: "90px 4.5vw", borderTop: "1px solid var(--line)" }}>
+      <section style={{ background: "linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 50%, #f8fafc 100%)", padding: "90px 4.5vw", borderTop: "1px solid #d0e1f9", borderBottom: "1px solid #d0e1f9" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", maxWidth: "720px", margin: "0 auto 50px" }}>
             <p className="eyebrow" style={{ justifyContent: "center" }}>Delivery Science</p>
             <h2>Advanced dosage <em>delivery systems.</em></h2>
-            <p style={{ marginTop: "14px", color: "#546863", fontSize: "16px" }}>
+            <p style={{ marginTop: "14px", color: "#475569", fontSize: "16px", lineHeight: "1.7" }}>
               Bioavailability is everything. We engineer proprietary formats to ensure maximum active stability, stomach survival, and targeted cellular uptake.
             </p>
           </div>
@@ -294,14 +294,14 @@ export default function ProductsPage() {
             {dosageFormats.map((item, idx) => {
               const Icon = item.icon;
               return (
-                <div key={item.title} className="card-panel">
-                  <div className="icon-box">
+                <div key={item.title} className="card-panel" style={{ border: "1.5px solid #dbeafe", boxShadow: "0 4px 18px rgba(0, 102, 204, 0.05)" }}>
+                  <div className="icon-box" style={{ background: "rgba(0, 102, 204, 0.1)", color: "#0066cc" }}>
                     <Icon size={24} />
                   </div>
                   <h4 style={{ fontSize: "18px", fontWeight: 700, color: "var(--ink)", marginBottom: "8px" }}>
                     {item.title}
                   </h4>
-                  <p style={{ fontSize: "14px", color: "#546863", lineHeight: "1.6" }}>
+                  <p style={{ fontSize: "14px", color: "#475569", lineHeight: "1.6" }}>
                     {item.desc}
                   </p>
                 </div>
