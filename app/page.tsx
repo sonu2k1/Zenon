@@ -64,8 +64,8 @@ const heroSlides = [
     secondaryHref: "/rnd",
     badgeTitle: "Targeted Delivery",
     badgeSub: "Pharma-grade softgels & capsules",
-    image: "https://images.unsplash.com/photo-1550572017-edd951aa8f72?auto=format&fit=crop&w=1800&q=85",
-    alt: "Pharmaceutical grade capsule and softgel production",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1920&q=85",
+    alt: "Golden nutraceutical softgels and bioavailable capsule delivery formats",
     Icon: Pill,
   },
   {
