@@ -246,8 +246,8 @@ export default function ContactPage() {
                   Submit Partnership Request
                 </button>
 
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", marginTop: "16px", fontSize: "12px", color: "#748883" }}>
-                  <ShieldCheck size={14} color="var(--moss)" />
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", marginTop: "16px", fontSize: "12px", color: "#64748b" }}>
+                  <ShieldCheck size={14} color="#0066cc" />
                   <span>Strict NDA and data confidentiality guaranteed.</span>
                 </div>
               </form>
@@ -261,7 +261,7 @@ export default function ContactPage() {
               <h2 style={{ fontSize: "32px", marginBottom: "16px" }}>
                 Global locations & <em>representation.</em>
               </h2>
-              <p style={{ color: "#546863", lineHeight: "1.7", fontSize: "15px" }}>
+              <p style={{ color: "#475569", lineHeight: "1.7", fontSize: "15px" }}>
                 Our international team operates across European, North American, and Asian time zones to support rapid turnaround on inquiries and project milestones.
               </p>
             </div>
@@ -270,22 +270,22 @@ export default function ContactPage() {
               {offices.map((office) => (
                 <div key={office.city} className="card-panel" style={{ padding: "24px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
-                    <MapPin size={18} color="var(--moss)" />
+                    <MapPin size={18} color="#0066cc" />
                     <h4 style={{ fontSize: "17px", fontWeight: 700, color: "var(--ink)" }}>{office.city}</h4>
                   </div>
-                  <div style={{ fontSize: "12px", fontWeight: 600, color: "var(--moss)", marginBottom: "8px" }}>
+                  <div style={{ fontSize: "12px", fontWeight: 700, color: "#0066cc", marginBottom: "8px" }}>
                     {office.region}
                   </div>
-                  <p style={{ fontSize: "13px", color: "#5a706b", marginBottom: "12px" }}>
+                  <p style={{ fontSize: "13px", color: "#64748b", marginBottom: "12px" }}>
                     {office.address}
                   </p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", fontSize: "13px", color: "var(--ink)", fontWeight: 600 }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                      <Phone size={14} color="var(--moss)" />
+                      <Phone size={14} color="#0066cc" />
                       {office.phone}
                     </span>
                     <span style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                      <Mail size={14} color="var(--moss)" />
+                      <Mail size={14} color="#0066cc" />
                       {office.email}
                     </span>
                   </div>
@@ -297,7 +297,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section style={{ background: "#edf2ee", padding: "90px 4.5vw", borderTop: "1px solid var(--line)" }}>
+      <section style={{ background: "linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 50%, #f8fafc 100%)", padding: "90px 4.5vw", borderTop: "1px solid #d0e1f9", borderBottom: "1px solid #d0e1f9" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <p className="eyebrow" style={{ justifyContent: "center" }}>Frequently Asked Questions</p>
@@ -310,17 +310,24 @@ export default function ContactPage() {
               return (
                 <div
                   key={faq.q}
-                  className="card-panel"
-                  style={{ padding: "20px 28px", cursor: "pointer" }}
+                  style={{
+                    padding: "22px 28px",
+                    cursor: "pointer",
+                    background: "#ffffff",
+                    border: isOpen ? "1.5px solid #0066cc" : "1.5px solid #dbeafe",
+                    borderRadius: "16px",
+                    boxShadow: isOpen ? "0 10px 28px rgba(0, 102, 204, 0.12)" : "0 4px 16px rgba(0, 102, 204, 0.04)",
+                    transition: "all 0.25s ease",
+                  }}
                   onClick={() => setOpenFaq(isOpen ? null : idx)}
                 >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "16px" }}>
-                    <h4 style={{ fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
+                    <h4 style={{ fontSize: "16px", fontWeight: 700, color: isOpen ? "#0066cc" : "#071e33", transition: "color 0.2s ease" }}>
                       {faq.q}
                     </h4>
                     <ChevronDown
                       size={18}
-                      color="var(--moss)"
+                      color={isOpen ? "#0066cc" : "#0284c7"}
                       style={{
                         transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
                         transition: "transform 0.25s ease",
@@ -332,7 +339,7 @@ export default function ContactPage() {
                     <motion.p
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
-                      style={{ fontSize: "14px", color: "#546863", lineHeight: "1.7", marginTop: "14px", borderTop: "1px solid #e0eae3", paddingTop: "14px" }}
+                      style={{ fontSize: "14px", color: "#475569", lineHeight: "1.7", marginTop: "14px", borderTop: "1px solid #e2e8f0", paddingTop: "14px" }}
                     >
                       {faq.a}
                     </motion.p>
