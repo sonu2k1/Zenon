@@ -196,8 +196,9 @@ em {
 /* Hero Section */
 /* Full-Bleed Complete Background Hero */
 .hero {
-  min-height: 88vh;
-  padding: 145px 5vw 60px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 120px 5vw 40px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1354,8 +1355,9 @@ em {
   }
 
   .hero {
-    min-height: 85vh;
-    padding: 110px 5vw 40px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 100px 5vw 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
