@@ -1899,8 +1899,8 @@ em {
   background: #ffffff;
   border-radius: 16px;
   padding: 36px 28px 30px;
-  box-shadow: 0 4px 20px rgba(16, 47, 53, 0.04);
-  border: 1px solid rgba(16, 47, 53, 0.07);
+  box-shadow: 0 4px 20px rgba(0, 102, 204, 0.05);
+  border: 1.5px solid #dbeafe;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1911,8 +1911,8 @@ em {
 
 .service-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 14px 32px rgba(16, 47, 53, 0.09);
-  border-color: rgba(111, 174, 56, 0.35);
+  box-shadow: 0 16px 36px rgba(0, 102, 204, 0.16);
+  border-color: #0066cc;
 }
 
 .service-corner-blob {
@@ -1921,7 +1921,7 @@ em {
   right: -40px;
   width: 130px;
   height: 130px;
-  background: #eef7e8;
+  background: #e0f2fe;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -1929,8 +1929,8 @@ em {
 }
 
 .service-card:hover .service-corner-blob {
-  transform: scale(1.15);
-  background: #e4f3da;
+  transform: scale(1.18);
+  background: #bae6fd;
 }
 
 .service-icon-box {
@@ -1942,14 +1942,14 @@ em {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: #2b5292;
+  color: #0066cc;
 }
 
 .service-card h3 {
   font-size: 17px;
   font-weight: 800;
   text-transform: uppercase;
-  color: #2b5292;
+  color: #071e33;
   letter-spacing: 0.04em;
   margin-bottom: 14px;
   font-family: Georgia, "Times New Roman", serif;
@@ -1960,7 +1960,7 @@ em {
 .service-card p {
   font-size: 14px;
   line-height: 1.65;
-  color: #556964;
+  color: #475569;
   margin-bottom: 24px;
   position: relative;
   z-index: 2;

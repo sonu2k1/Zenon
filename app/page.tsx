@@ -178,10 +178,10 @@ const portfolioItems = [
 const services = [
   {
     title: "PRIVATE LABELLING",
-    desc: "Zeon is a leading full-service private label manufacturer. Whether you are a startup or an established business, we would love to partner with you in..",
+    desc: "Novara is a leading full-service private label manufacturer. Whether you are a startup or an established enterprise, we scale custom formulations for your brand.",
     href: "/products",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#2b5292" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#0066cc" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 6L38 22L24 36L8 20L22 6Z" />
         <circle cx="18" cy="16" r="2.5" />
         <path d="M20 28C22 30 26 30 28 26C30 22 28 18 24 20" />
@@ -191,10 +191,10 @@ const services = [
   },
   {
     title: "REGULATORY COMPLIANCES",
-    desc: "Ensure all necessary licenses and compliance and Works closely with regulatory bodies like FSSAI, AYUSH, Legal Metrology",
+    desc: "Ensure all necessary global licensing and compliance, working closely with regulatory authorities like US FDA, FSSAI, AYUSH, and EFSA.",
     href: "/about",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#2b5292" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#0066cc" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M27 8L36 17L32 21L23 12L27 8Z" />
         <path d="M19 16L30 27" />
         <path d="M24 21L10 35L7 32L21 18" />
@@ -205,10 +205,10 @@ const services = [
   },
   {
     title: "CRAMS",
-    desc: "Zeon is proud to be a trusted partner in contract manufacturing. We specialize in the production of Nutra and Wellness products..",
+    desc: "Novara is a trusted contract research & manufacturing partner, specializing in pharmaceutical-grade cleanroom scaling and active bioactives.",
     href: "/rnd",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#2b5292" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#0066cc" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M20 6H28V12H20V6Z" />
         <path d="M24 12V20" />
         <path d="M12 28H20V40H12V28Z" />
@@ -222,10 +222,10 @@ const services = [
   },
   {
     title: "PACKAGING",
-    desc: "With growing consumer demands for health & wellness products, the nutraceutical industry is seeing tremendous growth.",
+    desc: "High-barrier Alu-Alu blister packaging, automated softgel bottling, and nitrogen-flushed single-serve stick pack delivery formats.",
     href: "/products",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#2b5292" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#0066cc" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M10 16L24 8L38 16L24 24L10 16Z" />
         <path d="M10 16V34L24 42V24" />
         <path d="M38 16V34L24 42" />
