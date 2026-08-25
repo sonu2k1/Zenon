@@ -144,26 +144,26 @@ export default function RndPage() {
       </section>
 
       {/* Deep Dive Science Feature */}
-      <section style={{ background: "#edf2ee", padding: "90px 4.5vw", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" }}>
+      <section style={{ background: "linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 50%, #f8fafc 100%)", padding: "90px 4.5vw", borderTop: "1px solid #d0e1f9", borderBottom: "1px solid #d0e1f9" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "50px", alignItems: "center" }}>
           <div>
             <p className="eyebrow">Bioavailability Engineering</p>
             <h2>Overcoming the gut-blood <em>barrier.</em></h2>
-            <p style={{ color: "#546863", fontSize: "16px", lineHeight: "1.7", margin: "20px 0 24px" }}>
+            <p style={{ color: "#475569", fontSize: "16px", lineHeight: "1.7", margin: "20px 0 24px" }}>
               Most active botanicals (such as curcumin, quercetin, and resveratrol) suffer from less than 1-2% baseline bioavailability due to gastric degradation and rapid hepatic first-pass metabolism.
             </p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "30px" }}>
               <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                <CheckCircle2 color="#0284c7" size={20} style={{ marginTop: "2px", flexShrink: 0 }} />
+                <CheckCircle2 color="#0066cc" size={20} style={{ marginTop: "2px", flexShrink: 0 }} />
                 <span style={{ fontSize: "14px", color: "var(--ink)" }}><strong>Liposomal Micro-Vesicles:</strong> Protects hydrophilic and lipophilic actives with biomimetic phospholipid bilayer membranes.</span>
               </div>
               <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                <CheckCircle2 color="#0284c7" size={20} style={{ marginTop: "2px", flexShrink: 0 }} />
+                <CheckCircle2 color="#0066cc" size={20} style={{ marginTop: "2px", flexShrink: 0 }} />
                 <span style={{ fontSize: "14px", color: "var(--ink)" }}><strong>DRCaps® Gastric Acid Bypass:</strong> Guarantees zero release in the stomach (pH 1.2) with complete dissolution in the duodenum (pH 6.8).</span>
               </div>
               <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                <CheckCircle2 color="#0284c7" size={20} style={{ marginTop: "2px", flexShrink: 0 }} />
+                <CheckCircle2 color="#0066cc" size={20} style={{ marginTop: "2px", flexShrink: 0 }} />
                 <span style={{ fontSize: "14px", color: "var(--ink)" }}><strong>Self-Emulsifying Nano-Suspensions:</strong> Up to 12.5x greater plasma concentration verified via HPLC blood serum analysis.</span>
               </div>
             </div>
@@ -174,18 +174,18 @@ export default function RndPage() {
             </Link>
           </div>
 
-          <div style={{ position: "relative", borderRadius: "24px", overflow: "hidden", boxShadow: "0 16px 40px rgba(16, 47, 53, 0.12)" }}>
+          <div style={{ position: "relative", borderRadius: "24px", overflow: "hidden", boxShadow: "0 16px 40px rgba(0, 102, 204, 0.15)", border: "2px solid #ffffff" }}>
             <img
               src="https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&w=1200&q=85"
               alt="High precision laboratory analysis"
               style={{ width: "100%", height: "480px", objectFit: "cover" }}
             />
-            <div style={{ position: "absolute", bottom: "24px", left: "24px", right: "24px", background: "rgba(16, 47, 53, 0.9)", color: "white", padding: "20px", borderRadius: "16px", backdropFilter: "blur(10px)" }}>
+            <div style={{ position: "absolute", bottom: "24px", left: "24px", right: "24px", background: "linear-gradient(135deg, rgba(7, 21, 38, 0.95) 0%, rgba(0, 51, 102, 0.92) 100%)", border: "1px solid rgba(56, 189, 248, 0.3)", color: "white", padding: "20px", borderRadius: "16px", backdropFilter: "blur(12px)", boxShadow: "0 10px 30px rgba(0, 102, 204, 0.25)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
                 <Beaker size={18} color="#38bdf8" />
                 <strong style={{ fontSize: "15px" }}>Novara BioMatrix™ Technology</strong>
               </div>
-              <p style={{ fontSize: "12px", color: "#b8d1cb", margin: 0 }}>
+              <p style={{ fontSize: "12px", color: "#d1e2f2", margin: 0 }}>
                 12.5x higher area-under-the-curve (AUC) bioavailability compared to unformulated reference standards.
               </p>
             </div>
@@ -205,13 +205,13 @@ export default function RndPage() {
             const Icon = eq.icon;
             return (
               <div key={eq.title} className="card-panel">
-                <div className="icon-box" style={{ background: "rgba(2, 132, 199, 0.1)", color: "#0284c7" }}>
+                <div className="icon-box" style={{ background: "rgba(0, 102, 204, 0.1)", color: "#0066cc" }}>
                   <Icon size={24} />
                 </div>
                 <h4 style={{ fontSize: "17px", fontWeight: 700, color: "var(--ink)", marginBottom: "8px" }}>
                   {eq.title}
                 </h4>
-                <p style={{ fontSize: "13px", color: "#546863", lineHeight: "1.6" }}>
+                <p style={{ fontSize: "13px", color: "#475569", lineHeight: "1.6" }}>
                   {eq.desc}
                 </p>
               </div>
@@ -221,7 +221,7 @@ export default function RndPage() {
       </section>
 
       {/* Published Whitepapers / Research */}
-      <section style={{ background: "#edf2ee", padding: "80px 4.5vw", borderTop: "1px solid var(--line)" }}>
+      <section style={{ background: "linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 50%, #f8fafc 100%)", padding: "80px 4.5vw", borderTop: "1px solid #d0e1f9", borderBottom: "1px solid #d0e1f9" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: "20px", marginBottom: "40px" }}>
             <div>
@@ -241,11 +241,11 @@ export default function RndPage() {
                 style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "16px", padding: "24px 30px" }}
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "18px" }}>
-                  <div style={{ width: "44px", height: "44px", borderRadius: "12px", background: "rgba(2, 132, 199, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "#0284c7", flexShrink: 0 }}>
+                  <div style={{ width: "44px", height: "44px", borderRadius: "12px", background: "rgba(0, 102, 204, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "#0066cc", flexShrink: 0 }}>
                     <FileText size={22} />
                   </div>
                   <div>
-                    <span style={{ fontSize: "11px", fontWeight: 700, textTransform: "uppercase", color: "#0284c7", letterSpacing: "0.05em" }}>
+                    <span style={{ fontSize: "11px", fontWeight: 700, textTransform: "uppercase", color: "#0066cc", letterSpacing: "0.05em" }}>
                       {doc.tag} • {doc.date}
                     </span>
                     <h4 style={{ fontSize: "16px", fontWeight: 700, color: "var(--ink)", marginTop: "2px" }}>
