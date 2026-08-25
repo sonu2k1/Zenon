@@ -121,20 +121,27 @@ export default function ContactPage() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))", gap: "50px", alignItems: "start" }}>
           
           {/* Left: Contact Form */}
-          <div className="card-panel" style={{ padding: "40px" }}>
+          <motion.div
+            className="card-panel"
+            style={{ padding: "40px" }}
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             {submitted ? (
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 style={{ textAlign: "center", padding: "40px 10px" }}
               >
-                <div style={{ width: "64px", height: "64px", borderRadius: "50%", background: "rgba(16, 110, 99, 0.12)", color: "var(--moss)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
+                <div style={{ width: "64px", height: "64px", borderRadius: "50%", background: "rgba(0, 102, 204, 0.12)", color: "#0066cc", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
                   <CheckCircle2 size={36} />
                 </div>
                 <h3 style={{ fontSize: "24px", fontWeight: 700, color: "var(--ink)", marginBottom: "12px" }}>
                   Inquiry Received Successfully!
                 </h3>
-                <p style={{ color: "#546863", fontSize: "15px", lineHeight: "1.7", maxWidth: "420px", margin: "0 auto 24px" }}>
+                <p style={{ color: "#475569", fontSize: "15px", lineHeight: "1.7", maxWidth: "420px", margin: "0 auto 24px" }}>
                   Thank you, <strong>{formData.name}</strong>. A dedicated formulation and commercial specialist from Novara Life Sciences will review your requirements and respond within 24 business hours.
                 </p>
                 <button
@@ -160,7 +167,7 @@ export default function ContactPage() {
                   <h3 style={{ fontSize: "22px", fontWeight: 700, color: "var(--ink)", marginBottom: "6px" }}>
                     Send Us an Inquiry
                   </h3>
-                  <p style={{ fontSize: "13px", color: "#647772" }}>
+                  <p style={{ fontSize: "13px", color: "#64748b" }}>
                     Fill out the parameters below to connect with our science and contract manufacturing team.
                   </p>
                 </div>
@@ -252,11 +259,11 @@ export default function ContactPage() {
                 </div>
               </form>
             )}
-          </div>
+          </motion.div>
 
           {/* Right: Quick Contacts & Direct Channels */}
           <div>
-            <div style={{ marginBottom: "36px" }}>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} style={{ marginBottom: "36px" }}>
               <p className="eyebrow">Direct Contact</p>
               <h2 style={{ fontSize: "32px", marginBottom: "16px" }}>
                 Global locations & <em>representation.</em>
@@ -264,11 +271,20 @@ export default function ContactPage() {
               <p style={{ color: "#475569", lineHeight: "1.7", fontSize: "15px" }}>
                 Our international team operates across European, North American, and Asian time zones to support rapid turnaround on inquiries and project milestones.
               </p>
-            </div>
+            </motion.div>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-              {offices.map((office) => (
-                <div key={office.city} className="card-panel" style={{ padding: "24px" }}>
+              {offices.map((office, idx) => (
+                <motion.div
+                  key={office.city}
+                  className="card-panel"
+                  style={{ padding: "24px" }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1, duration: 0.45 }}
+                  whileHover={{ y: -5 }}
+                >
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
                     <MapPin size={18} color="#0066cc" />
                     <h4 style={{ fontSize: "17px", fontWeight: 700, color: "var(--ink)" }}>{office.city}</h4>
@@ -289,7 +305,7 @@ export default function ContactPage() {
                       {office.email}
                     </span>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

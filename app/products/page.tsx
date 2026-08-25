@@ -294,7 +294,16 @@ export default function ProductsPage() {
             {dosageFormats.map((item, idx) => {
               const Icon = item.icon;
               return (
-                <div key={item.title} className="card-panel" style={{ border: "1.5px solid #dbeafe", boxShadow: "0 4px 18px rgba(0, 102, 204, 0.05)" }}>
+                <motion.div
+                  key={item.title}
+                  className="card-panel"
+                  style={{ border: "1.5px solid #dbeafe", boxShadow: "0 4px 18px rgba(0, 102, 204, 0.05)" }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.08, duration: 0.4 }}
+                  whileHover={{ y: -6 }}
+                >
                   <div className="icon-box" style={{ background: "rgba(0, 102, 204, 0.1)", color: "#0066cc" }}>
                     <Icon size={24} />
                   </div>
@@ -304,7 +313,7 @@ export default function ProductsPage() {
                   <p style={{ fontSize: "14px", color: "#475569", lineHeight: "1.6" }}>
                     {item.desc}
                   </p>
-                </div>
+                </motion.div>
               );
             })}
           </div>

@@ -204,7 +204,15 @@ export default function RndPage() {
           {labEquipment.map((eq, i) => {
             const Icon = eq.icon;
             return (
-              <div key={eq.title} className="card-panel">
+              <motion.div
+                key={eq.title}
+                className="card-panel"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08, duration: 0.4 }}
+                whileHover={{ y: -6 }}
+              >
                 <div className="icon-box" style={{ background: "rgba(0, 102, 204, 0.1)", color: "#0066cc" }}>
                   <Icon size={24} />
                 </div>
@@ -214,7 +222,7 @@ export default function RndPage() {
                 <p style={{ fontSize: "13px", color: "#475569", lineHeight: "1.6" }}>
                   {eq.desc}
                 </p>
-              </div>
+              </motion.div>
             );
           })}
         </div>
@@ -224,10 +232,10 @@ export default function RndPage() {
       <section style={{ background: "linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 50%, #f8fafc 100%)", padding: "80px 4.5vw", borderTop: "1px solid #d0e1f9", borderBottom: "1px solid #d0e1f9" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: "20px", marginBottom: "40px" }}>
-            <div>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <p className="eyebrow">Scientific Publications</p>
               <h2>Recent research <em>whitepapers.</em></h2>
-            </div>
+            </motion.div>
             <Link href="/contact?inquiry=whitepaper" className="text-link">
               Request full research access <ArrowRight size={16} />
             </Link>
@@ -235,10 +243,15 @@ export default function RndPage() {
 
           <div style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
             {whitepapers.map((doc, idx) => (
-              <div
+              <motion.div
                 key={doc.title}
                 className="card-panel"
                 style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "16px", padding: "24px 30px" }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1, duration: 0.45 }}
+                whileHover={{ y: -5 }}
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "18px" }}>
                   <div style={{ width: "44px", height: "44px", borderRadius: "12px", background: "rgba(0, 102, 204, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "#0066cc", flexShrink: 0 }}>
@@ -254,14 +267,14 @@ export default function RndPage() {
                   </div>
                 </div>
                 <Link
-                  href={`/contact?inquiry=whitepaper&title=${encodeURIComponent(doc.title)}`}
+                  href="/contact?inquiry=whitepaper"
                   className="button button-dark"
-                  style={{ padding: "8px 18px", fontSize: "12px" }}
+                  style={{ padding: "8px 16px", fontSize: "12px" }}
                 >
-                  Download PDF
+                  Download Dossier
                   <ArrowRight size={14} />
                 </Link>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

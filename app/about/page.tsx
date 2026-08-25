@@ -320,38 +320,45 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ delay: idx * 0.08 }}
               variants={fade}
+              whileHover={{ y: -6 }}
             >
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "10px" }}>
-                <MapPin size={20} color="var(--moss)" />
+                <MapPin size={20} color="#0066cc" />
                 <h3 style={{ fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>{reg.region}</h3>
               </div>
-              <div style={{ fontSize: "13px", fontWeight: 700, color: "var(--moss)", marginBottom: "8px" }}>
+              <div style={{ fontSize: "13px", fontWeight: 700, color: "#0066cc", marginBottom: "8px" }}>
                 {reg.countries}
               </div>
-              <p style={{ fontSize: "13px", color: "#546863", lineHeight: "1.6", marginBottom: "14px" }}>
+              <p style={{ fontSize: "13px", color: "#475569", lineHeight: "1.6", marginBottom: "14px" }}>
                 <strong>Key Focus:</strong> {reg.focus}
               </p>
-              <div style={{ background: "#f5f8f6", padding: "6px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 700, color: "var(--ink)", width: "fit-content" }}>
+              <div style={{ background: "#f0f7ff", padding: "6px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 700, color: "#0066cc", width: "fit-content", border: "1px solid #dbeafe" }}>
                 {reg.stat}
               </div>
             </motion.div>
           ))}
         </div>
 
-        <div style={{ background: "linear-gradient(135deg, #102f35 0%, #0d272c 100%)", borderRadius: "20px", padding: "40px 6vw", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "24px" }}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          style={{ background: "linear-gradient(135deg, #071526 0%, #003366 100%)", border: "1px solid rgba(56, 189, 248, 0.25)", borderRadius: "20px", padding: "40px 6vw", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "24px", boxShadow: "0 16px 40px rgba(7, 30, 51, 0.15)" }}
+        >
           <div>
             <h3 style={{ fontSize: "22px", fontWeight: 800, marginBottom: "8px" }}>
               Expanding into New International Territories?
             </h3>
-            <p style={{ color: "#b8cbc7", fontSize: "14px", maxWidth: "600px" }}>
+            <p style={{ color: "#d1e2f2", fontSize: "14px", maxWidth: "600px" }}>
               Our dedicated export and regulatory compliance department prepares full country dossiers (CoA, FSC, GMP Certificates) for seamless local health ministry approval.
             </p>
           </div>
-          <Link href="/contact?inquiry=export" className="button button-light" style={{ background: "white", color: "var(--ink)" }}>
+          <Link href="/contact?inquiry=export" className="button button-light" style={{ background: "white", color: "#0066cc" }}>
             Inquire About Export
             <ArrowRight size={16} />
           </Link>
-        </div>
+        </motion.div>
       </section>
 
       {/* 7. MISSION */}
@@ -365,7 +372,14 @@ export default function AboutPage() {
             <div className="trust-underline" />
           </div>
 
-          <div className="card-panel" style={{ background: "linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%)", border: "2px solid #0066cc", padding: "48px 42px", boxShadow: "0 16px 40px rgba(0, 102, 204, 0.12)" }}>
+          <motion.div
+            className="card-panel"
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            style={{ background: "linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%)", border: "2px solid #0066cc", padding: "48px 42px", boxShadow: "0 16px 40px rgba(0, 102, 204, 0.12)" }}
+          >
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "40px", alignItems: "center" }}>
               <div>
                 <div className="icon-box" style={{ background: "#0066cc", color: "white", width: "60px", height: "60px", marginBottom: "18px" }}>
@@ -399,7 +413,7 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -425,14 +439,15 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
                 variants={fade}
+                whileHover={{ y: -6 }}
               >
-                <div className="icon-box" style={{ background: "rgba(16, 110, 99, 0.12)", color: "var(--moss)" }}>
+                <div className="icon-box" style={{ background: "rgba(0, 102, 204, 0.1)", color: "#0066cc" }}>
                   <Icon size={24} />
                 </div>
                 <h4 style={{ fontSize: "18px", fontWeight: 700, color: "var(--ink)", marginBottom: "10px" }}>
                   {v.title}
                 </h4>
-                <p style={{ fontSize: "14px", lineHeight: "1.65", color: "#5a706b" }}>
+                <p style={{ fontSize: "14px", lineHeight: "1.65", color: "#475569" }}>
                   {v.desc}
                 </p>
               </motion.div>

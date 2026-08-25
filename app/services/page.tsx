@@ -188,8 +188,16 @@ export default function ServicesPage() {
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
-            {capabilities.map((cap) => (
-              <div key={cap.title} className="card-panel">
+            {capabilities.map((cap, i) => (
+              <motion.div
+                key={cap.title}
+                className="card-panel"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08, duration: 0.4 }}
+                whileHover={{ y: -6 }}
+              >
                 <div className="icon-box" style={{ background: "rgba(0, 102, 204, 0.12)", color: "#0066cc" }}>
                   <Sparkles size={24} />
                 </div>
@@ -199,7 +207,7 @@ export default function ServicesPage() {
                 <p style={{ fontSize: "13px", color: "#475569", lineHeight: "1.6" }}>
                   {cap.desc}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

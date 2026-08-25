@@ -393,19 +393,25 @@ export default function Home() {
       </section>
 
       <section className="section partnership" id="about">
-        <div>
+        <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <p className="eyebrow">About Novara Life Sciences</p>
           <h2>Your brand.<br /><em>Our science.</em></h2>
           <p>Bring the ambition. We bring the insight, formulation expertise, and operational discipline to take it further.</p>
           <Button>Start a partnership</Button>
-        </div>
+        </motion.div>
         <div className="timeline">
           {["Concept", "Formulation", "Manufacturing", "Packaging", "Delivery"].map((x, i) => (
-            <div key={x}>
+            <motion.div
+              key={x}
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+            >
               <span>0{i + 1}</span>
               <b>{x}</b>
               {i < 4 && <i />}
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
@@ -457,10 +463,11 @@ export default function Home() {
               key={service.title}
               href={service.href}
               className="service-card"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.08, duration: 0.4 }}
+              transition={{ delay: idx * 0.08, duration: 0.45 }}
+              whileHover={{ y: -6 }}
             >
               <div className="service-corner-blob" />
               <div className="service-icon-box">
@@ -492,10 +499,11 @@ export default function Home() {
               key={item.title}
               href="/products"
               className="portfolio-card"
-              initial={{ opacity: 0, y: 18 }}
+              initial={{ opacity: 0, y: 22 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.05, duration: 0.4 }}
+              transition={{ delay: idx * 0.06, duration: 0.45 }}
+              whileHover={{ y: -6 }}
             >
               <img
                 src={item.image}
@@ -513,10 +521,10 @@ export default function Home() {
 
       <section className="section solutions" id="products">
         <div className="section-heading">
-          <div>
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
             <p className="eyebrow">Products & Solutions</p>
             <h2>Nutrition for the<br /><em>way life moves.</em></h2>
-          </div>
+          </motion.div>
           <a className="text-link" href="#contact">
             View all products <ArrowRight size={16} />
           </a>
@@ -532,6 +540,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.07 }}
               variants={fade}
+              whileHover={{ y: -5 }}
             >
               <div className="card-image">
                 <img src={img as string} alt="" />
@@ -548,10 +557,10 @@ export default function Home() {
       </section>
 
       <section className="science" id="rnd">
-        <div className="science-image">
+        <motion.div className="science-image" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1600&q=85" alt="Scientist working in a laboratory" />
-        </div>
-        <div className="science-copy">
+        </motion.div>
+        <motion.div className="science-copy" initial={{ opacity: 0, x: 25 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.15 }}>
           <p className="eyebrow light">R&D and ingredient innovation</p>
           <h2>Where science<br />meets <em>nutrition.</em></h2>
           <p>Our multidisciplinary teams connect the rigor of research with the human realities of daily wellness.</p>
@@ -561,19 +570,19 @@ export default function Home() {
             <span><Check />Sensory excellence</span>
           </div>
           <Button dark={false}>Explore our R&D</Button>
-        </div>
-        <div className="floating-card">
+        </motion.div>
+        <motion.div className="floating-card anim-float" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.35, duration: 0.5 }}>
           <Beaker />
           <div>
             <b>R&D 02</b>
             <small>Ingredient interaction study</small>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       <section className="facility">
         <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=85" alt="Modern production facility" />
-        <div className="facility-overlay">
+        <motion.div className="facility-overlay" initial={{ opacity: 0, y: 25 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
           <p className="eyebrow light">Built to perform</p>
           <h2>Manufacturing at<br /><em>global standards.</em></h2>
           <p>Integrated capabilities for dependable quality, fast-moving markets, and brands ready to grow.</p>
@@ -582,18 +591,25 @@ export default function Home() {
               <span key={x}><Check size={16} />{x}</span>
             ))}
           </div>
-        </div>
+        </motion.div>
       </section>
 
       <section className="quality section" id="quality">
-        <div>
+        <motion.div initial={{ opacity: 0, x: -25 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <p className="eyebrow">Quality, made visible</p>
           <h2>Confidence at every<br /><em>checkpoint.</em></h2>
           <p>Certification and compliance status is verified per facility and market. The marks below are representative placeholders pending certification review.</p>
-        </div>
+        </motion.div>
         <div className="certs">
           {["GMP", "ISO", "HACCP", "FSSAI", "WHO–GMP"].map((x, i) => (
-            <motion.div key={x} initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}>
+            <motion.div
+              key={x}
+              initial={{ opacity: 0, scale: 0.85, y: 15 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08, duration: 0.45 }}
+              whileHover={{ scale: 1.08, y: -6 }}
+            >
               <Award />
               <b>{x}</b>
               <small>Placeholder</small>
@@ -603,44 +619,51 @@ export default function Home() {
       </section>
 
       <section className="global">
-        <div>
+        <motion.div initial={{ opacity: 0, x: -25 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <p className="eyebrow">Worldwide perspective</p>
           <h2>Nutrition without<br /><em>borders.</em></h2>
           <p>Trusted by partners across global markets.</p>
           <a href="#contact" className="text-link">
             Discover our reach <ArrowRight size={16} />
           </a>
-        </div>
-        <div className="map" aria-label="Stylised global network map">
+        </motion.div>
+        <motion.div className="map" aria-label="Stylised global network map" initial={{ opacity: 0, scale: 0.92 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
           <Globe2 />
-          <span className="pin one" />
-          <span className="pin two" />
-          <span className="pin three" />
-          <span className="pin four" />
-          <span className="pin five" />
-          <div className="map-note">
+          <span className="pin one anim-radar" />
+          <span className="pin two anim-radar" />
+          <span className="pin three anim-radar" />
+          <span className="pin four anim-radar" />
+          <span className="pin five anim-radar" />
+          <div className="map-note anim-float">
             30+<small>countries served</small>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       <section className="section insights" id="insights">
         <div className="section-heading">
-          <div>
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
             <p className="eyebrow">Latest perspectives</p>
             <h2>Ideas that move<br /><em>wellness forward.</em></h2>
-          </div>
+          </motion.div>
           <a className="text-link" href="#contact">
             Read all insights <ArrowRight size={16} />
           </a>
         </div>
         <div className="insight-grid">
           {["The Future of Nutraceuticals", "Personalized Nutrition: A More Human Formula", "Gut Health & the New Microbiome Economy"].map((x, i) => (
-            <article key={x}>
+            <motion.article
+              key={x}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.12, duration: 0.5 }}
+              whileHover={{ y: -6 }}
+            >
               <span>Perspective / 0{i + 1}</span>
               <h3>{x}</h3>
               <a href="#contact"><ArrowRight /></a>
-            </article>
+            </motion.article>
           ))}
         </div>
       </section>
@@ -653,7 +676,13 @@ export default function Home() {
 
       {/* COMPACT CTA BANNER */}
       <section className="cta-banner-section">
-        <div className="cta-banner-card">
+        <motion.div
+          className="cta-banner-card"
+          initial={{ opacity: 0, y: 30, scale: 0.97 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="cta-banner-content">
             <span className="cta-banner-pill">Ready to Collaborate?</span>
             <h3 className="cta-banner-title">Let’s engineer your next formulation breakthrough.</h3>
@@ -665,7 +694,7 @@ export default function Home() {
               <ArrowRight size={17} />
             </Link>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       <Footer />
