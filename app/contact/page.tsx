@@ -80,8 +80,15 @@ export default function ContactPage() {
     <main>
       <Navbar />
 
-      {/* Subpage Hero */}
+      {/* Subpage Hero with Full Background Image */}
       <section className="subpage-hero">
+        <div className="subpage-hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=1920&q=85"
+            alt="Life Sciences corporate headquarters and cleanroom facility"
+          />
+        </div>
+
         <div className="subpage-hero-inner">
           <div className="breadcrumbs">
             <Link href="/">Home</Link>
@@ -90,20 +97,20 @@ export default function ContactPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(16, 110, 99, 0.1)", borderColor: "rgba(16, 110, 99, 0.25)", color: "var(--moss)" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(111, 174, 56, 0.2)", borderColor: "rgba(111, 174, 56, 0.4)", color: "#74d4c0" }}>
               <MessageSquare size={14} />
               <span>Partner With Novara</span>
-              <span className="pill-dot" style={{ backgroundColor: "var(--moss)" }} />
+              <span className="pill-dot" style={{ backgroundColor: "#74d4c0" }} />
               <span>Global Client Inquiries</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
-              Let’s engineer the next<br />
-              <em style={{ color: "var(--moss)" }}>breakthrough in nutrition.</em>
+              Let’s engineer your next<br />
+              <em style={{ color: "#74d4c0" }}>breakthrough formulation.</em>
             </h1>
 
-            <p className="hero-text" style={{ maxWidth: "680px", fontSize: "17px", lineHeight: "1.7" }}>
-              Whether you are looking to scale commercial manufacturing, create a proprietary clinical formulation, or request product samples, our specialists are here to assist.
+            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#b8d1cb", margin: "14px 0 0" }}>
+              Scale contract manufacturing, request batch pilot samples, or explore regulatory partnership.
             </p>
           </motion.div>
         </div>

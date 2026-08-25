@@ -308,11 +308,11 @@ export default function Home() {
               </p>
 
               <div className="hero-actions">
-                <Link href={activeSlide.primaryHref} className="button button-dark">
+                <Link href={activeSlide.primaryHref} className="button button-dark" style={{ background: activeSlide.accentColor, borderColor: activeSlide.accentColor }}>
                   {activeSlide.primaryBtn}
                   <ArrowRight size={17} />
                 </Link>
-                <Link href={activeSlide.secondaryHref} className="button button-light">
+                <Link href={activeSlide.secondaryHref} className="button button-light" style={{ background: "rgba(255, 255, 255, 0.12)", color: "#ffffff", borderColor: "rgba(255, 255, 255, 0.3)", backdropFilter: "blur(8px)" }}>
                   {activeSlide.secondaryBtn}
                   <ArrowRight size={17} />
                 </Link>
@@ -331,16 +331,16 @@ export default function Home() {
                   className={`carousel-tab ${isActive ? "active" : ""}`}
                   onClick={() => setCurrentSlide(idx)}
                   style={{
-                    borderColor: isActive ? slide.accentColor : "rgba(16, 47, 53, 0.1)",
-                    backgroundColor: isActive ? `${slide.accentColor}15` : "rgba(255, 255, 255, 0.65)",
-                    color: isActive ? slide.accentColor : "#4b5d59",
+                    borderColor: isActive ? slide.accentColor : "rgba(255, 255, 255, 0.15)",
+                    backgroundColor: isActive ? `${slide.accentColor}30` : "rgba(10, 28, 32, 0.65)",
+                    color: isActive ? "#ffffff" : "#b6cbc6",
                   }}
                 >
                   <span
                     className="tab-indicator"
                     style={{
                       backgroundColor: slide.accentColor,
-                      boxShadow: isActive ? `0 0 8px ${slide.accentColor}` : "none",
+                      boxShadow: isActive ? `0 0 10px ${slide.accentColor}` : "none",
                     }}
                   />
                   <Icon size={13} />

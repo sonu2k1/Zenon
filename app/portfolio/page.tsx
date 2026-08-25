@@ -96,8 +96,15 @@ export default function PortfolioPage() {
     <main>
       <Navbar />
 
-      {/* Subpage Hero */}
+      {/* Subpage Hero with Full Background Image */}
       <section className="subpage-hero">
+        <div className="subpage-hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=1920&q=85"
+            alt="Botanical herbs and nutraceutical ingredients"
+          />
+        </div>
+
         <div className="subpage-hero-inner">
           <div className="breadcrumbs">
             <Link href="/">Home</Link>
@@ -106,20 +113,20 @@ export default function PortfolioPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(111, 174, 56, 0.12)", borderColor: "rgba(111, 174, 56, 0.3)", color: "#559024" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(111, 174, 56, 0.2)", borderColor: "rgba(111, 174, 56, 0.4)", color: "#74d4c0" }}>
               <Sparkles size={14} />
               <span>Nutraceutical Portfolio</span>
-              <span className="pill-dot" style={{ backgroundColor: "#6fae38" }} />
-              <span>8 Comprehensive Categories</span>
+              <span className="pill-dot" style={{ backgroundColor: "#74d4c0" }} />
+              <span>8 Specialized Categories</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
-              Science-backed formulations for<br />
-              <em style={{ color: "#559024" }}>every stage of life.</em>
+              Formulations engineered for<br />
+              <em style={{ color: "#74d4c0" }}>human vitality & longevity.</em>
             </h1>
 
-            <p className="hero-text" style={{ maxWidth: "680px", fontSize: "17px", lineHeight: "1.7" }}>
-              Explore our diverse portfolio spanning active sports performance, pediatric health, microbiome therapeutics, and standardized Ayurvedic herbal extracts.
+            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#b8d1cb", margin: "14px 0 0" }}>
+              Evidence-based nutritional ranges spanning active sports, pediatric growth, microbiome, and standardized phytopharma.
             </p>
           </motion.div>
         </div>

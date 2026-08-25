@@ -127,8 +127,15 @@ export default function ProductsPage() {
     <main>
       <Navbar />
 
-      {/* Subpage Hero */}
+      {/* Subpage Hero with Full Background Image */}
       <section className="subpage-hero">
+        <div className="subpage-hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1550572017-edd951aa8f72?auto=format&fit=crop&w=1920&q=85"
+            alt="Nutraceutical softgels and pharmaceutical capsules"
+          />
+        </div>
+
         <div className="subpage-hero-inner">
           <div className="breadcrumbs">
             <Link href="/">Home</Link>
@@ -137,20 +144,20 @@ export default function ProductsPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(16, 110, 99, 0.1)", borderColor: "rgba(16, 110, 99, 0.25)", color: "var(--moss)" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(111, 174, 56, 0.2)", borderColor: "rgba(111, 174, 56, 0.4)", color: "#74d4c0" }}>
               <Package size={14} />
               <span>Catalog & Capabilities</span>
-              <span className="pill-dot" style={{ backgroundColor: "var(--moss)" }} />
+              <span className="pill-dot" style={{ backgroundColor: "#74d4c0" }} />
               <span>500+ Market Ready Formulas</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
               Engineered for efficacy.<br />
-              <em style={{ color: "var(--moss)" }}>Formulated for market leaders.</em>
+              <em style={{ color: "#74d4c0" }}>Formulated for market leaders.</em>
             </h1>
 
-            <p className="hero-text" style={{ maxWidth: "680px", fontSize: "17px", lineHeight: "1.7" }}>
-              Explore our turnkey clinical formulations or partner with our formulation laboratory to co-create proprietary, patent-protected custom nutraceuticals.
+            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#b8d1cb", margin: "14px 0 0" }}>
+              Turnkey clinical formulations, targeted delivery systems, and patent-protected custom nutraceuticals.
             </p>
           </motion.div>
         </div>

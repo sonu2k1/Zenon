@@ -82,8 +82,15 @@ export default function ServicesPage() {
     <main>
       <Navbar />
 
-      {/* Subpage Hero */}
+      {/* Subpage Hero with Full Background Image */}
       <section className="subpage-hero">
+        <div className="subpage-hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1920&q=85"
+            alt="Pharmaceutical formulation laboratory and cleanroom manufacturing"
+          />
+        </div>
+
         <div className="subpage-hero-inner">
           <div className="breadcrumbs">
             <Link href="/">Home</Link>
@@ -92,20 +99,20 @@ export default function ServicesPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(43, 82, 146, 0.1)", borderColor: "rgba(43, 82, 146, 0.25)", color: "#2b5292" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(111, 174, 56, 0.2)", borderColor: "rgba(111, 174, 56, 0.4)", color: "#74d4c0" }}>
               <Layers size={14} />
-              <span>Full-Service Manufacturing</span>
-              <span className="pill-dot" style={{ backgroundColor: "#2b5292" }} />
+              <span>Full-Service Contract Manufacturing</span>
+              <span className="pill-dot" style={{ backgroundColor: "#74d4c0" }} />
               <span>Concept to Shelf</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
-              Comprehensive services for<br />
-              <em style={{ color: "#2b5292" }}>visionary health brands.</em>
+              End-to-end solutions for<br />
+              <em style={{ color: "#74d4c0" }}>global health leaders.</em>
             </h1>
 
-            <p className="hero-text" style={{ maxWidth: "680px", fontSize: "17px", lineHeight: "1.7" }}>
-              From initial molecular formulation and clinical licensing to high-volume cleanroom manufacturing and high-barrier packaging, discover our complete service suite.
+            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#b8d1cb", margin: "14px 0 0" }}>
+              Private labelling, WHO-GMP CRAMS manufacturing, regulatory dossiers, and smart dosage packaging.
             </p>
           </motion.div>
         </div>
