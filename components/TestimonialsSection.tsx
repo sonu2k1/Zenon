@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const fade = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
@@ -67,38 +67,102 @@ const testimonialsRow2 = [
   },
 ];
 
-const fannedMedia = [
+const fannedCards = [
   {
+    id: 1,
+    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85",
+    name: "Ananya Sharma",
+    role: "Wellness Consultant",
+  },
+  {
+    id: 2,
     img: "https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=800&q=85",
-    name: "Dr. Rakesh Varma",
-    tag: "Retail Partner & Formulator",
+    name: "Rohan Patel",
+    role: "Formulation Partner",
   },
   {
+    id: 3,
     img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=85",
-    name: "Elena Rostova",
-    tag: "Quality Control Lead",
+    name: "Meera Sen",
+    role: "Clinical Nutritionist",
   },
   {
+    id: 4,
     img: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=85",
-    name: "Marc Dupont",
-    tag: "Global Brand Director",
+    name: "David Miller",
+    role: "Brand Director",
   },
 ];
 
 export default function TestimonialsSection() {
-  const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const prevMedia = () => {
-    setCurrentMediaIndex((prev) => (prev === 0 ? fannedMedia.length - 1 : prev - 1));
+  const prevCard = () => {
+    setActiveIndex((prev) => (prev === 0 ? fannedCards.length - 1 : prev - 1));
   };
 
-  const nextMedia = () => {
-    setCurrentMediaIndex((prev) => (prev === fannedMedia.length - 1 ? 0 : prev + 1));
+  const nextCard = () => {
+    setActiveIndex((prev) => (prev === fannedCards.length - 1 ? 0 : prev + 1));
   };
 
   // Triplicate arrays for smooth seamless infinite marquees
   const row1Marquee = [...testimonialsRow1, ...testimonialsRow1, ...testimonialsRow1];
   const row2Marquee = [...testimonialsRow2, ...testimonialsRow2, ...testimonialsRow2];
+
+  // Helper to get card style based on relative offset from activeIndex
+  const getCardTransform = (index: number) => {
+    const total = fannedCards.length;
+    let diff = (index - activeIndex) % total;
+    if (diff < -Math.floor(total / 2)) diff += total;
+    if (diff > Math.floor(total / 2)) diff -= total;
+
+    if (diff === 0) {
+      return {
+        rotate: 0,
+        x: 0,
+        y: 0,
+        scale: 1,
+        zIndex: 5,
+        opacity: 1,
+      };
+    } else if (diff === -1) {
+      return {
+        rotate: -7,
+        x: -45,
+        y: 8,
+        scale: 0.94,
+        zIndex: 4,
+        opacity: 0.88,
+      };
+    } else if (diff === 1) {
+      return {
+        rotate: 7,
+        x: 45,
+        y: 8,
+        scale: 0.94,
+        zIndex: 4,
+        opacity: 0.88,
+      };
+    } else if (diff === -2 || diff < -1) {
+      return {
+        rotate: -14,
+        x: -85,
+        y: 18,
+        scale: 0.88,
+        zIndex: 2,
+        opacity: 0.72,
+      };
+    } else {
+      return {
+        rotate: 14,
+        x: 85,
+        y: 18,
+        scale: 0.88,
+        zIndex: 2,
+        opacity: 0.72,
+      };
+    }
+  };
 
   return (
     <section className="testimonials-section">
@@ -172,52 +236,102 @@ export default function TestimonialsSection() {
         </div>
       </div>
 
-      {/* Bottom 3D Fanned Video/Photo Carousel Deck */}
+      {/* Interactive 3D Fanned Card Deck */}
       <div className="video-carousel-section">
         <button
-          onClick={prevMedia}
+          onClick={prevCard}
           className="video-nav-arrow"
           aria-label="Previous story"
+          style={{ borderColor: "#c8b982", color: "#8a7536" }}
         >
-          <ChevronLeft size={24} />
+          <ChevronLeft size={22} />
         </button>
 
-        <div className="fanned-cards-container">
-          {/* Fanned Layer 1 (Left Back) */}
-          <div className="fanned-card-layer layer-1" />
-
-          {/* Fanned Layer 2 (Left Mid) */}
-          <div className="fanned-card-layer layer-2" />
-
-          {/* Fanned Layer 3 (Right Mid) */}
-          <div className="fanned-card-layer layer-3" />
-
-          {/* Main Front Card */}
-          <motion.div
-            key={currentMediaIndex}
-            className="fanned-card-layer layer-main"
-            initial={{ opacity: 0.8, scale: 0.96 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.35 }}
-          >
-            <img
-              src={fannedMedia[currentMediaIndex].img}
-              alt={fannedMedia[currentMediaIndex].name}
-            />
-            <div style={{ position: "absolute", bottom: "0", left: "0", right: "0", background: "linear-gradient(0deg, rgba(16, 47, 53, 0.95) 0%, rgba(16, 47, 53, 0.6) 60%, transparent 100%)", color: "white", padding: "20px 22px" }}>
-              <div style={{ fontSize: "16px", fontWeight: 800 }}>{fannedMedia[currentMediaIndex].name}</div>
-              <div style={{ fontSize: "12px", color: "#a4cbbd", fontWeight: 600 }}>{fannedMedia[currentMediaIndex].tag}</div>
-            </div>
-          </motion.div>
+        <div className="fanned-deck-wrapper" style={{ position: "relative", width: "340px", height: "460px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+          {fannedCards.map((card, idx) => {
+            const transform = getCardTransform(idx);
+            const isCenter = idx === activeIndex;
+            return (
+              <motion.div
+                key={card.id}
+                className="fanned-deck-card"
+                animate={{
+                  rotate: transform.rotate,
+                  x: transform.x,
+                  y: transform.y,
+                  scale: transform.scale,
+                  zIndex: transform.zIndex,
+                  opacity: transform.opacity,
+                }}
+                transition={{ duration: 0.45, ease: [0.25, 1, 0.5, 1] }}
+                style={{
+                  position: "absolute",
+                  width: "250px",
+                  height: "380px",
+                  borderRadius: "24px",
+                  overflow: "hidden",
+                  boxShadow: isCenter ? "0 22px 55px rgba(16, 47, 53, 0.28)" : "0 12px 30px rgba(16, 47, 53, 0.15)",
+                  border: isCenter ? "3px solid #ffffff" : "1.5px solid rgba(255, 255, 255, 0.8)",
+                  cursor: "pointer",
+                  backgroundColor: "#ffffff",
+                }}
+                onClick={() => setActiveIndex(idx)}
+              >
+                <img
+                  src={card.img}
+                  alt={card.name}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    background: isCenter
+                      ? "linear-gradient(0deg, rgba(16, 47, 53, 0.8) 0%, transparent 60%)"
+                      : "rgba(0, 0, 0, 0.15)",
+                    transition: "background 0.3s ease",
+                  }}
+                />
+                {isCenter && (
+                  <div style={{ position: "absolute", bottom: "16px", left: "16px", right: "16px", color: "white" }}>
+                    <div style={{ fontSize: "15px", fontWeight: 800 }}>{card.name}</div>
+                    <div style={{ fontSize: "12px", color: "#a4cbbd", fontWeight: 600 }}>{card.role}</div>
+                  </div>
+                )}
+              </motion.div>
+            );
+          })}
         </div>
 
         <button
-          onClick={nextMedia}
+          onClick={nextCard}
           className="video-nav-arrow"
           aria-label="Next story"
+          style={{ borderColor: "#c8b982", color: "#8a7536" }}
         >
-          <ChevronRight size={24} />
+          <ChevronRight size={22} />
         </button>
+      </div>
+
+      {/* Bottom Pagination Dots */}
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "6px", marginTop: "24px" }}>
+        {fannedCards.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => setActiveIndex(idx)}
+            aria-label={`Go to slide ${idx + 1}`}
+            style={{
+              height: "6px",
+              width: activeIndex === idx ? "20px" : "6px",
+              borderRadius: "10px",
+              backgroundColor: activeIndex === idx ? "#c5a059" : "#dcd7ce",
+              border: "none",
+              cursor: "pointer",
+              transition: "all 0.3s ease",
+              padding: 0,
+            }}
+          />
+        ))}
       </div>
     </section>
   );
