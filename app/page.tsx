@@ -365,34 +365,6 @@ export default function Home() {
             />
           </AnimatePresence>
 
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeSlide.id}
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.4 }}
-              className="hero-badge"
-              style={{
-                borderLeft: `3px solid ${activeSlide.accentColor}`
-              }}
-            >
-              <div
-                className="hero-badge-icon"
-                style={{
-                  backgroundColor: `${activeSlide.accentColor}20`,
-                  color: activeSlide.accentColor
-                }}
-              >
-                <ActiveIcon size={18} />
-              </div>
-              <span>
-                <b>{activeSlide.badgeTitle}</b>
-                <small>{activeSlide.badgeSub}</small>
-              </span>
-            </motion.div>
-          </AnimatePresence>
-
           <div className="hero-dots">
             {heroSlides.map((slide, idx) => (
               <button
