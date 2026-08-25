@@ -1243,25 +1243,36 @@ em {
   gap: 14px;
 }
 
-/* Responsive */
 @media (max-width: 800px) {
   .nav {
-    padding: 0 6vw;
+    padding: 0 4.5vw;
     height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .nav .navlinks,
-  .nav-actions,
+  .nav-actions .button,
   .nav>.button {
     display: none;
   }
 
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
   .menu {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 0;
     background: none;
     color: var(--ink);
     cursor: pointer;
+    padding: 4px;
   }
 
   .mobile-nav {
