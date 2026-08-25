@@ -26,9 +26,19 @@ export default function Navbar() {
 
   return (
     <nav className="nav">
-      <Link className="brand" href="/">
-        <i />NOVARA<span>Life Sciences</span>
-      </Link>
+      <div className="nav-brand-group">
+        <button
+          className="menu"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation menu"
+        >
+          {menuOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
+
+        <Link className="brand" href="/">
+          <i />NOVARA<span>Life Sciences</span>
+        </Link>
+      </div>
 
       <div className="navlinks">
         {navItems.map((item) => (
@@ -50,14 +60,6 @@ export default function Navbar() {
           <ArrowRight size={15} />
         </Link>
       </div>
-
-      <button
-        className="menu"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle navigation menu"
-      >
-        {menuOpen ? <X size={22} /> : <Menu size={22} />}
-      </button>
 
       {menuOpen && (
         <div className="mobile-nav">

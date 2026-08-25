@@ -76,6 +76,12 @@ em {
   box-shadow: 0 4px 20px rgba(16, 47, 53, 0.03);
 }
 
+.nav-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .brand {
   font-size: 14px;
   font-weight: 800;
