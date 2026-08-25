@@ -246,7 +246,7 @@ export default function TestimonialsSection() {
           onClick={prevCard}
           className="video-nav-arrow"
           aria-label="Previous story"
-          style={{ borderColor: "#c8b982", color: "#8a7536" }}
+          style={{ borderColor: "#0066cc", color: "#0066cc" }}
         >
           <ChevronLeft size={22} />
         </button>
