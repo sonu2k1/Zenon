@@ -132,8 +132,8 @@ export default function TestimonialsSection() {
     } else if (diff === -1) {
       return {
         rotate: -7,
-        x: -45,
-        y: 8,
+        x: -55,
+        y: 10,
         scale: 0.94,
         zIndex: 4,
         opacity: 0.88,
@@ -141,8 +141,8 @@ export default function TestimonialsSection() {
     } else if (diff === 1) {
       return {
         rotate: 7,
-        x: 45,
-        y: 8,
+        x: 55,
+        y: 10,
         scale: 0.94,
         zIndex: 4,
         opacity: 0.88,
@@ -150,8 +150,8 @@ export default function TestimonialsSection() {
     } else if (diff === -2 || diff < -1) {
       return {
         rotate: -14,
-        x: -85,
-        y: 18,
+        x: -105,
+        y: 22,
         scale: 0.88,
         zIndex: 2,
         opacity: 0.72,
@@ -159,8 +159,8 @@ export default function TestimonialsSection() {
     } else {
       return {
         rotate: 14,
-        x: 85,
-        y: 18,
+        x: 105,
+        y: 22,
         scale: 0.88,
         zIndex: 2,
         opacity: 0.72,
@@ -251,7 +251,7 @@ export default function TestimonialsSection() {
           <ChevronLeft size={22} />
         </button>
 
-        <div className="fanned-deck-wrapper" style={{ position: "relative", width: "340px", height: "460px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div className="fanned-deck-wrapper" style={{ position: "relative", width: "380px", height: "520px", display: "flex", justifyContent: "center", alignItems: "center" }}>
           {fannedCards.map((card, idx) => {
             const transform = getCardTransform(idx);
             const isCenter = idx === activeIndex;
@@ -270,12 +270,13 @@ export default function TestimonialsSection() {
                 transition={{ duration: 0.45, ease: [0.25, 1, 0.5, 1] }}
                 style={{
                   position: "absolute",
-                  width: "250px",
-                  height: "380px",
+                  width: "270px",
+                  height: "480px",
+                  aspectRatio: "9 / 16",
                   borderRadius: "24px",
                   overflow: "hidden",
-                  boxShadow: isCenter ? "0 22px 55px rgba(16, 47, 53, 0.28)" : "0 12px 30px rgba(16, 47, 53, 0.15)",
-                  border: isCenter ? "3px solid #ffffff" : "1.5px solid rgba(255, 255, 255, 0.8)",
+                  boxShadow: isCenter ? "0 24px 60px rgba(16, 47, 53, 0.3)" : "0 12px 32px rgba(16, 47, 53, 0.15)",
+                  border: isCenter ? "3.5px solid #ffffff" : "1.5px solid rgba(255, 255, 255, 0.8)",
                   cursor: "pointer",
                   backgroundColor: "#ffffff",
                 }}
