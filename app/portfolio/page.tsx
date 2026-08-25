@@ -84,7 +84,7 @@ const portfolioCategories = [
     title: "Ayurvedic",
     shortDesc: "Our array of Ayurvedic nutrition is designed to promote balance, wellness.",
     desc: "Bridging classical 5,000-year Ayurvedic wisdom with modern clinical validation. Pure botanical rasayanas formulated for dosha equilibrium and holistic vigor.",
-    image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1615397349754-cfa2066a298e?auto=format&fit=crop&w=1000&q=80",
     formats: ["Herbal Decoctions", "Vegetarian Vcaps", "Cold-Pressed Oils"],
     keyIngredients: ["Triphala Standardized Extract", "Shilajit 50% Fulvic Acid", "Brahmi (Bacopa 50% Bacosides)", "Tulsi Bioactive Fraction"],
     icon: Pill,
@@ -100,7 +100,7 @@ export default function PortfolioPage() {
       <section className="subpage-hero">
         <div className="subpage-hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=1920&q=85"
+            src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&w=1920&q=85"
             alt="Botanical herbs and nutraceutical ingredients"
           />
         </div>

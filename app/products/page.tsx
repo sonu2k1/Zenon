@@ -101,7 +101,7 @@ const productList = [
     tagline: "Low molecular weight dermal elasticity peptides",
     formats: ["Liquid Stick Packs", "Gummies"],
     keyActives: "Korean Fish Collagen Tripeptides (CTP 500Da), Rice Ceramides, Hyaluronic Acid",
-    image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=80",
     badge: "500 Da Absorption",
     icon: HeartPulse,
   },

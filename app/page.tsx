@@ -45,7 +45,7 @@ const heroSlides = [
     secondaryHref: "/portfolio",
     badgeTitle: "Botanical Actives",
     badgeSub: "Standardized herbal & plant extraction",
-    image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=1800&q=85",
+    image: "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&w=1920&q=85",
     alt: "Botanical science and natural active formulation",
     Icon: Leaf,
   },
@@ -170,7 +170,7 @@ const portfolioItems = [
   {
     title: "Ayurvedic",
     desc: "Our array of Ayurvedic nutrition is designed to promote balance, wellness.",
-    image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1615397349754-cfa2066a298e?auto=format&fit=crop&w=800&q=80",
     href: "/products",
   },
 ];
