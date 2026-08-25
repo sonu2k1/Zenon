@@ -70,31 +70,31 @@ const testimonialsRow2 = [
 const fannedCards = [
   {
     id: 1,
-    video: "https://assets.mixkit.co/videos/preview/mixkit-young-woman-drinking-a-green-smoothie-42884-large.mp4",
-    poster: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85",
-    name: "Ananya Sharma",
-    role: "Wellness Consultant & Creator",
+    video: "/videos/testimonial-1.webm",
+    poster: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=85",
+    name: "Dr. Rohan Patel",
+    role: "Clinical R&D & Formulation Specialist",
   },
   {
     id: 2,
-    video: "https://assets.mixkit.co/videos/preview/mixkit-scientist-working-in-a-laboratory-40615-large.mp4",
-    poster: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=85",
-    name: "Dr. Rohan Patel",
-    role: "Clinical R&D Specialist",
+    video: "/videos/testimonial-2.webm",
+    poster: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85",
+    name: "Ananya Sharma",
+    role: "Holistic Nutrition & Wellness Consultant",
   },
   {
     id: 3,
-    video: "https://assets.mixkit.co/videos/preview/mixkit-athlete-drinking-from-a-water-bottle-after-training-41457-large.mp4",
+    video: "/videos/testimonial-3.webm",
     poster: "https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=800&q=85",
     name: "Meera Sen",
-    role: "Sports Nutrition Coach",
+    role: "Quality Assurance & Clinical Trials",
   },
   {
     id: 4,
-    video: "https://assets.mixkit.co/videos/preview/mixkit-woman-applying-facial-cream-in-a-spa-41484-large.mp4",
+    video: "/videos/testimonial-4.webm",
     poster: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=85",
     name: "David Miller",
-    role: "Brand Founder & Partner",
+    role: "Global Health Sciences Director",
   },
 ];
 
@@ -289,6 +289,7 @@ export default function TestimonialsSection() {
                   muted
                   playsInline
                   preload="auto"
+                  onLoadedData={(e) => e.currentTarget.play().catch(() => {})}
                   style={{
                     width: "100%",
                     height: "100%",
