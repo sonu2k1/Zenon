@@ -14,8 +14,8 @@ const heroSlides = [
   {
     id: "rnd",
     theme: "cyan",
-    accentColor: "#0284c7",
-    glowColor: "#38bdf8",
+    accentColor: "#38bdf8",
+    glowColor: "#0284c7",
     tag: "Clinical R&D",
     titlePrefix: "Science-driven nutrition.",
     titleAccent: "Built for better health.",
@@ -26,15 +26,15 @@ const heroSlides = [
     secondaryHref: "/services",
     badgeTitle: "Evidence-led R&D",
     badgeSub: "Clinical trials & molecular validation",
-    image: "https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&w=1800&q=85",
+    image: "https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&w=1920&q=85",
     alt: "Modern biotechnology and life sciences laboratory",
     Icon: Atom,
   },
   {
     id: "botanicals",
-    theme: "emerald",
-    accentColor: "#059669",
-    glowColor: "#34d399",
+    theme: "sky",
+    accentColor: "#60a5fa",
+    glowColor: "#2563eb",
     tag: "Botanical Science",
     titlePrefix: "Nature's purest actives.",
     titleAccent: "Validated by science.",
@@ -51,9 +51,9 @@ const heroSlides = [
   },
   {
     id: "bioavailability",
-    theme: "amber",
-    accentColor: "#d97706",
-    glowColor: "#fbbf24",
+    theme: "ice",
+    accentColor: "#93c5fd",
+    glowColor: "#3b82f6",
     tag: "Bioavailability",
     titlePrefix: "Maximum absorption.",
     titleAccent: "Targeted delivery.",
@@ -70,9 +70,9 @@ const heroSlides = [
   },
   {
     id: "formulations",
-    theme: "purple",
-    accentColor: "#7c3aed",
-    glowColor: "#a78bfa",
+    theme: "blue",
+    accentColor: "#38bdf8",
+    glowColor: "#0284c7",
     tag: "Custom Blends",
     titlePrefix: "Your unique formula.",
     titleAccent: "Scaled to perfection.",
@@ -83,15 +83,15 @@ const heroSlides = [
     secondaryHref: "/rnd",
     badgeTitle: "500+ Formulations",
     badgeSub: "Micro-encapsulation & efficacy testing",
-    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1800&q=85",
+    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1920&q=85",
     alt: "Pharmaceutical research scientist formulation testing",
     Icon: FlaskConical,
   },
   {
     id: "manufacturing",
-    theme: "lime",
-    accentColor: "#65a30d",
-    glowColor: "#a3e635",
+    theme: "royal",
+    accentColor: "#60a5fa",
+    glowColor: "#1d4ed8",
     tag: "GMP Scale",
     titlePrefix: "Global manufacturing.",
     titleAccent: "Zero compromise.",
@@ -102,7 +102,7 @@ const heroSlides = [
     secondaryHref: "/about",
     badgeTitle: "Global Scale",
     badgeSub: "WHO-GMP & ISO 22000 certified facilities",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1800&q=85",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=85",
     alt: "High-tech automated manufacturing facility",
     Icon: ShieldCheck,
   },
@@ -660,9 +660,9 @@ export default function Home() {
             <p className="cta-banner-desc">From initial molecular discovery to full WHO-GMP commercial scale.</p>
           </div>
           <div className="cta-banner-actions">
-            <Link href="/contact" className="button button-dark" style={{ background: "#6fae38", borderColor: "#6fae38" }}>
-              Get Started Today
-              <ArrowRight size={16} />
+            <Link href="/contact" className="button button-dark" style={{ background: "#0066cc", borderColor: "#0066cc" }}>
+              Request Formulation Consultation
+              <ArrowRight size={17} />
             </Link>
           </div>
         </div>

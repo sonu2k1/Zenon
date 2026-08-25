@@ -312,7 +312,7 @@ export default function TestimonialsSection() {
                 {isCenter && (
                   <div style={{ position: "absolute", bottom: "16px", left: "16px", right: "16px", color: "white", pointerEvents: "none" }}>
                     <div style={{ fontSize: "15px", fontWeight: 800 }}>{card.name}</div>
-                    <div style={{ fontSize: "12px", color: "#a4cbbd", fontWeight: 600 }}>{card.role}</div>
+                    <div style={{ fontSize: "12px", color: "#93c5fd", fontWeight: 600 }}>{card.role}</div>
                   </div>
                 )}
               </motion.div>
@@ -324,7 +324,7 @@ export default function TestimonialsSection() {
           onClick={nextCard}
           className="video-nav-arrow"
           aria-label="Next story"
-          style={{ borderColor: "#c8b982", color: "#8a7536" }}
+          style={{ borderColor: "#0066cc", color: "#0066cc" }}
         >
           <ChevronRight size={22} />
         </button>
@@ -341,7 +341,7 @@ export default function TestimonialsSection() {
               height: "6px",
               width: activeIndex === idx ? "20px" : "6px",
               borderRadius: "10px",
-              backgroundColor: activeIndex === idx ? "#c5a059" : "#dcd7ce",
+              backgroundColor: activeIndex === idx ? "#0066cc" : "#cbd5e1",
               border: "none",
               cursor: "pointer",
               transition: "all 0.3s ease",

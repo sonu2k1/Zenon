@@ -97,19 +97,19 @@ export default function ContactPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(111, 174, 56, 0.2)", borderColor: "rgba(111, 174, 56, 0.4)", color: "#74d4c0" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(56, 189, 248, 0.15)", borderColor: "rgba(56, 189, 248, 0.35)", color: "#38bdf8" }}>
               <MessageSquare size={14} />
               <span>Partner With Novara</span>
-              <span className="pill-dot" style={{ backgroundColor: "#74d4c0" }} />
+              <span className="pill-dot" style={{ backgroundColor: "#38bdf8" }} />
               <span>Global Client Inquiries</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
               Let’s engineer your next<br />
-              <em style={{ color: "#74d4c0" }}>breakthrough formulation.</em>
+              <em style={{ color: "#38bdf8" }}>breakthrough formulation.</em>
             </h1>
 
-            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#b8d1cb", margin: "14px 0 0" }}>
+            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e2f2", margin: "14px 0 0" }}>
               Scale contract manufacturing, request batch pilot samples, or explore regulatory partnership.
             </p>
           </motion.div>

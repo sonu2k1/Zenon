@@ -17,7 +17,7 @@ export default function Footer() {
           {/* Column 1: Brand & Credentials */}
           <div className="footer-brand-col">
             <Link className="brand" href="/" style={{ color: "#ffffff", fontSize: "16px", textDecoration: "none" }}>
-              <i />NOVARA<span style={{ color: "#87d3c7", fontSize: "12px" }}>Life Sciences</span>
+              <i style={{ border: "4px solid #38bdf8" }} />NOVARA<span style={{ color: "#38bdf8", fontSize: "12px" }}>Life Sciences</span>
             </Link>
             <p className="footer-tagline">
               Pharmaceutical-grade nutraceutical contract manufacturing, advanced clinical R&D, and global regulatory compliance.
@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <span style={{ display: "block", fontSize: "11px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", color: "#8fa5a0", marginBottom: "8px" }}>
+              <span style={{ display: "block", fontSize: "11px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", color: "#94a3b8", marginBottom: "8px" }}>
                 Follow Us
               </span>
               <SocialIcons size="md" />
@@ -68,7 +68,7 @@ export default function Footer() {
               <Link
                 href="/contact"
                 style={{
-                  background: "#6fae38",
+                  background: "#0066cc",
                   color: "#ffffff",
                   padding: "9px 18px",
                   borderRadius: "100px",
@@ -78,7 +78,7 @@ export default function Footer() {
                   alignItems: "center",
                   gap: "6px",
                   textDecoration: "none",
-                  boxShadow: "0 4px 12px rgba(111, 174, 56, 0.3)",
+                  boxShadow: "0 4px 14px rgba(0, 102, 204, 0.35)",
                   transition: "transform 0.2s ease, background 0.2s ease",
                 }}
               >

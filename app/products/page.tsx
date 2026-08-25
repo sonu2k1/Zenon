@@ -144,19 +144,19 @@ export default function ProductsPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(111, 174, 56, 0.2)", borderColor: "rgba(111, 174, 56, 0.4)", color: "#74d4c0" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(56, 189, 248, 0.15)", borderColor: "rgba(56, 189, 248, 0.35)", color: "#38bdf8" }}>
               <Package size={14} />
               <span>Catalog & Capabilities</span>
-              <span className="pill-dot" style={{ backgroundColor: "#74d4c0" }} />
+              <span className="pill-dot" style={{ backgroundColor: "#38bdf8" }} />
               <span>500+ Market Ready Formulas</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
               Engineered for efficacy.<br />
-              <em style={{ color: "#74d4c0" }}>Formulated for market leaders.</em>
+              <em style={{ color: "#38bdf8" }}>Formulated for market leaders.</em>
             </h1>
 
-            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#b8d1cb", margin: "14px 0 0" }}>
+            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e2f2", margin: "14px 0 0" }}>
               Turnkey clinical formulations, targeted delivery systems, and patent-protected custom nutraceuticals.
             </p>
           </motion.div>
@@ -167,7 +167,7 @@ export default function ProductsPage() {
       <section style={{ background: "#ffffff", borderBottom: "1px solid var(--line)", padding: "18px 4.5vw", position: "sticky", top: "76px", zIndex: 40, backdropFilter: "blur(12px)", backgroundColor: "rgba(255, 255, 255, 0.95)" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", display: "flex", alignItems: "center", gap: "10px", overflowX: "auto", paddingBottom: "4px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "6px", color: "var(--ink)", fontWeight: 700, fontSize: "13px", marginRight: "8px" }}>
-            <Filter size={15} color="var(--moss)" />
+            <Filter size={15} color="#0066cc" />
             <span>Filter:</span>
           </div>
           {categories.map((cat) => {
@@ -183,9 +183,9 @@ export default function ProductsPage() {
                   fontWeight: 600,
                   cursor: "pointer",
                   whiteSpace: "nowrap",
-                  border: isActive ? "1px solid var(--moss)" : "1px solid #dce3dd",
-                  backgroundColor: isActive ? "var(--ink)" : "#f7f8f4",
-                  color: isActive ? "#ffffff" : "#4b5d59",
+                  border: isActive ? "1px solid #0066cc" : "1px solid #e2e8f0",
+                  backgroundColor: isActive ? "#0066cc" : "#f8fafc",
+                  color: isActive ? "#ffffff" : "#475569",
                   transition: "all 0.2s ease",
                 }}
               >

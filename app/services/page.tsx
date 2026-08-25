@@ -19,8 +19,9 @@ const serviceList = [
       "Ready-to-launch validated stock formulations",
       "Label artwork regulatory review and barcoding",
     ],
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=80",
     icon: Tag,
-    color: "#2b5292",
+    color: "#0066cc",
     badge: "Turnkey Ready",
   },
   {
@@ -34,8 +35,9 @@ const serviceList = [
       "Free Sale Certificates (FSC) and Certificate of Analysis (CoA)",
       "Clinical dossier compilation for EFSA & ASEAN filings",
     ],
+    image: "https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&w=900&q=80",
     icon: FileCheck,
-    color: "#059669",
+    color: "#0284c7",
     badge: "100% Compliant",
   },
   {
@@ -49,8 +51,9 @@ const serviceList = [
       "ICH stability testing chambers (Zone IVb conditions)",
       "Complete batch manufacturing records (BMR) & traceability",
     ],
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80",
     icon: Factory,
-    color: "#7c3aed",
+    color: "#2563eb",
     badge: "WHO-GMP Certified",
   },
   {
@@ -64,8 +67,9 @@ const serviceList = [
       "Nitrogen-flushed single-serve liquid & powder stick packs",
       "Tamper-evident induction sealing and custom labeling",
     ],
+    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=900&q=80",
     icon: Package,
-    color: "#d97706",
+    color: "#0284c7",
     badge: "High Barrier Protection",
   },
 ];
@@ -99,19 +103,19 @@ export default function ServicesPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(111, 174, 56, 0.2)", borderColor: "rgba(111, 174, 56, 0.4)", color: "#74d4c0" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(56, 189, 248, 0.15)", borderColor: "rgba(56, 189, 248, 0.35)", color: "#38bdf8" }}>
               <Layers size={14} />
               <span>Full-Service Contract Manufacturing</span>
-              <span className="pill-dot" style={{ backgroundColor: "#74d4c0" }} />
+              <span className="pill-dot" style={{ backgroundColor: "#38bdf8" }} />
               <span>Concept to Shelf</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
               End-to-end solutions for<br />
-              <em style={{ color: "#74d4c0" }}>global health leaders.</em>
+              <em style={{ color: "#38bdf8" }}>global health leaders.</em>
             </h1>
 
-            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#b8d1cb", margin: "14px 0 0" }}>
+            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e2f2", margin: "14px 0 0" }}>
               Private labelling, WHO-GMP CRAMS manufacturing, regulatory dossiers, and smart dosage packaging.
             </p>
           </motion.div>
@@ -123,56 +127,42 @@ export default function ServicesPage() {
         <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
           {serviceList.map((service, idx) => {
             const Icon = service.icon;
-            const isEven = idx % 2 === 0;
+            const isEven = idx % 2 === 1;
+
             return (
               <motion.div
                 key={service.id}
-                className="card-panel"
-                style={{ padding: "40px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "40px", alignItems: "center" }}
-                initial="hidden"
-                whileInView="show"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                variants={fade}
+                className={`service-detail-card ${isEven ? "reverse" : ""}`}
               >
-                <div>
-                  <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
-                    <div style={{ width: "48px", height: "48px", borderRadius: "12px", background: `${service.color}15`, display: "flex", alignItems: "center", justifyContent: "center", color: service.color }}>
-                      <Icon size={24} />
-                    </div>
-                    <span style={{ fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: service.color, background: `${service.color}10`, padding: "4px 10px", borderRadius: "100px" }}>
-                      {service.badge}
-                    </span>
+                <div className="service-detail-img">
+                  <img src={service.image} alt={service.title} />
+                  <div className="service-detail-badge">
+                    <Icon size={16} />
+                    <span>0{idx + 1}</span>
                   </div>
+                </div>
 
-                  <h2 style={{ fontSize: "28px", fontWeight: 800, color: "var(--ink)", marginBottom: "8px" }}>
+                <div className="service-detail-content">
+                  <span style={{ fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", color: "#0066cc" }}>
+                    Service Stream 0{idx + 1}
+                  </span>
+                  <h3 style={{ fontSize: "28px", fontWeight: 700, color: "var(--ink)", margin: "8px 0 12px" }}>
                     {service.title}
-                  </h2>
-                  <p style={{ fontSize: "15px", fontWeight: 600, color: service.color, marginBottom: "14px" }}>
-                    {service.tagline}
-                  </p>
-                  <p style={{ fontSize: "14px", color: "#546863", lineHeight: "1.7", marginBottom: "24px" }}>
+                  </h3>
+                  <p style={{ fontSize: "15px", color: "#475569", lineHeight: "1.65", marginBottom: "20px" }}>
                     {service.desc}
                   </p>
 
-                  <Link
-                    href={`/contact?service=${encodeURIComponent(service.title)}`}
-                    className="button button-dark"
-                    style={{ fontSize: "13px", padding: "10px 20px" }}
-                  >
-                    Inquire About {service.title}
-                    <ArrowRight size={15} />
-                  </Link>
-                </div>
-
-                <div style={{ background: "#f6f8f5", borderRadius: "16px", padding: "30px", border: "1px solid #e2eae4" }}>
-                  <h4 style={{ fontSize: "15px", fontWeight: 700, color: "var(--ink)", marginBottom: "16px", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                  <h4 style={{ fontSize: "13px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--ink)", marginBottom: "14px" }}>
                     Core Capabilities & Deliverables:
                   </h4>
                   <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                     {service.features.map((feat) => (
                       <div key={feat} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                        <CheckCircle2 size={18} color="#6fae38" style={{ marginTop: "2px", flexShrink: 0 }} />
+                        <CheckCircle2 size={18} color="#0066cc" style={{ marginTop: "2px", flexShrink: 0 }} />
                         <span style={{ fontSize: "13px", color: "var(--ink)", lineHeight: "1.5", fontWeight: 500 }}>
                           {feat}
                         </span>
@@ -187,12 +177,12 @@ export default function ServicesPage() {
       </section>
 
       {/* Capabilities Section */}
-      <section style={{ background: "#edf2ee", padding: "90px 4.5vw", borderTop: "1px solid var(--line)" }}>
+      <section style={{ background: "#f0f7ff", padding: "90px 4.5vw", borderTop: "1px solid var(--line)" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto 50px" }}>
             <p className="eyebrow" style={{ justifyContent: "center" }}>Facility Strengths</p>
             <h2>Precision manufacturing <em>capabilities.</em></h2>
-            <p style={{ marginTop: "14px", color: "#546863", fontSize: "15px" }}>
+            <p style={{ marginTop: "14px", color: "#475569", fontSize: "15px" }}>
               Equipped with pharmaceutical-grade automated production machinery operating inside certified ISO Class 8 cleanroom environments.
             </p>
           </div>
@@ -200,13 +190,13 @@ export default function ServicesPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
             {capabilities.map((cap) => (
               <div key={cap.title} className="card-panel">
-                <div className="icon-box" style={{ background: "rgba(111, 174, 56, 0.15)", color: "#559024" }}>
+                <div className="icon-box" style={{ background: "rgba(0, 102, 204, 0.12)", color: "#0066cc" }}>
                   <Sparkles size={24} />
                 </div>
                 <h4 style={{ fontSize: "18px", fontWeight: 700, color: "var(--ink)", marginBottom: "8px" }}>
                   {cap.title}
                 </h4>
-                <p style={{ fontSize: "13px", color: "#546863", lineHeight: "1.6" }}>
+                <p style={{ fontSize: "13px", color: "#475569", lineHeight: "1.6" }}>
                   {cap.desc}
                 </p>
               </div>
