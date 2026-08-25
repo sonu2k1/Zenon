@@ -572,7 +572,7 @@ export default function Home() {
       </section>
 
       <section className="facility">
-        <img src="https://images.unsplash.com/photo-1581093458791-9d42e3c3eaa7?auto=format&fit=crop&w=1800&q=85" alt="Modern production facility" />
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=85" alt="Modern production facility" />
         <div className="facility-overlay">
           <p className="eyebrow light">Built to perform</p>
           <h2>Manufacturing at<br /><em>global standards.</em></h2>

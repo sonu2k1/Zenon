@@ -700,7 +700,7 @@ em {
 
 .science-points svg,
 .facility-overlay svg {
-  color: #d6ed64;
+  color: #38bdf8;
   width: 15px;
 }
 
@@ -708,18 +708,19 @@ em {
   position: absolute;
   left: 43%;
   bottom: 45px;
-  background: #f6f9ee;
+  background: #f0f7ff;
   color: var(--ink);
   border-radius: 15px;
   padding: 16px;
   display: flex;
   gap: 14px;
   align-items: center;
-  box-shadow: 0 15px 30px #0003;
+  box-shadow: 0 15px 30px rgba(7, 30, 51, 0.12);
+  border: 1px solid #d0e1f9;
 }
 
 .floating-card svg {
-  color: var(--moss);
+  color: #0066cc;
 }
 
 .floating-card b,
@@ -744,14 +745,13 @@ em {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.7);
 }
 
 .facility:after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(9, 34, 39, 0.88), rgba(10, 35, 40, 0.16));
+  background: linear-gradient(90deg, rgba(7, 21, 38, 0.92) 0%, rgba(7, 21, 38, 0.65) 45%, rgba(7, 21, 38, 0.15) 100%);
 }
 
 .facility-overlay {
