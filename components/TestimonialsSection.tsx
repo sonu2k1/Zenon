@@ -70,27 +70,31 @@ const testimonialsRow2 = [
 const fannedCards = [
   {
     id: 1,
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85",
+    video: "https://assets.mixkit.co/videos/preview/mixkit-young-woman-drinking-a-green-smoothie-42884-large.mp4",
+    poster: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85",
     name: "Ananya Sharma",
-    role: "Wellness Consultant",
+    role: "Wellness Consultant & Creator",
   },
   {
     id: 2,
-    img: "https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=800&q=85",
-    name: "Rohan Patel",
-    role: "Formulation Partner",
+    video: "https://assets.mixkit.co/videos/preview/mixkit-scientist-working-in-a-laboratory-40615-large.mp4",
+    poster: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=85",
+    name: "Dr. Rohan Patel",
+    role: "Clinical R&D Specialist",
   },
   {
     id: 3,
-    img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=85",
+    video: "https://assets.mixkit.co/videos/preview/mixkit-athlete-drinking-from-a-water-bottle-after-training-41457-large.mp4",
+    poster: "https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=800&q=85",
     name: "Meera Sen",
-    role: "Clinical Nutritionist",
+    role: "Sports Nutrition Coach",
   },
   {
     id: 4,
-    img: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=85",
+    video: "https://assets.mixkit.co/videos/preview/mixkit-woman-applying-facial-cream-in-a-spa-41484-large.mp4",
+    poster: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=85",
     name: "David Miller",
-    role: "Brand Director",
+    role: "Brand Founder & Partner",
   },
 ];
 
@@ -277,23 +281,34 @@ export default function TestimonialsSection() {
                 }}
                 onClick={() => setActiveIndex(idx)}
               >
-                <img
-                  src={card.img}
-                  alt={card.name}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                <video
+                  src={card.video}
+                  poster={card.poster}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="auto"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
                 />
                 <div
                   style={{
                     position: "absolute",
                     inset: 0,
                     background: isCenter
-                      ? "linear-gradient(0deg, rgba(16, 47, 53, 0.8) 0%, transparent 60%)"
-                      : "rgba(0, 0, 0, 0.15)",
+                      ? "linear-gradient(0deg, rgba(16, 47, 53, 0.85) 0%, rgba(16, 47, 53, 0.2) 50%, transparent 80%)"
+                      : "rgba(0, 0, 0, 0.25)",
                     transition: "background 0.3s ease",
+                    pointerEvents: "none",
                   }}
                 />
                 {isCenter && (
-                  <div style={{ position: "absolute", bottom: "16px", left: "16px", right: "16px", color: "white" }}>
+                  <div style={{ position: "absolute", bottom: "16px", left: "16px", right: "16px", color: "white", pointerEvents: "none" }}>
                     <div style={{ fontSize: "15px", fontWeight: 800 }}>{card.name}</div>
                     <div style={{ fontSize: "12px", color: "#a4cbbd", fontWeight: 600 }}>{card.role}</div>
                   </div>
