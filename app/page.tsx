@@ -285,19 +285,6 @@ export default function Home() {
               transition={{ duration: 0.35, ease: "easeOut" }}
               className="hero-copy-inner"
             >
-              <div
-                className="hero-tag-pill"
-                style={{
-                  backgroundColor: `${activeSlide.accentColor}18`,
-                  borderColor: `${activeSlide.accentColor}40`,
-                  color: activeSlide.accentColor
-                }}
-              >
-                <ActiveIcon size={14} />
-                <span>{activeSlide.tag}</span>
-                <span className="pill-dot" style={{ backgroundColor: activeSlide.accentColor }} />
-                <span>Since 2004</span>
-              </div>
 
               <h1>
                 {activeSlide.titlePrefix}<br />
