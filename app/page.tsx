@@ -6,6 +6,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TrustSections from "@/components/TrustSections";
+import TestimonialsSection from "@/components/TestimonialsSection";
 
 const fade = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
 
@@ -660,14 +661,23 @@ export default function Home() {
       {/* OUR VALUABLE CLIENTS & CERTIFICATIONS SECTIONS */}
       <TrustSections />
 
-      <section className="contact" id="contact">
-        <div className="contact-mark">N</div>
-        <p className="eyebrow light">Start a conversation</p>
-        <h2>Let’s build the next<br />generation of <em>wellness.</em></h2>
-        <p>Have a product idea? Let’s turn science into a market-ready solution.</p>
-        <div>
-          <Button dark={false}>Talk to our experts</Button>
-          <Button dark={false}>Request a consultation</Button>
+      {/* TESTIMONIALS SECTION (Dual-Row Marquee + 3D Fanned Deck) */}
+      <TestimonialsSection />
+
+      {/* COMPACT CTA BANNER */}
+      <section className="cta-banner-section">
+        <div className="cta-banner-card">
+          <div className="cta-banner-content">
+            <span className="cta-banner-pill">Ready to Collaborate?</span>
+            <h3 className="cta-banner-title">Let’s engineer your next formulation breakthrough.</h3>
+            <p className="cta-banner-desc">From initial molecular discovery to full WHO-GMP commercial scale.</p>
+          </div>
+          <div className="cta-banner-actions">
+            <Link href="/contact" className="button button-dark" style={{ background: "#6fae38", borderColor: "#6fae38" }}>
+              Get Started Today
+              <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </section>
 
