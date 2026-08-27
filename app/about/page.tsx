@@ -117,7 +117,7 @@ export default function AboutPage() {
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <div className="hero-tag-pill" style={{ backgroundColor: "rgba(56, 189, 248, 0.15)", borderColor: "rgba(56, 189, 248, 0.35)", color: "#38bdf8" }}>
               <Users size={14} />
-              <span>About Novara Life Sciences</span>
+              <span>About Veradaco Industries</span>
               <span className="pill-dot" style={{ backgroundColor: "#38bdf8" }} />
               <span>Since 2004</span>
             </div>
@@ -143,7 +143,7 @@ export default function AboutPage() {
               WHO ARE <em>WE?</em>
             </h2>
             <p style={{ color: "#475569", fontSize: "16px", lineHeight: "1.75", marginBottom: "18px" }}>
-              Novara Life Sciences is a full-service pharmaceutical-grade contract manufacturer and formulation innovator. Founded in 2004, we have dedicated over two decades to decoding the relationship between bioavailable phytonutrients, micro-encapsulated actives, and human cellular vitality.
+              Veradaco Industries is a full-service pharmaceutical-grade contract manufacturer and formulation innovator. Founded in 2004, we have dedicated over two decades to decoding the relationship between bioavailable phytonutrients, micro-encapsulated actives, and human cellular vitality.
             </p>
             <p style={{ color: "#475569", fontSize: "15px", lineHeight: "1.75", marginBottom: "26px" }}>
               From initial molecular formulation, organoleptic sensory optimization, and clinical assay testing to high-speed WHO-GMP cleanroom packaging, we empower the world’s leading healthcare brands to bring safe, compliant, and efficacious products to market.

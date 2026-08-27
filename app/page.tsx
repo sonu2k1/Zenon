@@ -178,7 +178,7 @@ const portfolioItems = [
 const services = [
   {
     title: "PRIVATE LABELLING",
-    desc: "Novara is a leading full-service private label manufacturer. Whether you are a startup or an established enterprise, we scale custom formulations for your brand.",
+    desc: "Veradaco is a leading full-service private label manufacturer. Whether you are a startup or an established enterprise, we scale custom formulations for your brand.",
     href: "/products",
     icon: (
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#0066cc" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -205,7 +205,7 @@ const services = [
   },
   {
     title: "CRAMS",
-    desc: "Novara is a trusted contract research & manufacturing partner, specializing in pharmaceutical-grade cleanroom scaling and active bioactives.",
+    desc: "Veradaco is a trusted contract research & manufacturing partner, specializing in pharmaceutical-grade cleanroom scaling and active bioactives.",
     href: "/rnd",
     icon: (
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#0066cc" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -394,7 +394,7 @@ export default function Home() {
 
       <section className="section partnership" id="about">
         <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <p className="eyebrow">About Novara Life Sciences</p>
+          <p className="eyebrow">About Veradaco Industries</p>
           <h2>Your brand.<br /><em>Our science.</em></h2>
           <p>Bring the ambition. We bring the insight, formulation expertise, and operational discipline to take it further.</p>
           <Button>Start a partnership</Button>
@@ -418,7 +418,7 @@ export default function Home() {
 
       <section className="section process" id="capabilities">
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={fade}>
-          <p className="eyebrow">The Novara difference</p>
+          <p className="eyebrow">The Veradaco difference</p>
           <h2>From scientific idea to<br /><em>market-ready product.</em></h2>
         </motion.div>
         <div className="process-grid">

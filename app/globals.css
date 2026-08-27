@@ -88,6 +88,23 @@ em {
   gap: 12px;
 }
 
+.veradaco-brand-logo {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.veradaco-brand-logo:hover {
+  transform: translateY(-1px);
+}
+
+.veradaco-brand-logo svg {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease;
+}
+
+.veradaco-brand-logo:hover svg {
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 12px rgba(0, 102, 204, 0.25));
+}
+
 .brand {
   font-size: 14px;
   font-weight: 800;

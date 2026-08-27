@@ -39,21 +39,21 @@ const offices = [
     region: "Switzerland (R&D & Science HQ)",
     address: "BioTechnopark 42, 4057 Basel, Switzerland",
     phone: "+41 61 205 8890",
-    email: "rnd-europe@novara-life.com",
+    email: "rnd-europe@veradaco.com",
   },
   {
     city: "Boston Biomedical Hub",
     region: "United States (Americas Commercial Office)",
     address: "750 Atlantic Avenue, Boston, MA 02111, USA",
     phone: "+1 (800) 845-9230",
-    email: "usa-sales@novara-life.com",
+    email: "usa-sales@veradaco.com",
   },
   {
     city: "Global Manufacturing Plant",
     region: "Cleanroom Facility & Export Operations",
     address: "Life Sciences Industrial Zone, WHO-GMP Campus",
     phone: "+91 22 6890 1200",
-    email: "manufacturing@novara-life.com",
+    email: "manufacturing@veradaco.com",
   },
 ];
 
@@ -99,7 +99,7 @@ export default function ContactPage() {
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <div className="hero-tag-pill" style={{ backgroundColor: "rgba(56, 189, 248, 0.15)", borderColor: "rgba(56, 189, 248, 0.35)", color: "#38bdf8" }}>
               <MessageSquare size={14} />
-              <span>Partner With Novara</span>
+              <span>Partner With Veradaco</span>
               <span className="pill-dot" style={{ backgroundColor: "#38bdf8" }} />
               <span>Global Client Inquiries</span>
             </div>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                   Inquiry Received Successfully!
                 </h3>
                 <p style={{ color: "#475569", fontSize: "15px", lineHeight: "1.7", maxWidth: "420px", margin: "0 auto 24px" }}>
-                  Thank you, <strong>{formData.name}</strong>. A dedicated formulation and commercial specialist from Novara Life Sciences will review your requirements and respond within 24 business hours.
+                  Thank you, <strong>{formData.name}</strong>. A dedicated formulation and commercial specialist from Veradaco Industries will review your requirements and respond within 24 business hours.
                 </p>
                 <button
                   className="button button-dark"

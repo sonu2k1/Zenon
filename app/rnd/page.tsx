@@ -183,7 +183,7 @@ export default function RndPage() {
             <div style={{ position: "absolute", bottom: "24px", left: "24px", right: "24px", background: "linear-gradient(135deg, rgba(7, 21, 38, 0.95) 0%, rgba(0, 51, 102, 0.92) 100%)", border: "1px solid rgba(56, 189, 248, 0.3)", color: "white", padding: "20px", borderRadius: "16px", backdropFilter: "blur(12px)", boxShadow: "0 10px 30px rgba(0, 102, 204, 0.25)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
                 <Beaker size={18} color="#38bdf8" />
-                <strong style={{ fontSize: "15px" }}>Novara BioMatrix™ Technology</strong>
+                <strong style={{ fontSize: "15px" }}>Veradaco BioMatrix™ Technology</strong>
               </div>
               <p style={{ fontSize: "12px", color: "#d1e2f2", margin: 0 }}>
                 12.5x higher area-under-the-curve (AUC) bioavailability compared to unformulated reference standards.

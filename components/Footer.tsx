@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowUp, Mail, MapPin, Phone } from "lucide-react";
 import { navItems } from "./Navbar";
 import SocialIcons from "./SocialIcons";
+import Logo from "./Logo";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -16,9 +17,9 @@ export default function Footer() {
           
           {/* Column 1: Brand & Credentials */}
           <div className="footer-brand-col">
-            <Link className="brand" href="/" style={{ color: "#ffffff", fontSize: "16px", textDecoration: "none" }}>
-              <i style={{ border: "4px solid #38bdf8" }} />NOVARA<span style={{ color: "#38bdf8", fontSize: "12px" }}>Life Sciences</span>
-            </Link>
+            <div style={{ marginBottom: "14px" }}>
+              <Logo variant="dark" size="md" />
+            </div>
             <p className="footer-tagline">
               Pharmaceutical-grade nutraceutical contract manufacturing, advanced clinical R&D, and global regulatory compliance.
             </p>
@@ -53,8 +54,8 @@ export default function Footer() {
           <div className="footer-contact-col">
             <h5 className="footer-heading">Get in Touch</h5>
             <div className="footer-contact-list">
-              <a href="mailto:hello@novara-life.com" className="footer-contact-item">
-                <Mail size={14} /> hello@novara-life.com
+              <a href="mailto:hello@veradaco.com" className="footer-contact-item">
+                <Mail size={14} /> hello@veradaco.com
               </a>
               <a href="tel:+18008459230" className="footer-contact-item">
                 <Phone size={14} /> +1 (800) 845-9230
@@ -92,7 +93,7 @@ export default function Footer() {
 
         {/* Bottom copyright bar */}
         <div className="footer-bottom-bar">
-          <span>© 2026 Novara Life Sciences. All rights reserved.</span>
+          <span>© 2026 Veradaco Industries. All rights reserved.</span>
           <div className="footer-legal-links">
             <Link href="/about">About</Link>
             <Link href="/services">Services</Link>

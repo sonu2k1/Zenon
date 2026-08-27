@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 import SocialIcons from "./SocialIcons";
+import Logo from "./Logo";
 
 export const navItems = [
   { name: "Home", href: "/" },
@@ -35,9 +36,7 @@ export default function Navbar() {
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
 
-        <Link className="brand" href="/">
-          <i />NOVARA<span>Life Sciences</span>
-        </Link>
+        <Logo size="md" />
       </div>
 
       <div className="navlinks">
