@@ -729,20 +729,36 @@ export default function ProductsPage() {
               position: "relative",
               borderRadius: "32px",
               overflow: "hidden",
-              minHeight: "400px",
+              minHeight: "440px",
               display: "flex",
               alignItems: "center",
-              padding: "clamp(32px, 6vw, 64px)",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+              gap: "36px",
+              padding: "clamp(32px, 5vw, 56px)",
               background: "linear-gradient(135deg, #071e33 0%, #0c2b4d 50%, #0066cc 100%)",
               boxShadow: "0 20px 45px rgba(0, 102, 204, 0.18)",
               border: "1px solid rgba(56, 189, 248, 0.2)",
             }}
           >
-            {/* Ambient Radial Blue Glowing Orbs */}
-            <div style={{ position: "absolute", top: "-80px", right: "-80px", width: "350px", height: "350px", borderRadius: "50%", background: "radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, rgba(0, 102, 204, 0) 70%)", filter: "blur(40px)", pointerEvents: "none" }} />
-            <div style={{ position: "absolute", bottom: "-60px", left: "25%", width: "280px", height: "280px", borderRadius: "50%", background: "radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, rgba(0, 102, 204, 0) 70%)", filter: "blur(40px)", pointerEvents: "none" }} />
+            {/* Background Laboratory & Botanical Formulation Image Layer */}
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                backgroundImage: `linear-gradient(to right, rgba(7, 30, 51, 0.95) 0%, rgba(7, 30, 51, 0.8) 55%, rgba(0, 102, 204, 0.3) 100%), url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1920&q=85')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center right",
+                zIndex: 1,
+              }}
+            />
 
-            <div style={{ position: "relative", zIndex: 2, maxWidth: "620px" }}>
+            {/* Ambient Radial Blue Glowing Orbs */}
+            <div style={{ position: "absolute", top: "-80px", right: "-80px", width: "350px", height: "350px", borderRadius: "50%", background: "radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, rgba(0, 102, 204, 0) 70%)", filter: "blur(40px)", pointerEvents: "none", zIndex: 1 }} />
+            <div style={{ position: "absolute", bottom: "-60px", left: "25%", width: "280px", height: "280px", borderRadius: "50%", background: "radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, rgba(0, 102, 204, 0) 70%)", filter: "blur(40px)", pointerEvents: "none", zIndex: 1 }} />
+
+            {/* Left Content Column */}
+            <div style={{ position: "relative", zIndex: 2, maxWidth: "560px", flex: "1 1 320px" }}>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -773,9 +789,9 @@ export default function ProductsPage() {
                 transition={{ delay: 0.2, duration: 0.5 }}
                 style={{
                   color: "#ffffff",
-                  fontSize: "clamp(34px, 5.5vw, 56px)",
+                  fontSize: "clamp(32px, 4.5vw, 50px)",
                   fontWeight: 800,
-                  lineHeight: 1.1,
+                  lineHeight: 1.12,
                   letterSpacing: "-0.03em",
                   marginBottom: "16px",
                 }}
@@ -793,7 +809,7 @@ export default function ProductsPage() {
                 transition={{ delay: 0.3, duration: 0.5 }}
                 style={{
                   color: "#e0f2fe",
-                  fontSize: "clamp(15px, 2vw, 17px)",
+                  fontSize: "clamp(14px, 1.8vw, 16px)",
                   lineHeight: 1.6,
                   marginBottom: "28px",
                   maxWidth: "480px",
@@ -849,10 +865,93 @@ export default function ProductsPage() {
                   onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(255, 255, 255, 0.2)")}
                   onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255, 255, 255, 0.12)")}
                 >
-                  Featured Medicine: Ashwagandha
+                  Featured: Ashwagandha
                 </button>
               </motion.div>
             </div>
+
+            {/* Right Showcase Image Card */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.92, x: 25 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              style={{
+                position: "relative",
+                zIndex: 2,
+                flex: "1 1 340px",
+                maxWidth: "460px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  position: "relative",
+                  borderRadius: "26px",
+                  overflow: "hidden",
+                  border: "2px solid rgba(56, 189, 248, 0.4)",
+                  boxShadow: "0 25px 60px rgba(0, 0, 0, 0.4)",
+                  background: "rgba(255, 255, 255, 0.08)",
+                  backdropFilter: "blur(14px)",
+                  width: "100%",
+                  height: "320px",
+                }}
+              >
+                <img
+                  src="/products/ashwagandha.jpg"
+                  alt="Clinical Evidence-Led Medicine Formulation"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+
+                {/* Floating Glassmorphic Trust Tag */}
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: "16px",
+                    left: "16px",
+                    right: "16px",
+                    background: "rgba(7, 30, 51, 0.9)",
+                    backdropFilter: "blur(12px)",
+                    borderRadius: "16px",
+                    padding: "12px 16px",
+                    border: "1px solid rgba(56, 189, 248, 0.3)",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    boxShadow: "0 10px 25px rgba(0,0,0,0.3)",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "38px",
+                      height: "38px",
+                      borderRadius: "12px",
+                      background: "rgba(56, 189, 248, 0.2)",
+                      color: "#38bdf8",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexShrink: 0,
+                    }}
+                  >
+                    <ShieldCheck size={22} />
+                  </div>
+                  <div>
+                    <div style={{ fontSize: "14px", fontWeight: 800, color: "#ffffff" }}>
+                      WHO-GMP Clinical Grade
+                    </div>
+                    <div style={{ fontSize: "12px", color: "#93c5fd" }}>
+                      100% Bioavailable Active Extracts
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
         </section>
 
