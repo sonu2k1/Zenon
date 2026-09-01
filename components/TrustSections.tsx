@@ -136,7 +136,7 @@ export const certLogos = [
   {
     name: "URS GMP",
     component: (
-      <div style={{ width: "52px", height: "52px", borderRadius: "50%", border: "2.5px solid #065f46", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", color: "#065f46", padding: "2px" }}>
+      <div style={{ width: "52px", height: "52px", borderRadius: "50%", border: "2.5px solid #1B3626", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", color: "#1B3626", padding: "2px" }}>
         <span style={{ fontSize: "6px", fontWeight: 800, textTransform: "uppercase" }}>REGISTRAR</span>
         <span style={{ fontSize: "11px", fontWeight: 900 }}>URS</span>
         <span style={{ fontSize: "6px", fontWeight: 800 }}>GMP</span>
@@ -179,8 +179,8 @@ export const certLogos = [
   {
     name: "WHO-GMP",
     component: (
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", color: "#059669", textAlign: "center" }}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", color: "#15803D", textAlign: "center" }}>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#15803D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="10" />
           <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
           <path d="M2 12h20" />

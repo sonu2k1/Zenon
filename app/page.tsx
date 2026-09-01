@@ -14,8 +14,8 @@ const heroSlides = [
   {
     id: "rnd",
     theme: "emerald",
-    accentColor: "#34d399",
-    glowColor: "#059669",
+    accentColor: "#7CA832",
+    glowColor: "#15803D",
     tag: "Clinical R&D",
     titlePrefix: "Science-driven nutrition.",
     titleAccent: "Built for better health.",
@@ -33,8 +33,8 @@ const heroSlides = [
   {
     id: "botanicals",
     theme: "botanical",
-    accentColor: "#a3e635",
-    glowColor: "#16a34a",
+    accentColor: "#E8A324",
+    glowColor: "#3B592D",
     tag: "Botanical Science",
     titlePrefix: "Nature's purest actives.",
     titleAccent: "Validated by science.",
@@ -52,8 +52,8 @@ const heroSlides = [
   {
     id: "bioavailability",
     theme: "mint",
-    accentColor: "#6ee7b7",
-    glowColor: "#059669",
+    accentColor: "#0D9488",
+    glowColor: "#15803D",
     tag: "Bioavailability",
     titlePrefix: "Maximum absorption.",
     titleAccent: "Targeted delivery.",
@@ -71,8 +71,8 @@ const heroSlides = [
   {
     id: "formulations",
     theme: "forest",
-    accentColor: "#10b981",
-    glowColor: "#047857",
+    accentColor: "#7CA832",
+    glowColor: "#2D5A27",
     tag: "Custom Blends",
     titlePrefix: "Your unique formula.",
     titleAccent: "Scaled to perfection.",
@@ -90,8 +90,8 @@ const heroSlides = [
   {
     id: "manufacturing",
     theme: "jade",
-    accentColor: "#34d399",
-    glowColor: "#065f46",
+    accentColor: "#E8A324",
+    glowColor: "#1B3626",
     tag: "GMP Scale",
     titlePrefix: "Global manufacturing.",
     titleAccent: "Zero compromise.",
@@ -109,12 +109,55 @@ const heroSlides = [
 ];
 
 const solutions = [
-  ["Sports Nutrition", "Performance-led formats engineered for active lives.", "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80", CircleGauge],
-  ["Women’s Health", "Purposeful nutrition across every life stage.", "https://images.unsplash.com/photo-1543362906-acfc16c67564?auto=format&fit=crop&w=900&q=80", HeartPulse],
-  ["Gut Health", "Precision blends for better daily balance.", "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80", Leaf],
-  ["Medical Nutrition", "Clinically informed nutrition for specific needs.", "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=80", Microscope],
-  ["Botanical Science", "Modern delivery systems for heritage ingredients.", "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=80", Sparkles],
-  ["Kids Nutrition", "Thoughtfully developed, delightfully simple formats.", "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=80", Pill],
+  ["KSM-66 Ashwagandha", "Standardized full-spectrum root extract for stress resilience, cortisol balance, and peak vitality.", "/products/ashwagandha_ksm66.jpg", Leaf],
+  ["Himalayan Shilajit", "Gold-grade natural mineral resin rich in fulvic acid and 84+ ionic trace minerals for cellular energy.", "/products/himalayan_shilajit.jpg", Sparkles],
+  ["Gym & Sports Supplements", "High-performance whey protein isolates, creatine matrix, and rapid-recovery BCAA amino blends.", "/products/gym_supplements.jpg", CircleGauge],
+  ["Medical & Clinical Nutrition", "Evidence-led bioactive formulas engineered for targeted metabolic and therapeutic wellness.", "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=80", Microscope],
+  ["Women’s Vitality & Health", "Purposeful bioavailable nutrition across every stage, supporting hormonal balance and longevity.", "https://images.unsplash.com/photo-1543362906-acfc16c67564?auto=format&fit=crop&w=900&q=80", HeartPulse],
+  ["Gut & Microbiome Health", "DRCaps® delayed-release multi-strain probiotics and prebiotic synbiotics for digestive vitality.", "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80", Pill],
+];
+
+const timelineSteps = [
+  {
+    step: "01",
+    name: "Concept",
+    desc: "Target profile, molecular mapping & active selection",
+    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=85",
+    badge: "Stage 01 • Molecular Discovery & Active Selection",
+    alt: "Concept research and molecular botanical discovery",
+  },
+  {
+    step: "02",
+    name: "Formulation",
+    desc: "Bioavailability optimization, assay testing & clean synthesis",
+    image: "https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&w=1200&q=85",
+    badge: "Stage 02 • Bioavailability & Assay Formulation",
+    alt: "Formulation laboratory scientist testing bioavailable nutrition",
+  },
+  {
+    step: "03",
+    name: "Manufacturing",
+    desc: "Class 100,000 cleanroom commercial batch scaling",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=85",
+    badge: "Stage 03 • WHO-GMP Cleanroom Precision Scaling",
+    alt: "Automated high-speed pharmaceutical manufacturing",
+  },
+  {
+    step: "04",
+    name: "Packaging",
+    desc: "High-barrier Alu-Alu blister, bottling & nitrogen flushing",
+    image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&q=85",
+    badge: "Stage 04 • High-Barrier Automated Blister & Bottling",
+    alt: "Automated pharmaceutical bottle filling and packaging line",
+  },
+  {
+    step: "05",
+    name: "Delivery",
+    desc: "Global regulatory release, cold-chain freight & worldwide export",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85",
+    badge: "Stage 05 • Global Distribution & Cold-Chain Logistics",
+    alt: "Global freight distribution and worldwide pharmaceutical delivery",
+  },
 ];
 
 const process = [
@@ -178,10 +221,10 @@ const portfolioItems = [
 const services = [
   {
     title: "PRIVATE LABELLING",
-    desc: "Veradaco is a leading full-service private label manufacturer. Whether you are a startup or an established enterprise, we scale custom formulations for your brand.",
+    desc: "Varadaco is a leading full-service private label manufacturer. Whether you are a startup or an established enterprise, we scale custom formulations for your brand.",
     href: "/products",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#059669" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#15803D" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 6L38 22L24 36L8 20L22 6Z" />
         <circle cx="18" cy="16" r="2.5" />
         <path d="M20 28C22 30 26 30 28 26C30 22 28 18 24 20" />
@@ -194,7 +237,7 @@ const services = [
     desc: "Ensure all necessary global licensing and compliance, working closely with regulatory authorities like US FDA, FSSAI, AYUSH, and EFSA.",
     href: "/about",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#059669" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#15803D" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M27 8L36 17L32 21L23 12L27 8Z" />
         <path d="M19 16L30 27" />
         <path d="M24 21L10 35L7 32L21 18" />
@@ -205,10 +248,10 @@ const services = [
   },
   {
     title: "CRAMS",
-    desc: "Veradaco is a trusted contract research & manufacturing partner, specializing in pharmaceutical-grade cleanroom scaling and active bioactives.",
+    desc: "Varadaco is a trusted contract research & manufacturing partner, specializing in pharmaceutical-grade cleanroom scaling and active bioactives.",
     href: "/rnd",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#059669" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#15803D" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M20 6H28V12H20V6Z" />
         <path d="M24 12V20" />
         <path d="M12 28H20V40H12V28Z" />
@@ -225,7 +268,7 @@ const services = [
     desc: "High-barrier Alu-Alu blister packaging, automated softgel bottling, and nitrogen-flushed single-serve stick pack delivery formats.",
     href: "/products",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#059669" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#15803D" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M10 16L24 8L38 16L24 24L10 16Z" />
         <path d="M10 16V34L24 42V24" />
         <path d="M38 16V34L24 42" />
@@ -259,12 +302,20 @@ function Button({ children, dark = true }: { children: React.ReactNode; dark?: b
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [activeTimelineStep, setActiveTimelineStep] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
     }, 4000);
     return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const stepTimer = setInterval(() => {
+      setActiveTimelineStep((prev) => (prev + 1) % timelineSteps.length);
+    }, 4000);
+    return () => clearInterval(stepTimer);
   }, []);
 
   const activeSlide = heroSlides[currentSlide];
@@ -294,17 +345,6 @@ export default function Home() {
               <p className="hero-text">
                 {activeSlide.description}
               </p>
-
-              <div className="hero-actions">
-                <Link href={activeSlide.primaryHref} className="button button-dark" style={{ background: activeSlide.accentColor, borderColor: activeSlide.accentColor }}>
-                  {activeSlide.primaryBtn}
-                  <ArrowRight size={17} />
-                </Link>
-                <Link href={activeSlide.secondaryHref} className="button button-light" style={{ background: "rgba(255, 255, 255, 0.12)", color: "#ffffff", borderColor: "rgba(255, 255, 255, 0.3)", backdropFilter: "blur(8px)" }}>
-                  {activeSlide.secondaryBtn}
-                  <ArrowRight size={17} />
-                </Link>
-              </div>
             </motion.div>
           </AnimatePresence>
 
@@ -393,32 +433,74 @@ export default function Home() {
       </section>
 
       <section className="section partnership" id="about">
-        <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <p className="eyebrow">About Veradaco Industries</p>
+        <motion.div
+          className="partnership-copy"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <p className="eyebrow">About Varadaco Industries</p>
           <h2>Your brand.<br /><em>Our science.</em></h2>
           <p>Bring the ambition. We bring the insight, formulation expertise, and operational discipline to take it further.</p>
-          <Button>Start a partnership</Button>
+          <Link href="/contact" className="button button-dark" style={{ background: "#15803D", borderColor: "#15803D", fontWeight: 800, padding: "14px 28px", fontSize: "15px" }}>
+            Start a partnership
+            <ArrowRight size={17} />
+          </Link>
         </motion.div>
-        <div className="timeline">
-          {["Concept", "Formulation", "Manufacturing", "Packaging", "Delivery"].map((x, i) => (
+
+        <div className="partnership-image-card">
+          <AnimatePresence mode="wait">
             <motion.div
-              key={x}
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
+              key={timelineSteps[activeTimelineStep].name}
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 1.02 }}
+              transition={{ duration: 0.35, ease: "easeOut" }}
+              style={{ width: "100%", height: "100%", position: "relative" }}
             >
-              <span>0{i + 1}</span>
-              <b>{x}</b>
-              {i < 4 && <i />}
+              <img
+                src={timelineSteps[activeTimelineStep].image}
+                alt={timelineSteps[activeTimelineStep].alt}
+              />
+              <div className="partnership-image-badge">
+                <ShieldCheck size={18} color="#7CA832" />
+                <span>{timelineSteps[activeTimelineStep].badge}</span>
+              </div>
             </motion.div>
-          ))}
+          </AnimatePresence>
+        </div>
+
+        <div className="timeline">
+          {timelineSteps.map((item, i) => {
+            const isActive = activeTimelineStep === i;
+            return (
+              <motion.div
+                key={item.name}
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08, duration: 0.5 }}
+                className={isActive ? "active" : ""}
+                onMouseEnter={() => setActiveTimelineStep(i)}
+                onClick={() => setActiveTimelineStep(i)}
+                style={{ cursor: "pointer" }}
+              >
+                <span>{item.step}</span>
+                <div>
+                  <b>{item.name}</b>
+                  <small>{item.desc}</small>
+                </div>
+                <i />
+              </motion.div>
+            );
+          })}
         </div>
       </section>
 
       <section className="section process" id="capabilities">
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={fade}>
-          <p className="eyebrow">The Veradaco difference</p>
+          <p className="eyebrow">The Varadaco difference</p>
           <h2>From scientific idea to<br /><em>market-ready product.</em></h2>
         </motion.div>
         <div className="process-grid">
@@ -522,18 +604,16 @@ export default function Home() {
       <section className="section solutions" id="products">
         <div className="section-heading">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
-            <p className="eyebrow">Products & Solutions</p>
+            <p className="eyebrow">Explore Our Products</p>
             <h2>Nutrition for the<br /><em>way life moves.</em></h2>
           </motion.div>
-          <a className="text-link" href="#contact">
+          <Link className="text-link" href="/products">
             View all products <ArrowRight size={16} />
-          </a>
+          </Link>
         </div>
         <div className="solution-grid">
           {solutions.map(([title, desc, img, Icon], i) => (
-            <motion.a
-              href="#contact"
-              className="solution-card"
+            <motion.div
               key={String(title)}
               initial="hidden"
               whileInView="show"
@@ -542,16 +622,18 @@ export default function Home() {
               variants={fade}
               whileHover={{ y: -5 }}
             >
-              <div className="card-image">
-                <img src={img as string} alt="" />
-              </div>
-              <div className="card-body">
-                <Icon size={21} />
-                <h3>{title as string}</h3>
-                <p>{desc as string}</p>
-                <span>Explore <ArrowRight size={15} /></span>
-              </div>
-            </motion.a>
+              <Link href="/products" className="solution-card" style={{ display: "block", textDecoration: "none" }}>
+                <div className="card-image">
+                  <img src={img as string} alt={title as string} />
+                </div>
+                <div className="card-body">
+                  <Icon size={21} />
+                  <h3>{title as string}</h3>
+                  <p>{desc as string}</p>
+                  <span>Explore <ArrowRight size={15} /></span>
+                </div>
+              </Link>
+            </motion.div>
           ))}
         </div>
       </section>
@@ -598,44 +680,136 @@ export default function Home() {
         <motion.div initial={{ opacity: 0, x: -25 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <p className="eyebrow">Quality, made visible</p>
           <h2>Confidence at every<br /><em>checkpoint.</em></h2>
-          <p>Certification and compliance status is verified per facility and market. The marks below are representative placeholders pending certification review.</p>
+          <p>Certification and compliance status is verified per facility and market across our global pharmaceutical and nutraceutical cleanroom suites.</p>
         </motion.div>
         <div className="certs">
-          {["GMP", "ISO", "HACCP", "FSSAI", "WHO–GMP"].map((x, i) => (
-            <motion.div
-              key={x}
-              initial={{ opacity: 0, scale: 0.85, y: 15 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.08, duration: 0.45 }}
-              whileHover={{ scale: 1.08, y: -6 }}
-            >
-              <Award />
-              <b>{x}</b>
-              <small>Placeholder</small>
-            </motion.div>
-          ))}
+          {[
+            { title: "GMP", label: "c-GMP Certified", icon: Award },
+            { title: "ISO", label: "ISO 22000:2018", icon: ShieldCheck },
+            { title: "HACCP", label: "Hazard Analysis", icon: Check },
+            { title: "FSSAI", label: "Central License", icon: Award },
+            { title: "WHO–GMP", label: "Global Standard", icon: Sparkles },
+          ].map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, scale: 0.85, y: 15 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08, duration: 0.45 }}
+                whileHover={{ scale: 1.08, y: -8 }}
+              >
+                <div className="cert-icon-wrap">
+                  <Icon size={20} />
+                </div>
+                <b>{item.title}</b>
+                <small>{item.label}</small>
+              </motion.div>
+            );
+          })}
         </div>
       </section>
 
-      <section className="global">
-        <motion.div initial={{ opacity: 0, x: -25 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <p className="eyebrow">Worldwide perspective</p>
+      <section className="global" id="global">
+        <div className="global-bg-grid" />
+        <div className="global-glow-orb" />
+
+        <motion.div
+          className="global-copy"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <p className="eyebrow">Global Reach & Export Standards</p>
           <h2>Nutrition without<br /><em>borders.</em></h2>
-          <p>Trusted by partners across global markets.</p>
-          <a href="#contact" className="text-link">
-            Discover our reach <ArrowRight size={16} />
-          </a>
+          <p>
+            Trusted by healthcare leaders and innovative nutraceutical brands worldwide. We formulate, manufacture, and clear global regulatory dossiers for seamless delivery to over 30+ international markets.
+          </p>
+
+          <div className="global-features-list">
+            <div className="global-feature-item">
+              <ShieldCheck size={18} color="#a3e635" />
+              <span>Full Regulatory Dossier Support (FDA, EFSA, TGA, AYUSH)</span>
+            </div>
+            <div className="global-feature-item">
+              <Globe2 size={18} color="#a3e635" />
+              <span>Worldwide Cold-Chain Logistics & Maritime Freight</span>
+            </div>
+            <div className="global-feature-item">
+              <Check size={18} color="#a3e635" />
+              <span>100% Batch Traceability with Certified CoA & Lab Reports</span>
+            </div>
+          </div>
+
+          <Link href="/contact" className="button button-dark" style={{ background: "#15803D", borderColor: "#15803D", fontWeight: 800, padding: "14px 28px", fontSize: "15px", marginTop: "24px", display: "inline-flex" }}>
+            Inquire About Global Export
+            <ArrowRight size={17} />
+          </Link>
         </motion.div>
-        <motion.div className="map" aria-label="Stylised global network map" initial={{ opacity: 0, scale: 0.92 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-          <Globe2 />
-          <span className="pin one anim-radar" />
-          <span className="pin two anim-radar" />
-          <span className="pin three anim-radar" />
-          <span className="pin four anim-radar" />
-          <span className="pin five anim-radar" />
-          <div className="map-note anim-float">
-            30+<small>countries served</small>
+
+        <motion.div
+          className="global-visual-container"
+          initial={{ opacity: 0, scale: 0.92 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          {/* 3D Photorealistic Illuminated Globe with Atmosphere */}
+          <div className="globe-sphere-wrapper">
+            <div className="globe-atmosphere-glow" />
+            <img
+              src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?auto=format&fit=crop&w=1200&q=85"
+              alt="Global nutraceutical supply network"
+              className="globe-image"
+            />
+            <div className="globe-inner-shadow" />
+
+            {/* Glowing Hub Radar Markers */}
+            <div className="global-hub-pin pin-us" title="North America: US FDA Registered">
+              <span className="radar-pulse" />
+              <span className="hub-dot" />
+              <span className="hub-label">North America</span>
+            </div>
+
+            <div className="global-hub-pin pin-eu" title="Europe: EFSA Standard">
+              <span className="radar-pulse" />
+              <span className="hub-dot" />
+              <span className="hub-label">Europe</span>
+            </div>
+
+            <div className="global-hub-pin pin-me" title="Middle East: GCC & Halal Hub">
+              <span className="radar-pulse" />
+              <span className="hub-dot" />
+              <span className="hub-label">Middle East</span>
+            </div>
+
+            <div className="global-hub-pin pin-asia" title="Asia-Pacific: GMP Manufacturing">
+              <span className="radar-pulse" />
+              <span className="hub-dot" />
+              <span className="hub-label">Asia-Pacific</span>
+            </div>
+
+            <div className="global-hub-pin pin-aus" title="Oceania: TGA Standards">
+              <span className="radar-pulse" />
+              <span className="hub-dot" />
+              <span className="hub-label">Australia</span>
+            </div>
+          </div>
+
+          {/* Floating Metric Badges */}
+          <div className="global-stat-card stat-top-right anim-float">
+            <b>30+</b>
+            <small>Countries Served Worldwide</small>
+          </div>
+
+          <div className="global-stat-card stat-bottom-left anim-float-delay">
+            <div className="stat-pill-row">
+              <ShieldCheck size={16} color="#7CA832" />
+              <span>100% Export Clearance</span>
+            </div>
+            <small>WHO-GMP • CoAs • Halal • Kosher</small>
           </div>
         </motion.div>
       </section>
@@ -689,7 +863,7 @@ export default function Home() {
             <p className="cta-banner-desc">From initial molecular discovery to full WHO-GMP commercial scale.</p>
           </div>
           <div className="cta-banner-actions">
-            <Link href="/contact" className="button button-dark" style={{ background: "#059669", borderColor: "#059669" }}>
+            <Link href="/contact" className="button button-dark" style={{ background: "#15803D", borderColor: "#15803D" }}>
               Request Formulation Consultation
               <ArrowRight size={17} />
             </Link>

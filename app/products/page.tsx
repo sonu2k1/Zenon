@@ -712,7 +712,7 @@ export default function ProductsPage() {
   const currentIngredient = currentProduct.ingredients[activeIngredientIdx] || currentProduct.ingredients[0];
 
   return (
-    <main style={{ background: "linear-gradient(180deg, #f0fdf4 0%, #ffffff 40%, #f8fafc 100%)", minHeight: "100vh", color: "#062419", fontFamily: "var(--font-manrope), sans-serif" }}>
+    <main style={{ background: "linear-gradient(180deg, #FAF8F5 0%, #ffffff 40%, #F5F2EB 100%)", minHeight: "100vh", color: "#1E251F", fontFamily: "var(--font-manrope), sans-serif" }}>
       <Navbar />
 
       <div style={{ paddingTop: "76px" }}>
@@ -736,9 +736,9 @@ export default function ProductsPage() {
               flexWrap: "wrap",
               gap: "36px",
               padding: "clamp(32px, 5vw, 56px)",
-              background: "linear-gradient(135deg, #052e20 0%, #064e3b 50%, #047857 100%)",
-              boxShadow: "0 20px 45px rgba(5, 150, 105, 0.18)",
-              border: "1px solid rgba(16, 185, 129, 0.2)",
+              background: "linear-gradient(135deg, #0D2619 0%, #143B28 50%, #173F2B 100%)",
+              boxShadow: "0 20px 45px rgba(21, 128, 61, 0.18)",
+              border: "1px solid rgba(124, 168, 50, 0.2)",
             }}
           >
             {/* Background Laboratory & Botanical Formulation Image Layer */}
@@ -746,7 +746,7 @@ export default function ProductsPage() {
               style={{
                 position: "absolute",
                 inset: 0,
-                backgroundImage: `linear-gradient(to right, rgba(6, 36, 25, 0.95) 0%, rgba(6, 36, 25, 0.8) 55%, rgba(5, 150, 105, 0.35) 100%), url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1920&q=85')`,
+                backgroundImage: `linear-gradient(to right, rgba(13, 38, 25, 0.95) 0%, rgba(13, 38, 25, 0.8) 55%, rgba(21, 128, 61, 0.35) 100%), url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1920&q=85')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center right",
                 zIndex: 1,
@@ -754,8 +754,8 @@ export default function ProductsPage() {
             />
 
             {/* Ambient Radial Green Glowing Orbs */}
-            <div style={{ position: "absolute", top: "-80px", right: "-80px", width: "350px", height: "350px", borderRadius: "50%", background: "radial-gradient(circle, rgba(52, 211, 153, 0.35) 0%, rgba(5, 150, 105, 0) 70%)", filter: "blur(40px)", pointerEvents: "none", zIndex: 1 }} />
-            <div style={{ position: "absolute", bottom: "-60px", left: "25%", width: "280px", height: "280px", borderRadius: "50%", background: "radial-gradient(circle, rgba(16, 185, 129, 0.3) 0%, rgba(5, 150, 105, 0) 70%)", filter: "blur(40px)", pointerEvents: "none", zIndex: 1 }} />
+            <div style={{ position: "absolute", top: "-80px", right: "-80px", width: "350px", height: "350px", borderRadius: "50%", background: "radial-gradient(circle, rgba(124, 168, 50, 0.35) 0%, rgba(21, 128, 61, 0) 70%)", filter: "blur(40px)", pointerEvents: "none", zIndex: 1 }} />
+            <div style={{ position: "absolute", bottom: "-60px", left: "25%", width: "280px", height: "280px", borderRadius: "50%", background: "radial-gradient(circle, rgba(124, 168, 50, 0.3) 0%, rgba(21, 128, 61, 0) 70%)", filter: "blur(40px)", pointerEvents: "none", zIndex: 1 }} />
 
             {/* Left Content Column */}
             <div style={{ position: "relative", zIndex: 2, maxWidth: "560px", flex: "1 1 320px" }}>
@@ -767,10 +767,10 @@ export default function ProductsPage() {
                   display: "inline-flex",
                   alignItems: "center",
                   gap: "8px",
-                  background: "rgba(16, 185, 129, 0.12)",
+                  background: "rgba(124, 168, 50, 0.12)",
                   backdropFilter: "blur(10px)",
-                  border: "1px solid rgba(16, 185, 129, 0.35)",
-                  color: "#34d399",
+                  border: "1px solid rgba(124, 168, 50, 0.35)",
+                  color: "#7CA832",
                   padding: "6px 16px",
                   borderRadius: "100px",
                   fontSize: "12px",
@@ -779,7 +779,7 @@ export default function ProductsPage() {
                   letterSpacing: "0.05em",
                 }}
               >
-                <Sparkles size={14} color="#34d399" />
+                <Sparkles size={14} color="#7CA832" />
                 <span>CLINICAL AYURVEDA & MOLECULAR SCIENCE</span>
               </motion.div>
 
@@ -798,7 +798,7 @@ export default function ProductsPage() {
               >
                 Nourish.<br />
                 Strengthen.<br />
-                <span style={{ background: "linear-gradient(90deg, #34d399 0%, #a7f3d0 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+                <span style={{ background: "linear-gradient(90deg, #7CA832 0%, #d1e8b0 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
                   Thrive Clinically.
                 </span>
               </motion.h1>
@@ -808,7 +808,7 @@ export default function ProductsPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
                 style={{
-                  color: "#d1fae5",
+                  color: "#D5E0D5",
                   fontSize: "clamp(14px, 1.8vw, 16px)",
                   lineHeight: 1.6,
                   marginBottom: "28px",
@@ -828,7 +828,7 @@ export default function ProductsPage() {
                   onClick={() => productsGridRef.current?.scrollIntoView({ behavior: "smooth" })}
                   style={{
                     padding: "14px 34px",
-                    background: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
+                    background: "linear-gradient(135deg, #7CA832 0%, #15803D 100%)",
                     color: "#ffffff",
                     border: "none",
                     borderRadius: "100px",
@@ -838,7 +838,7 @@ export default function ProductsPage() {
                     display: "inline-flex",
                     alignItems: "center",
                     gap: "8px",
-                    boxShadow: "0 10px 25px rgba(16, 185, 129, 0.35)",
+                    boxShadow: "0 10px 25px rgba(124, 168, 50, 0.35)",
                     transition: "all 0.25s ease",
                   }}
                   onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-2px) scale(1.02)")}
@@ -890,7 +890,7 @@ export default function ProductsPage() {
                   position: "relative",
                   borderRadius: "26px",
                   overflow: "hidden",
-                  border: "2px solid rgba(16, 185, 129, 0.4)",
+                  border: "2px solid rgba(124, 168, 50, 0.4)",
                   boxShadow: "0 25px 60px rgba(0, 0, 0, 0.4)",
                   background: "rgba(255, 255, 255, 0.08)",
                   backdropFilter: "blur(14px)",
@@ -915,11 +915,11 @@ export default function ProductsPage() {
                     bottom: "16px",
                     left: "16px",
                     right: "16px",
-                    background: "rgba(6, 36, 25, 0.9)",
+                    background: "rgba(13, 38, 25, 0.9)",
                     backdropFilter: "blur(12px)",
                     borderRadius: "16px",
                     padding: "12px 16px",
-                    border: "1px solid rgba(16, 185, 129, 0.3)",
+                    border: "1px solid rgba(124, 168, 50, 0.3)",
                     display: "flex",
                     alignItems: "center",
                     gap: "12px",
@@ -931,8 +931,8 @@ export default function ProductsPage() {
                       width: "38px",
                       height: "38px",
                       borderRadius: "12px",
-                      background: "rgba(16, 185, 129, 0.2)",
-                      color: "#34d399",
+                      background: "rgba(124, 168, 50, 0.2)",
+                      color: "#7CA832",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -945,7 +945,7 @@ export default function ProductsPage() {
                     <div style={{ fontSize: "14px", fontWeight: 800, color: "#ffffff" }}>
                       WHO-GMP Clinical Grade
                     </div>
-                    <div style={{ fontSize: "12px", color: "#a7f3d0" }}>
+                    <div style={{ fontSize: "12px", color: "#d1e8b0" }}>
                       100% Bioavailable Active Extracts
                     </div>
                   </div>
@@ -960,7 +960,7 @@ export default function ProductsPage() {
         {/* ======================================================== */}
         <section style={{ maxWidth: "1240px", margin: "40px auto 0", padding: "0 4.5vw" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "14px" }}>
-            <span style={{ fontSize: "12px", fontWeight: 800, color: "#059669", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+            <span style={{ fontSize: "12px", fontWeight: 800, color: "#15803D", textTransform: "uppercase", letterSpacing: "0.08em" }}>
               Quick Formula Select
             </span>
             <span style={{ fontSize: "12px", color: "#64748b" }}>
@@ -1000,14 +1000,14 @@ export default function ProductsPage() {
                       height: "82px",
                       borderRadius: "50%",
                       overflow: "hidden",
-                      border: isSelected ? "3px solid #059669" : "2px solid #d1fae5",
+                      border: isSelected ? "3px solid #15803D" : "2px solid #D5E0D5",
                       background: "#ffffff",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
                       boxShadow: isSelected
-                        ? "0 8px 22px rgba(5, 150, 105, 0.25)"
-                        : "0 4px 14px rgba(6, 36, 25, 0.06)",
+                        ? "0 8px 22px rgba(21, 128, 61, 0.25)"
+                        : "0 4px 14px rgba(13, 38, 25, 0.06)",
                       position: "relative",
                       transition: "all 0.2s",
                     }}
@@ -1028,7 +1028,7 @@ export default function ProductsPage() {
                       marginTop: "8px",
                       fontSize: "12.5px",
                       fontWeight: isSelected ? 800 : 700,
-                      color: isSelected ? "#059669" : "#1e293b",
+                      color: isSelected ? "#15803D" : "#1e293b",
                       textAlign: "center",
                     }}
                   >
@@ -1047,14 +1047,14 @@ export default function ProductsPage() {
           <div
             style={{
               background: "#ffffff",
-              border: "1px solid #d1fae5",
+              border: "1px solid #D5E0D5",
               borderRadius: "24px",
               padding: "26px 30px",
-              boxShadow: "0 6px 25px rgba(5, 150, 105, 0.05)",
+              boxShadow: "0 6px 25px rgba(21, 128, 61, 0.05)",
               textAlign: "center",
             }}
           >
-            <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", color: "#059669", fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "6px" }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", color: "#15803D", fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "6px" }}>
               <ShieldCheck size={15} />
               <span>Pharma-Grade Guarantee</span>
             </div>
@@ -1062,7 +1062,7 @@ export default function ProductsPage() {
               style={{
                 fontSize: "clamp(20px, 2.8vw, 25px)",
                 fontWeight: 800,
-                color: "#062419",
+                color: "#1E251F",
                 marginBottom: "22px",
                 letterSpacing: "-0.01em",
               }}
@@ -1079,34 +1079,34 @@ export default function ProductsPage() {
               }}
             >
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
-                <div style={{ width: "48px", height: "48px", borderRadius: "14px", border: "1.5px solid #a7f3d0", color: "#10b981", display: "flex", alignItems: "center", justifyContent: "center", background: "#f0fdf4" }}>
+                <div style={{ width: "48px", height: "48px", borderRadius: "14px", border: "1.5px solid #d1e8b0", color: "#7CA832", display: "flex", alignItems: "center", justifyContent: "center", background: "#F0F4EF" }}>
                   <Leaf size={22} />
                 </div>
-                <span style={{ fontSize: "13.5px", fontWeight: 800, color: "#062419" }}>100% Bioactive</span>
+                <span style={{ fontSize: "13.5px", fontWeight: 800, color: "#1E251F" }}>100% Bioactive</span>
                 <span style={{ fontSize: "11px", color: "#64748b" }}>Zero synthetic additives</span>
               </div>
 
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
-                <div style={{ width: "48px", height: "48px", borderRadius: "14px", border: "1.5px solid #a7f3d0", color: "#059669", display: "flex", alignItems: "center", justifyContent: "center", background: "#f0fdf4" }}>
+                <div style={{ width: "48px", height: "48px", borderRadius: "14px", border: "1.5px solid #d1e8b0", color: "#15803D", display: "flex", alignItems: "center", justifyContent: "center", background: "#F0F4EF" }}>
                   <FlaskConical size={22} />
                 </div>
-                <span style={{ fontSize: "13.5px", fontWeight: 800, color: "#062419" }}>Clinical Lab Tested</span>
+                <span style={{ fontSize: "13.5px", fontWeight: 800, color: "#1E251F" }}>Clinical Lab Tested</span>
                 <span style={{ fontSize: "11px", color: "#64748b" }}>HPLC verified potency</span>
               </div>
 
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
-                <div style={{ width: "48px", height: "48px", borderRadius: "14px", border: "1.5px solid #a7f3d0", color: "#047857", display: "flex", alignItems: "center", justifyContent: "center", background: "#f0fdf4" }}>
+                <div style={{ width: "48px", height: "48px", borderRadius: "14px", border: "1.5px solid #d1e8b0", color: "#2D5A27", display: "flex", alignItems: "center", justifyContent: "center", background: "#F0F4EF" }}>
                   <ShieldCheck size={22} />
                 </div>
-                <span style={{ fontSize: "13.5px", fontWeight: 800, color: "#062419" }}>GMP Certified</span>
+                <span style={{ fontSize: "13.5px", fontWeight: 800, color: "#1E251F" }}>GMP Certified</span>
                 <span style={{ fontSize: "11px", color: "#64748b" }}>Pharma facility safety</span>
               </div>
 
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
-                <div style={{ width: "48px", height: "48px", borderRadius: "14px", border: "1.5px solid #a7f3d0", color: "#10b981", display: "flex", alignItems: "center", justifyContent: "center", background: "#f0fdf4" }}>
+                <div style={{ width: "48px", height: "48px", borderRadius: "14px", border: "1.5px solid #d1e8b0", color: "#7CA832", display: "flex", alignItems: "center", justifyContent: "center", background: "#F0F4EF" }}>
                   <Truck size={22} />
                 </div>
-                <span style={{ fontSize: "13.5px", fontWeight: 800, color: "#062419" }}>Cold-Chain Delivery</span>
+                <span style={{ fontSize: "13.5px", fontWeight: 800, color: "#1E251F" }}>Cold-Chain Delivery</span>
                 <span style={{ fontSize: "11px", color: "#64748b" }}>Dispatched in 24 Hours</span>
               </div>
             </div>
@@ -1119,7 +1119,7 @@ export default function ProductsPage() {
         {/* ======================================================== */}
         <section ref={productsGridRef} style={{ maxWidth: "1240px", margin: "65px auto 90px", padding: "0 4.5vw" }}>
           <div style={{ textAlign: "center", marginBottom: "40px" }}>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "#d1fae5", color: "#10b981", padding: "4px 14px", borderRadius: "100px", fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "10px" }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "#D5E0D5", color: "#7CA832", padding: "4px 14px", borderRadius: "100px", fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "10px" }}>
               <Sparkles size={13} />
               <span>Evidence-Led Pharmacy</span>
             </div>
@@ -1127,7 +1127,7 @@ export default function ProductsPage() {
               style={{
                 fontSize: "clamp(28px, 4vw, 42px)",
                 fontWeight: 800,
-                color: "#062419",
+                color: "#1E251F",
                 marginBottom: "8px",
                 letterSpacing: "-0.02em",
               }}
@@ -1160,25 +1160,25 @@ export default function ProductsPage() {
                 style={{
                   background: "#ffffff",
                   borderRadius: "26px",
-                  border: "1.5px solid #d1fae5",
+                  border: "1.5px solid #D5E0D5",
                   padding: "24px 20px",
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
                   textAlign: "center",
                   cursor: "pointer",
-                  boxShadow: "0 8px 24px rgba(5, 150, 105, 0.05)",
+                  boxShadow: "0 8px 24px rgba(21, 128, 61, 0.05)",
                   transition: "border-color 0.25s, box-shadow 0.25s",
                   position: "relative",
                   overflow: "hidden",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "#059669";
-                  e.currentTarget.style.boxShadow = "0 20px 40px rgba(5, 150, 105, 0.16)";
+                  e.currentTarget.style.borderColor = "#15803D";
+                  e.currentTarget.style.boxShadow = "0 20px 40px rgba(21, 128, 61, 0.16)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = "#d1fae5";
-                  e.currentTarget.style.boxShadow = "0 8px 24px rgba(5, 150, 105, 0.05)";
+                  e.currentTarget.style.borderColor = "#D5E0D5";
+                  e.currentTarget.style.boxShadow = "0 8px 24px rgba(21, 128, 61, 0.05)";
                 }}
               >
                 {/* Top Badge: Best Seller / Clinical */}
@@ -1187,9 +1187,9 @@ export default function ProductsPage() {
                     position: "absolute",
                     top: "14px",
                     left: "14px",
-                    background: "rgba(16, 185, 129, 0.1)",
-                    color: "#10b981",
-                    border: "1px solid rgba(16, 185, 129, 0.25)",
+                    background: "rgba(124, 168, 50, 0.1)",
+                    color: "#7CA832",
+                    border: "1px solid rgba(124, 168, 50, 0.25)",
                     padding: "3px 10px",
                     borderRadius: "100px",
                     fontSize: "11px",
@@ -1212,7 +1212,7 @@ export default function ProductsPage() {
                     gap: "4px",
                     fontSize: "12px",
                     fontWeight: 800,
-                    color: "#062419",
+                    color: "#1E251F",
                     background: "#ffffff",
                     padding: "3px 8px",
                     borderRadius: "100px",
@@ -1221,7 +1221,7 @@ export default function ProductsPage() {
                     zIndex: 2,
                   }}
                 >
-                  <Star size={12} fill="#eab308" color="#eab308" />
+                  <Star size={12} fill="#E8A324" color="#E8A324" />
                   <span>{prod.rating}</span>
                 </div>
 
@@ -1257,7 +1257,7 @@ export default function ProductsPage() {
                   style={{
                     fontSize: "11px",
                     fontWeight: 800,
-                    color: "#059669",
+                    color: "#15803D",
                     textTransform: "uppercase",
                     letterSpacing: "0.06em",
                     marginBottom: "4px",
@@ -1271,7 +1271,7 @@ export default function ProductsPage() {
                   style={{
                     fontSize: "20px",
                     fontWeight: 800,
-                    color: "#062419",
+                    color: "#1E251F",
                     marginBottom: "6px",
                     lineHeight: 1.25,
                   }}
@@ -1294,13 +1294,13 @@ export default function ProductsPage() {
 
                 {/* Price block */}
                 <div style={{ display: "flex", alignItems: "baseline", gap: "8px", marginBottom: "16px" }}>
-                  <span style={{ fontSize: "22px", fontWeight: 900, color: "#062419" }}>
+                  <span style={{ fontSize: "22px", fontWeight: 900, color: "#1E251F" }}>
                     ₹{prod.price}
                   </span>
                   <span style={{ fontSize: "14px", color: "#94a3b8", textDecoration: "line-through" }}>
                     ₹{prod.originalPrice}
                   </span>
-                  <span style={{ background: "#d1fae5", color: "#10b981", fontSize: "11px", fontWeight: 800, padding: "2px 8px", borderRadius: "100px" }}>
+                  <span style={{ background: "#D5E0D5", color: "#7CA832", fontSize: "11px", fontWeight: 800, padding: "2px 8px", borderRadius: "100px" }}>
                     SAVE 46%
                   </span>
                 </div>
@@ -1312,7 +1312,7 @@ export default function ProductsPage() {
                   style={{
                     width: "100%",
                     padding: "12px 20px",
-                    background: "linear-gradient(135deg, #059669 0%, #047857 100%)",
+                    background: "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)",
                     color: "#ffffff",
                     borderRadius: "12px",
                     border: "none",
@@ -1323,7 +1323,7 @@ export default function ProductsPage() {
                     alignItems: "center",
                     justifyContent: "center",
                     gap: "8px",
-                    boxShadow: "0 6px 18px rgba(5, 150, 105, 0.25)",
+                    boxShadow: "0 6px 18px rgba(21, 128, 61, 0.25)",
                   }}
                 >
                   <span>View Details & Journey</span>
@@ -1358,7 +1358,7 @@ export default function ProductsPage() {
                 transition={{ type: "spring", damping: 26, stiffness: 280 }}
                 style={{
                   position: "relative",
-                  background: "linear-gradient(180deg, #f0fdf4 0%, #ffffff 25%, #f8fafc 100%)",
+                  background: "linear-gradient(180deg, #F0F4EF 0%, #ffffff 25%, #f8fafc 100%)",
                   borderRadius: "30px",
                   maxWidth: "980px",
                   width: "100%",
@@ -1368,7 +1368,7 @@ export default function ProductsPage() {
                   zIndex: 2,
                   display: "flex",
                   flexDirection: "column",
-                  border: "1.5px solid rgba(16, 185, 129, 0.3)",
+                  border: "1.5px solid rgba(124, 168, 50, 0.3)",
                 }}
               >
                 {/* Sticky Header with Bluish Glass Bar */}
@@ -1378,7 +1378,7 @@ export default function ProductsPage() {
                     top: 0,
                     background: "rgba(255, 255, 255, 0.96)",
                     backdropFilter: "blur(16px)",
-                    borderBottom: "1px solid #d1fae5",
+                    borderBottom: "1px solid #D5E0D5",
                     padding: "14px 26px",
                     display: "flex",
                     alignItems: "center",
@@ -1388,14 +1388,14 @@ export default function ProductsPage() {
                   }}
                 >
                   <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                    <div style={{ width: "32px", height: "32px", borderRadius: "10px", background: "#d1fae5", color: "#059669", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <div style={{ width: "32px", height: "32px", borderRadius: "10px", background: "#D5E0D5", color: "#15803D", display: "flex", alignItems: "center", justifyContent: "center" }}>
                       <Activity size={18} />
                     </div>
                     <div>
-                      <span style={{ fontSize: "16px", fontWeight: 800, color: "#062419" }}>
+                      <span style={{ fontSize: "16px", fontWeight: 800, color: "#1E251F" }}>
                         {currentProduct.name}
                       </span>
-                      <span style={{ fontSize: "12px", color: "#10b981", fontWeight: 700, marginLeft: "8px" }}>
+                      <span style={{ fontSize: "12px", color: "#7CA832", fontWeight: 700, marginLeft: "8px" }}>
                         ₹{currentProduct.price}.00
                       </span>
                     </div>
@@ -1409,14 +1409,14 @@ export default function ProductsPage() {
                       }}
                       style={{
                         padding: "8px 20px",
-                        background: "linear-gradient(135deg, #059669 0%, #047857 100%)",
+                        background: "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)",
                         color: "#ffffff",
                         border: "none",
                         borderRadius: "10px",
                         fontSize: "13px",
                         fontWeight: 800,
                         cursor: "pointer",
-                        boxShadow: "0 4px 12px rgba(5, 150, 105, 0.25)",
+                        boxShadow: "0 4px 12px rgba(21, 128, 61, 0.25)",
                       }}
                     >
                       Instant Buy Now
@@ -1452,13 +1452,13 @@ export default function ProductsPage() {
                     style={{
                       background: "#ffffff",
                       borderRadius: "24px",
-                      border: "1px solid #d1fae5",
+                      border: "1px solid #D5E0D5",
                       padding: "clamp(22px, 4vw, 38px)",
-                      boxShadow: "0 6px 20px rgba(5, 150, 105, 0.04)",
+                      boxShadow: "0 6px 20px rgba(21, 128, 61, 0.04)",
                     }}
                   >
                     <div style={{ fontSize: "13px", color: "#64748b", marginBottom: "22px" }}>
-                      <span>Home</span> &gt; <span style={{ color: "#059669", fontWeight: 700 }}>{currentProduct.name}</span>
+                      <span>Home</span> &gt; <span style={{ color: "#15803D", fontWeight: 700 }}>{currentProduct.name}</span>
                     </div>
 
                     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: "36px", alignItems: "center" }}>
@@ -1466,8 +1466,8 @@ export default function ProductsPage() {
                       <div
                         style={{
                           borderRadius: "22px",
-                          background: "#f0fdf4",
-                          border: "1.5px solid #a7f3d0",
+                          background: "#F0F4EF",
+                          border: "1.5px solid #d1e8b0",
                           overflow: "hidden",
                           display: "flex",
                           alignItems: "center",
@@ -1490,15 +1490,15 @@ export default function ProductsPage() {
 
                       {/* Details */}
                       <div>
-                        <div style={{ display: "inline-block", background: "#d1fae5", color: "#10b981", padding: "4px 12px", borderRadius: "100px", fontSize: "11.5px", fontWeight: 800, textTransform: "uppercase", marginBottom: "8px" }}>
+                        <div style={{ display: "inline-block", background: "#D5E0D5", color: "#7CA832", padding: "4px 12px", borderRadius: "100px", fontSize: "11.5px", fontWeight: 800, textTransform: "uppercase", marginBottom: "8px" }}>
                           {currentProduct.category}
                         </div>
 
-                        <h2 style={{ fontSize: "clamp(28px, 3.8vw, 38px)", fontWeight: 900, color: "#062419", marginBottom: "6px", lineHeight: 1.15 }}>
+                        <h2 style={{ fontSize: "clamp(28px, 3.8vw, 38px)", fontWeight: 900, color: "#1E251F", marginBottom: "6px", lineHeight: 1.15 }}>
                           {currentProduct.name}
                         </h2>
 
-                        <p style={{ fontSize: "16px", color: "#059669", fontWeight: 700, marginBottom: "18px" }}>
+                        <p style={{ fontSize: "16px", color: "#15803D", fontWeight: 700, marginBottom: "18px" }}>
                           {currentProduct.tagline}
                         </p>
 
@@ -1506,7 +1506,7 @@ export default function ProductsPage() {
                         <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "22px" }}>
                           {currentProduct.keyHighlights.map((hl, idx) => (
                             <div key={idx} style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "14px", color: "#1e293b", fontWeight: 600 }}>
-                              <div style={{ background: "#059669", color: "#ffffff", borderRadius: "50%", width: "18px", height: "18px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                              <div style={{ background: "#15803D", color: "#ffffff", borderRadius: "50%", width: "18px", height: "18px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                                 <Check size={11} strokeWidth={3} />
                               </div>
                               <span>{hl}</span>
@@ -1515,7 +1515,7 @@ export default function ProductsPage() {
                         </div>
 
                         <div style={{ display: "flex", alignItems: "baseline", gap: "10px", marginBottom: "20px" }}>
-                          <span style={{ fontSize: "34px", fontWeight: 900, color: "#062419" }}>
+                          <span style={{ fontSize: "34px", fontWeight: 900, color: "#1E251F" }}>
                             ₹{currentProduct.price}.00
                           </span>
                           <span style={{ fontSize: "16px", color: "#94a3b8", textDecoration: "line-through" }}>
@@ -1530,14 +1530,14 @@ export default function ProductsPage() {
                           }}
                           style={{
                             padding: "14px 44px",
-                            background: "linear-gradient(135deg, #059669 0%, #047857 100%)",
+                            background: "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)",
                             color: "#ffffff",
                             border: "none",
                             borderRadius: "12px",
                             fontSize: "15px",
                             fontWeight: 800,
                             cursor: "pointer",
-                            boxShadow: "0 8px 24px rgba(5, 150, 105, 0.3)",
+                            boxShadow: "0 8px 24px rgba(21, 128, 61, 0.3)",
                           }}
                         >
                           Buy Now — ₹{currentProduct.price}
@@ -1558,31 +1558,31 @@ export default function ProductsPage() {
                       }}
                     >
                       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px" }}>
-                        <div style={{ width: "42px", height: "42px", borderRadius: "50%", border: "1.5px solid #a7f3d0", color: "#059669", display: "flex", alignItems: "center", justifyContent: "center", background: "#f0fdf4" }}>
+                        <div style={{ width: "42px", height: "42px", borderRadius: "50%", border: "1.5px solid #d1e8b0", color: "#15803D", display: "flex", alignItems: "center", justifyContent: "center", background: "#F0F4EF" }}>
                           <Leaf size={18} />
                         </div>
-                        <span style={{ fontSize: "12px", fontWeight: 800, color: "#062419" }}>100% Natural</span>
+                        <span style={{ fontSize: "12px", fontWeight: 800, color: "#1E251F" }}>100% Natural</span>
                       </div>
 
                       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px" }}>
-                        <div style={{ width: "42px", height: "42px", borderRadius: "50%", border: "1.5px solid #a7f3d0", color: "#059669", display: "flex", alignItems: "center", justifyContent: "center", background: "#f0fdf4" }}>
+                        <div style={{ width: "42px", height: "42px", borderRadius: "50%", border: "1.5px solid #d1e8b0", color: "#15803D", display: "flex", alignItems: "center", justifyContent: "center", background: "#F0F4EF" }}>
                           <FlaskConical size={18} />
                         </div>
-                        <span style={{ fontSize: "12px", fontWeight: 800, color: "#062419" }}>Lab Tested</span>
+                        <span style={{ fontSize: "12px", fontWeight: 800, color: "#1E251F" }}>Lab Tested</span>
                       </div>
 
                       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px" }}>
-                        <div style={{ width: "42px", height: "42px", borderRadius: "50%", border: "1.5px solid #a7f3d0", color: "#059669", display: "flex", alignItems: "center", justifyContent: "center", background: "#f0fdf4" }}>
+                        <div style={{ width: "42px", height: "42px", borderRadius: "50%", border: "1.5px solid #d1e8b0", color: "#15803D", display: "flex", alignItems: "center", justifyContent: "center", background: "#F0F4EF" }}>
                           <Ban size={18} />
                         </div>
-                        <span style={{ fontSize: "12px", fontWeight: 800, color: "#062419" }}>No Added Sugar</span>
+                        <span style={{ fontSize: "12px", fontWeight: 800, color: "#1E251F" }}>No Added Sugar</span>
                       </div>
 
                       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px" }}>
-                        <div style={{ width: "42px", height: "42px", borderRadius: "50%", border: "1.5px solid #a7f3d0", color: "#059669", display: "flex", alignItems: "center", justifyContent: "center", background: "#f0fdf4" }}>
+                        <div style={{ width: "42px", height: "42px", borderRadius: "50%", border: "1.5px solid #d1e8b0", color: "#15803D", display: "flex", alignItems: "center", justifyContent: "center", background: "#F0F4EF" }}>
                           <HeartPulse size={18} />
                         </div>
-                        <span style={{ fontSize: "12px", fontWeight: 800, color: "#062419" }}>Vegetarian</span>
+                        <span style={{ fontSize: "12px", fontWeight: 800, color: "#1E251F" }}>Vegetarian</span>
                       </div>
                     </div>
                   </div>
@@ -1592,19 +1592,19 @@ export default function ProductsPage() {
                   {/* ==================================================== */}
                   <div
                     style={{
-                      background: "linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%)",
+                      background: "linear-gradient(135deg, #ffffff 0%, #F0F4EF 100%)",
                       borderRadius: "24px",
-                      border: "1.5px solid #a7f3d0",
+                      border: "1.5px solid #d1e8b0",
                       padding: "clamp(24px, 4vw, 40px)",
-                      boxShadow: "0 6px 25px rgba(5, 150, 105, 0.05)",
+                      boxShadow: "0 6px 25px rgba(21, 128, 61, 0.05)",
                     }}
                   >
                     <div style={{ textAlign: "center", marginBottom: "32px" }}>
-                      <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "#d1fae5", color: "#059669", padding: "4px 14px", borderRadius: "100px", fontSize: "11.5px", fontWeight: 800, textTransform: "uppercase", marginBottom: "8px" }}>
+                      <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "#D5E0D5", color: "#15803D", padding: "4px 14px", borderRadius: "100px", fontSize: "11.5px", fontWeight: 800, textTransform: "uppercase", marginBottom: "8px" }}>
                         <Sparkles size={13} />
                         <span>Interactive Active Matrix</span>
                       </div>
-                      <h3 style={{ fontSize: "clamp(24px, 3.5vw, 34px)", fontWeight: 900, color: "#062419", margin: "0 0 6px" }}>
+                      <h3 style={{ fontSize: "clamp(24px, 3.5vw, 34px)", fontWeight: 900, color: "#1E251F", margin: "0 0 6px" }}>
                         Discover What&apos;s Inside
                       </h3>
                       <p style={{ fontSize: "15px", color: "#475569" }}>
@@ -1625,10 +1625,10 @@ export default function ProductsPage() {
                       <div style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
                         {currentProduct.ingredients[0] && (
                           <motion.div
-                            whileHover={{ y: -4, borderColor: "#059669" }}
-                            style={{ background: "#ffffff", border: "1.5px solid #d1fae5", borderRadius: "16px", padding: "20px", boxShadow: "0 4px 14px rgba(5, 150, 105, 0.04)" }}
+                            whileHover={{ y: -4, borderColor: "#15803D" }}
+                            style={{ background: "#ffffff", border: "1.5px solid #D5E0D5", borderRadius: "16px", padding: "20px", boxShadow: "0 4px 14px rgba(21, 128, 61, 0.04)" }}
                           >
-                            <h4 style={{ fontSize: "16px", fontWeight: 800, color: "#062419", margin: "0 0 4px" }}>
+                            <h4 style={{ fontSize: "16px", fontWeight: 800, color: "#1E251F", margin: "0 0 4px" }}>
                               {currentProduct.ingredients[0].name}
                             </h4>
                             <p style={{ fontSize: "12.5px", color: "#64748b", lineHeight: 1.45, margin: "0 0 14px", minHeight: "36px" }}>
@@ -1636,7 +1636,7 @@ export default function ProductsPage() {
                             </p>
                             <button
                               onClick={() => handleExploreIngredientInModal(0)}
-                              style={{ padding: "7px 18px", background: "linear-gradient(135deg, #059669 0%, #047857 100%)", color: "#ffffff", border: "none", borderRadius: "8px", fontSize: "12px", fontWeight: 800, cursor: "pointer" }}
+                              style={{ padding: "7px 18px", background: "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)", color: "#ffffff", border: "none", borderRadius: "8px", fontSize: "12px", fontWeight: 800, cursor: "pointer" }}
                             >
                               Explore
                             </button>
@@ -1645,10 +1645,10 @@ export default function ProductsPage() {
 
                         {currentProduct.ingredients[2] && (
                           <motion.div
-                            whileHover={{ y: -4, borderColor: "#059669" }}
-                            style={{ background: "#ffffff", border: "1.5px solid #d1fae5", borderRadius: "16px", padding: "20px", boxShadow: "0 4px 14px rgba(5, 150, 105, 0.04)" }}
+                            whileHover={{ y: -4, borderColor: "#15803D" }}
+                            style={{ background: "#ffffff", border: "1.5px solid #D5E0D5", borderRadius: "16px", padding: "20px", boxShadow: "0 4px 14px rgba(21, 128, 61, 0.04)" }}
                           >
-                            <h4 style={{ fontSize: "16px", fontWeight: 800, color: "#062419", margin: "0 0 4px" }}>
+                            <h4 style={{ fontSize: "16px", fontWeight: 800, color: "#1E251F", margin: "0 0 4px" }}>
                               {currentProduct.ingredients[2].name}
                             </h4>
                             <p style={{ fontSize: "12.5px", color: "#64748b", lineHeight: 1.45, margin: "0 0 14px", minHeight: "36px" }}>
@@ -1656,7 +1656,7 @@ export default function ProductsPage() {
                             </p>
                             <button
                               onClick={() => handleExploreIngredientInModal(2)}
-                              style={{ padding: "7px 18px", background: "linear-gradient(135deg, #059669 0%, #047857 100%)", color: "#ffffff", border: "none", borderRadius: "8px", fontSize: "12px", fontWeight: 800, cursor: "pointer" }}
+                              style={{ padding: "7px 18px", background: "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)", color: "#ffffff", border: "none", borderRadius: "8px", fontSize: "12px", fontWeight: 800, cursor: "pointer" }}
                             >
                               Explore
                             </button>
@@ -1672,27 +1672,27 @@ export default function ProductsPage() {
                             height: "220px",
                             borderRadius: "50%",
                             background: "#ffffff",
-                            border: "3px solid #059669",
+                            border: "3px solid #15803D",
                             display: "flex",
                             flexDirection: "column",
                             alignItems: "center",
                             justifyContent: "center",
                             padding: "16px",
-                            boxShadow: "0 0 35px rgba(5, 150, 105, 0.2)",
+                            boxShadow: "0 0 35px rgba(21, 128, 61, 0.2)",
                             overflow: "hidden",
                           }}
                         >
-                          <div style={{ width: "95px", height: "95px", borderRadius: "50%", overflow: "hidden", border: "2px solid #a7f3d0", marginBottom: "8px" }}>
+                          <div style={{ width: "95px", height: "95px", borderRadius: "50%", overflow: "hidden", border: "2px solid #d1e8b0", marginBottom: "8px" }}>
                             <img
                               src={currentProduct.image}
                               alt={currentProduct.name}
                               style={{ width: "100%", height: "100%", objectFit: "cover" }}
                             />
                           </div>
-                          <div style={{ fontWeight: 900, fontSize: "13px", color: "#062419", letterSpacing: "0.04em" }}>
+                          <div style={{ fontWeight: 900, fontSize: "13px", color: "#1E251F", letterSpacing: "0.04em" }}>
                             {currentProduct.name.toUpperCase()}
                           </div>
-                          <div style={{ fontSize: "10.5px", fontWeight: 800, color: "#059669", marginTop: "2px" }}>
+                          <div style={{ fontSize: "10.5px", fontWeight: 800, color: "#15803D", marginTop: "2px" }}>
                             4 POWERFUL BIOACTIVES
                           </div>
                         </div>
@@ -1702,10 +1702,10 @@ export default function ProductsPage() {
                       <div style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
                         {currentProduct.ingredients[1] && (
                           <motion.div
-                            whileHover={{ y: -4, borderColor: "#059669" }}
-                            style={{ background: "#ffffff", border: "1.5px solid #d1fae5", borderRadius: "16px", padding: "20px", boxShadow: "0 4px 14px rgba(5, 150, 105, 0.04)" }}
+                            whileHover={{ y: -4, borderColor: "#15803D" }}
+                            style={{ background: "#ffffff", border: "1.5px solid #D5E0D5", borderRadius: "16px", padding: "20px", boxShadow: "0 4px 14px rgba(21, 128, 61, 0.04)" }}
                           >
-                            <h4 style={{ fontSize: "16px", fontWeight: 800, color: "#062419", margin: "0 0 4px" }}>
+                            <h4 style={{ fontSize: "16px", fontWeight: 800, color: "#1E251F", margin: "0 0 4px" }}>
                               {currentProduct.ingredients[1].name}
                             </h4>
                             <p style={{ fontSize: "12.5px", color: "#64748b", lineHeight: 1.45, margin: "0 0 14px", minHeight: "36px" }}>
@@ -1713,7 +1713,7 @@ export default function ProductsPage() {
                             </p>
                             <button
                               onClick={() => handleExploreIngredientInModal(1)}
-                              style={{ padding: "7px 18px", background: "linear-gradient(135deg, #059669 0%, #047857 100%)", color: "#ffffff", border: "none", borderRadius: "8px", fontSize: "12px", fontWeight: 800, cursor: "pointer" }}
+                              style={{ padding: "7px 18px", background: "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)", color: "#ffffff", border: "none", borderRadius: "8px", fontSize: "12px", fontWeight: 800, cursor: "pointer" }}
                             >
                               Explore
                             </button>
@@ -1722,10 +1722,10 @@ export default function ProductsPage() {
 
                         {currentProduct.ingredients[3] && (
                           <motion.div
-                            whileHover={{ y: -4, borderColor: "#059669" }}
-                            style={{ background: "#ffffff", border: "1.5px solid #d1fae5", borderRadius: "16px", padding: "20px", boxShadow: "0 4px 14px rgba(5, 150, 105, 0.04)" }}
+                            whileHover={{ y: -4, borderColor: "#15803D" }}
+                            style={{ background: "#ffffff", border: "1.5px solid #D5E0D5", borderRadius: "16px", padding: "20px", boxShadow: "0 4px 14px rgba(21, 128, 61, 0.04)" }}
                           >
-                            <h4 style={{ fontSize: "16px", fontWeight: 800, color: "#062419", margin: "0 0 4px" }}>
+                            <h4 style={{ fontSize: "16px", fontWeight: 800, color: "#1E251F", margin: "0 0 4px" }}>
                               {currentProduct.ingredients[3].name}
                             </h4>
                             <p style={{ fontSize: "12.5px", color: "#64748b", lineHeight: 1.45, margin: "0 0 14px", minHeight: "36px" }}>
@@ -1733,7 +1733,7 @@ export default function ProductsPage() {
                             </p>
                             <button
                               onClick={() => handleExploreIngredientInModal(3)}
-                              style={{ padding: "7px 18px", background: "linear-gradient(135deg, #059669 0%, #047857 100%)", color: "#ffffff", border: "none", borderRadius: "8px", fontSize: "12px", fontWeight: 800, cursor: "pointer" }}
+                              style={{ padding: "7px 18px", background: "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)", color: "#ffffff", border: "none", borderRadius: "8px", fontSize: "12px", fontWeight: 800, cursor: "pointer" }}
                             >
                               Explore
                             </button>
@@ -1755,9 +1755,9 @@ export default function ProductsPage() {
                     style={{
                       background: "#ffffff",
                       borderRadius: "24px",
-                      border: "1px solid #d1fae5",
+                      border: "1px solid #D5E0D5",
                       padding: "clamp(22px, 4vw, 38px)",
-                      boxShadow: "0 6px 20px rgba(5, 150, 105, 0.04)",
+                      boxShadow: "0 6px 20px rgba(21, 128, 61, 0.04)",
                     }}
                   >
                     {/* Ingredient Selector Pills */}
@@ -1769,9 +1769,9 @@ export default function ProductsPage() {
                           style={{
                             padding: "6px 14px",
                             borderRadius: "100px",
-                            border: activeIngredientIdx === idx ? "1.5px solid #059669" : "1px solid #e2e8f0",
-                            background: activeIngredientIdx === idx ? "#d1fae5" : "#ffffff",
-                            color: activeIngredientIdx === idx ? "#059669" : "#475569",
+                            border: activeIngredientIdx === idx ? "1.5px solid #15803D" : "1px solid #e2e8f0",
+                            background: activeIngredientIdx === idx ? "#D5E0D5" : "#ffffff",
+                            color: activeIngredientIdx === idx ? "#15803D" : "#475569",
                             fontSize: "12px",
                             fontWeight: 700,
                             cursor: "pointer",
@@ -1784,10 +1784,10 @@ export default function ProductsPage() {
                     </div>
 
                     <div style={{ textAlign: "center", marginBottom: "24px" }}>
-                      <h3 style={{ fontSize: "clamp(24px, 3.5vw, 34px)", fontWeight: 900, color: "#062419", margin: 0 }}>
+                      <h3 style={{ fontSize: "clamp(24px, 3.5vw, 34px)", fontWeight: 900, color: "#1E251F", margin: 0 }}>
                         {currentIngredient.name}
                       </h3>
-                      <div style={{ fontSize: "13px", color: "#059669", fontWeight: 700, marginTop: "4px" }}>
+                      <div style={{ fontSize: "13px", color: "#15803D", fontWeight: 700, marginTop: "4px" }}>
                         {currentIngredient.scientificName}
                       </div>
                     </div>
@@ -1801,8 +1801,8 @@ export default function ProductsPage() {
                             maxWidth: "300px",
                             height: "200px",
                             borderRadius: "18px",
-                            background: "#f0fdf4",
-                            border: "1.5px solid #a7f3d0",
+                            background: "#F0F4EF",
+                            border: "1.5px solid #d1e8b0",
                             overflow: "hidden",
                             display: "flex",
                             alignItems: "center",
@@ -1821,7 +1821,7 @@ export default function ProductsPage() {
                         <p style={{ fontSize: "15px", color: "#334155", lineHeight: 1.7, margin: 0 }}>
                           {currentIngredient.fullDesc}
                         </p>
-                        <div style={{ marginTop: "12px", background: "#f0fdf4", border: "1px solid #a7f3d0", display: "inline-block", padding: "6px 12px", borderRadius: "8px", fontSize: "12px", color: "#059669", fontWeight: 800 }}>
+                        <div style={{ marginTop: "12px", background: "#F0F4EF", border: "1px solid #d1e8b0", display: "inline-block", padding: "6px 12px", borderRadius: "8px", fontSize: "12px", color: "#15803D", fontWeight: 800 }}>
                           Standardized Dose: {currentIngredient.dosage}
                         </div>
                       </div>
@@ -1829,14 +1829,14 @@ export default function ProductsPage() {
 
                     {/* Clinical Benefits */}
                     <div style={{ marginBottom: "28px", background: "#f8fafc", borderRadius: "18px", padding: "22px", border: "1px solid #e2e8f0" }}>
-                      <div style={{ fontSize: "15px", fontWeight: 800, color: "#062419", marginBottom: "12px" }}>
+                      <div style={{ fontSize: "15px", fontWeight: 800, color: "#1E251F", marginBottom: "12px" }}>
                         Clinical Evidenced Benefits:
                       </div>
 
                       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "10px" }}>
                         {currentIngredient.benefits.map((b, bIdx) => (
                           <div key={bIdx} style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13.5px", color: "#1e293b", fontWeight: 600 }}>
-                            <div style={{ background: "#059669", color: "#ffffff", borderRadius: "50%", width: "16px", height: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                            <div style={{ background: "#15803D", color: "#ffffff", borderRadius: "50%", width: "16px", height: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                               <Check size={10} strokeWidth={3} />
                             </div>
                             <span>{b}</span>
@@ -1871,7 +1871,7 @@ export default function ProductsPage() {
                         onClick={handleNextIngredient}
                         style={{
                           padding: "9px 24px",
-                          background: "linear-gradient(135deg, #059669 0%, #047857 100%)",
+                          background: "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)",
                           color: "#ffffff",
                           borderRadius: "8px",
                           border: "none",
@@ -1901,12 +1901,12 @@ export default function ProductsPage() {
                       style={{
                         background: "#ffffff",
                         borderRadius: "22px",
-                        border: "1.5px solid #d1fae5",
+                        border: "1.5px solid #D5E0D5",
                         padding: "26px 22px",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
-                        boxShadow: "0 6px 20px rgba(5, 150, 105, 0.05)",
+                        boxShadow: "0 6px 20px rgba(21, 128, 61, 0.05)",
                       }}
                     >
                       <div>
@@ -1914,7 +1914,7 @@ export default function ProductsPage() {
                           style={{
                             fontSize: "18px",
                             fontWeight: 800,
-                            color: "#062419",
+                            color: "#1E251F",
                             marginBottom: "16px",
                             textAlign: "center",
                             lineHeight: 1.3,
@@ -1926,7 +1926,7 @@ export default function ProductsPage() {
                         <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "16px" }}>
                           {currentProduct.understandBenefits.map((b, idx) => (
                             <div key={idx} style={{ display: "flex", alignItems: "center", gap: "9px", fontSize: "13.5px", color: "#1e293b", fontWeight: 600 }}>
-                              <div style={{ background: "#059669", color: "#ffffff", borderRadius: "50%", width: "16px", height: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                              <div style={{ background: "#15803D", color: "#ffffff", borderRadius: "50%", width: "16px", height: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                                 <Check size={10} strokeWidth={3} />
                               </div>
                               <span>{b}</span>
@@ -1938,20 +1938,20 @@ export default function ProductsPage() {
                       {/* Fitness Athlete Pointing Graphic */}
                       <div style={{ textAlign: "center", marginTop: "auto", paddingTop: "8px" }}>
                         <svg width="140" height="140" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ margin: "0 auto", display: "block" }}>
-                          <circle cx="100" cy="115" r="68" fill="#f0fdf4" />
-                          <path d="M72 150 L88 108 L112 108 L128 150 Z" fill="#059669" />
+                          <circle cx="100" cy="115" r="68" fill="#F0F4EF" />
+                          <path d="M72 150 L88 108 L112 108 L128 150 Z" fill="#15803D" />
                           <path d="M88 108 L100 122 L112 108 Z" fill="#fbd38d" />
                           <circle cx="100" cy="72" r="22" fill="#fbd38d" />
-                          <path d="M78 68 C78 48, 122 48, 122 68 C114 56, 86 56, 78 68 Z" fill="#062419" />
-                          <circle cx="93" cy="70" r="2.5" fill="#062419" />
-                          <circle cx="107" cy="70" r="2.5" fill="#062419" />
-                          <path d="M95 79 Q100 85 105 79" stroke="#062419" strokeWidth="2" strokeLinecap="round" fill="none" />
+                          <path d="M78 68 C78 48, 122 48, 122 68 C114 56, 86 56, 78 68 Z" fill="#1E251F" />
+                          <circle cx="93" cy="70" r="2.5" fill="#1E251F" />
+                          <circle cx="107" cy="70" r="2.5" fill="#1E251F" />
+                          <path d="M95 79 Q100 85 105 79" stroke="#1E251F" strokeWidth="2" strokeLinecap="round" fill="none" />
                           <path d="M72 150 C54 140 50 120 58 105 C66 94 76 102 88 108" stroke="#fbd38d" strokeWidth="13" strokeLinecap="round" strokeLinejoin="round" />
                           <path d="M128 150 C142 135 148 112 144 88 L140 60" stroke="#fbd38d" strokeWidth="13" strokeLinecap="round" strokeLinejoin="round" />
                           <circle cx="140" cy="56" r="6" fill="#fbd38d" />
                           <path d="M140 56 L140 40" stroke="#fbd38d" strokeWidth="5.5" strokeLinecap="round" />
-                          <path d="M152 38 L158 32 M162 44 L168 44" stroke="#059669" strokeWidth="2" strokeLinecap="round" />
-                          <path d="M44 94 L38 88" stroke="#34d399" strokeWidth="2" strokeLinecap="round" />
+                          <path d="M152 38 L158 32 M162 44 L168 44" stroke="#15803D" strokeWidth="2" strokeLinecap="round" />
+                          <path d="M44 94 L38 88" stroke="#7CA832" strokeWidth="2" strokeLinecap="round" />
                         </svg>
                       </div>
                     </div>
@@ -1961,31 +1961,31 @@ export default function ProductsPage() {
                       style={{
                         background: "#ffffff",
                         borderRadius: "22px",
-                        border: "1.5px solid #d1fae5",
+                        border: "1.5px solid #D5E0D5",
                         padding: "26px 22px",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
-                        boxShadow: "0 6px 20px rgba(5, 150, 105, 0.05)",
+                        boxShadow: "0 6px 20px rgba(21, 128, 61, 0.05)",
                       }}
                     >
                       <div>
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "16px", marginBottom: "20px" }}>
-                          <div style={{ width: "80px", height: "80px", background: "#f0fdf4", borderRadius: "14px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid #d1fae5" }}>
+                          <div style={{ width: "80px", height: "80px", background: "#F0F4EF", borderRadius: "14px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid #D5E0D5" }}>
                             <img src={currentProduct.image} alt={currentProduct.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                           </div>
                           <div style={{ textAlign: "left" }}>
-                            <h4 style={{ fontSize: "16px", fontWeight: 800, color: "#062419", margin: "0 0 4px" }}>
+                            <h4 style={{ fontSize: "16px", fontWeight: 800, color: "#1E251F", margin: "0 0 4px" }}>
                               {currentProduct.name}
                             </h4>
-                            <div style={{ fontSize: "20px", fontWeight: 900, color: "#059669" }}>
+                            <div style={{ fontSize: "20px", fontWeight: 900, color: "#15803D" }}>
                               ₹{currentProduct.price}.00
                             </div>
                           </div>
                         </div>
 
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", marginBottom: "22px" }}>
-                          <span style={{ fontSize: "14px", fontWeight: 700, color: "#062419" }}>Qty:</span>
+                          <span style={{ fontSize: "14px", fontWeight: 700, color: "#1E251F" }}>Qty:</span>
                           <div style={{ display: "flex", alignItems: "center", border: "1.5px solid #cbd5e1", borderRadius: "10px", background: "#ffffff" }}>
                             <button onClick={() => setQuantity((q) => Math.max(1, q - 1))} style={{ border: "none", background: "none", padding: "6px 12px", cursor: "pointer", fontSize: "14px" }}>-</button>
                             <span style={{ fontSize: "14px", fontWeight: 800, padding: "0 8px" }}>{quantity}</span>
@@ -2003,7 +2003,7 @@ export default function ProductsPage() {
                           style={{
                             width: "100%",
                             padding: "13px",
-                            background: inlineAddedToCart ? "#16a34a" : "linear-gradient(135deg, #059669 0%, #047857 100%)",
+                            background: inlineAddedToCart ? "#16a34a" : "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)",
                             color: "#ffffff",
                             border: "none",
                             borderRadius: "12px",
@@ -2011,7 +2011,7 @@ export default function ProductsPage() {
                             fontWeight: 800,
                             cursor: "pointer",
                             transition: "all 0.2s",
-                            boxShadow: "0 6px 18px rgba(5, 150, 105, 0.25)",
+                            boxShadow: "0 6px 18px rgba(21, 128, 61, 0.25)",
                           }}
                         >
                           {inlineAddedToCart ? "Added to Cart ✓" : "Add to Cart"}
@@ -2029,12 +2029,12 @@ export default function ProductsPage() {
                       style={{
                         background: "#ffffff",
                         borderRadius: "22px",
-                        border: "1.5px solid #d1fae5",
+                        border: "1.5px solid #D5E0D5",
                         padding: "26px 22px",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
-                        boxShadow: "0 6px 20px rgba(5, 150, 105, 0.05)",
+                        boxShadow: "0 6px 20px rgba(21, 128, 61, 0.05)",
                       }}
                     >
                       {inlineModalPaid ? (
@@ -2042,7 +2042,7 @@ export default function ProductsPage() {
                           <div style={{ width: "56px", height: "56px", borderRadius: "50%", background: "#dcfce7", color: "#16a34a", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 12px" }}>
                             <CheckCircle size={32} />
                           </div>
-                          <h4 style={{ fontSize: "18px", fontWeight: 900, color: "#062419", marginBottom: "6px" }}>
+                          <h4 style={{ fontSize: "18px", fontWeight: 900, color: "#1E251F", marginBottom: "6px" }}>
                             Payment Successful!
                           </h4>
                           <p style={{ fontSize: "12.5px", color: "#475569", lineHeight: 1.4, marginBottom: "16px" }}>
@@ -2057,7 +2057,7 @@ export default function ProductsPage() {
                         </div>
                       ) : (
                         <div>
-                          <div style={{ fontSize: "13px", fontWeight: 800, color: "#062419", marginBottom: "10px" }}>
+                          <div style={{ fontSize: "13px", fontWeight: 800, color: "#1E251F", marginBottom: "10px" }}>
                             Delivery Details
                           </div>
 
@@ -2092,7 +2092,7 @@ export default function ProductsPage() {
                             />
                           </div>
 
-                          <div style={{ fontSize: "13px", fontWeight: 800, color: "#062419", marginBottom: "8px" }}>
+                          <div style={{ fontSize: "13px", fontWeight: 800, color: "#1E251F", marginBottom: "8px" }}>
                             Payment Method
                           </div>
 
@@ -2106,13 +2106,13 @@ export default function ProductsPage() {
                               color: "#1e293b",
                               marginBottom: "16px",
                               cursor: "pointer",
-                              background: "#f0fdf4",
+                              background: "#F0F4EF",
                               padding: "9px 12px",
                               borderRadius: "8px",
-                              border: "1px solid #a7f3d0",
+                              border: "1px solid #d1e8b0",
                             }}
                           >
-                            <input type="checkbox" checked={true} readOnly style={{ accentColor: "#059669" }} />
+                            <input type="checkbox" checked={true} readOnly style={{ accentColor: "#15803D" }} />
                             <span>Razorpay (UPI / Card / Netbanking)</span>
                           </label>
 
@@ -2121,7 +2121,7 @@ export default function ProductsPage() {
                             style={{
                               width: "100%",
                               padding: "13px",
-                              background: "linear-gradient(135deg, #059669 0%, #047857 100%)",
+                              background: "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)",
                               color: "#ffffff",
                               border: "none",
                               borderRadius: "10px",
@@ -2129,14 +2129,14 @@ export default function ProductsPage() {
                               fontWeight: 800,
                               cursor: "pointer",
                               marginBottom: "10px",
-                              boxShadow: "0 6px 18px rgba(5, 150, 105, 0.25)",
+                              boxShadow: "0 6px 18px rgba(21, 128, 61, 0.25)",
                             }}
                           >
                             Proceed to Pay
                           </button>
 
                           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "5px", fontSize: "11px", color: "#64748b" }}>
-                            <Lock size={12} color="#059669" />
+                            <Lock size={12} color="#15803D" />
                             <span>Secured by <strong>Razorpay</strong></span>
                           </div>
                         </div>
@@ -2185,8 +2185,8 @@ export default function ProductsPage() {
               >
                 <div style={{ padding: "18px 22px", borderBottom: "1px solid #e2e8f0", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                    <ShoppingBag size={18} color="#059669" />
-                    <span style={{ fontSize: "16px", fontWeight: 800, color: "#062419" }}>
+                    <ShoppingBag size={18} color="#15803D" />
+                    <span style={{ fontSize: "16px", fontWeight: 800, color: "#1E251F" }}>
                       {checkoutStep === "cart" && "Shopping Cart"}
                       {checkoutStep === "checkout" && "Delivery & Payment"}
                       {checkoutStep === "success" && "Order Placed!"}
@@ -2200,19 +2200,19 @@ export default function ProductsPage() {
                 <div style={{ flex: 1, overflowY: "auto", padding: "20px" }}>
                   {checkoutStep === "cart" && (
                     <div>
-                      <div style={{ display: "flex", gap: "14px", padding: "14px", background: "#f0fdf4", borderRadius: "16px", border: "1px solid #d1fae5", marginBottom: "18px" }}>
-                        <div style={{ width: "64px", height: "64px", background: "#ffffff", borderRadius: "10px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid #d1fae5" }}>
+                      <div style={{ display: "flex", gap: "14px", padding: "14px", background: "#F0F4EF", borderRadius: "16px", border: "1px solid #D5E0D5", marginBottom: "18px" }}>
+                        <div style={{ width: "64px", height: "64px", background: "#ffffff", borderRadius: "10px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid #D5E0D5" }}>
                           <img src={currentProduct.image} alt={currentProduct.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                         </div>
                         <div style={{ flex: 1 }}>
-                          <h4 style={{ fontSize: "14px", fontWeight: 800, color: "#062419", margin: 0 }}>
+                          <h4 style={{ fontSize: "14px", fontWeight: 800, color: "#1E251F", margin: 0 }}>
                             {currentProduct.name}
                           </h4>
                           <div style={{ fontSize: "11px", color: "#64748b", margin: "2px 0 6px" }}>
                             {currentProduct.tagline}
                           </div>
                           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                            <span style={{ fontSize: "16px", fontWeight: 900, color: "#059669" }}>
+                            <span style={{ fontSize: "16px", fontWeight: 900, color: "#15803D" }}>
                               ₹{currentProduct.price}.00
                             </span>
                             <div style={{ display: "flex", alignItems: "center", border: "1px solid #cbd5e1", borderRadius: "6px", background: "#ffffff" }}>
@@ -2234,7 +2234,7 @@ export default function ProductsPage() {
                         />
                         <button
                           onClick={() => setCouponApplied(!couponApplied)}
-                          style={{ padding: "10px 16px", background: couponApplied ? "#16a34a" : "#059669", color: "#ffffff", border: "none", borderRadius: "8px", fontSize: "12px", fontWeight: 800, cursor: "pointer" }}
+                          style={{ padding: "10px 16px", background: couponApplied ? "#16a34a" : "#15803D", color: "#ffffff", border: "none", borderRadius: "8px", fontSize: "12px", fontWeight: 800, cursor: "pointer" }}
                         >
                           {couponApplied ? "Remove" : "Apply"}
                         </button>
@@ -2255,7 +2255,7 @@ export default function ProductsPage() {
                           <span>Delivery</span>
                           <span style={{ color: "#16a34a", fontWeight: 700 }}>FREE</span>
                         </div>
-                        <div style={{ borderTop: "1px dashed #cbd5e1", paddingTop: "10px", marginTop: "10px", display: "flex", justifyContent: "space-between", fontSize: "16px", fontWeight: 900, color: "#062419" }}>
+                        <div style={{ borderTop: "1px dashed #cbd5e1", paddingTop: "10px", marginTop: "10px", display: "flex", justifyContent: "space-between", fontSize: "16px", fontWeight: 900, color: "#1E251F" }}>
                           <span>Total Amount</span>
                           <span>₹{finalPrice}.00</span>
                         </div>
@@ -2265,7 +2265,7 @@ export default function ProductsPage() {
 
                   {checkoutStep === "checkout" && (
                     <div>
-                      <div style={{ fontSize: "13px", fontWeight: 800, color: "#062419", marginBottom: "12px" }}>
+                      <div style={{ fontSize: "13px", fontWeight: 800, color: "#1E251F", marginBottom: "12px" }}>
                         Delivery Details
                       </div>
 
@@ -2300,7 +2300,7 @@ export default function ProductsPage() {
                         />
                       </div>
 
-                      <div style={{ fontSize: "13px", fontWeight: 800, color: "#062419", marginBottom: "10px" }}>
+                      <div style={{ fontSize: "13px", fontWeight: 800, color: "#1E251F", marginBottom: "10px" }}>
                         Payment Method
                       </div>
 
@@ -2311,16 +2311,16 @@ export default function ProductsPage() {
                           justifyContent: "space-between",
                           padding: "12px 14px",
                           borderRadius: "10px",
-                          border: "1.5px solid #059669",
-                          background: "#f0fdf4",
+                          border: "1.5px solid #15803D",
+                          background: "#F0F4EF",
                           cursor: "pointer",
                           marginBottom: "16px",
                         }}
                       >
                         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                          <input type="radio" checked={true} readOnly style={{ accentColor: "#059669" }} />
+                          <input type="radio" checked={true} readOnly style={{ accentColor: "#15803D" }} />
                           <div>
-                            <div style={{ fontSize: "13px", fontWeight: 800, color: "#062419" }}>Razorpay (UPI / Card / Netbanking)</div>
+                            <div style={{ fontSize: "13px", fontWeight: 800, color: "#1E251F" }}>Razorpay (UPI / Card / Netbanking)</div>
                             <div style={{ fontSize: "11px", color: "#64748b" }}>Instant Google Pay, PhonePe & Cards</div>
                           </div>
                         </div>
@@ -2330,7 +2330,7 @@ export default function ProductsPage() {
                       </label>
 
                       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", fontSize: "11.5px", color: "#64748b", background: "#f8fafc", padding: "10px", borderRadius: "8px" }}>
-                        <Lock size={13} color="#059669" />
+                        <Lock size={13} color="#15803D" />
                         <span>Secured by Razorpay • 256-Bit SSL Protection</span>
                       </div>
                     </div>
@@ -2341,7 +2341,7 @@ export default function ProductsPage() {
                       <div style={{ width: "64px", height: "64px", borderRadius: "50%", background: "#dcfce7", color: "#16a34a", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 16px" }}>
                         <CheckCircle size={36} />
                       </div>
-                      <h3 style={{ fontSize: "22px", fontWeight: 900, color: "#062419", marginBottom: "8px" }}>
+                      <h3 style={{ fontSize: "22px", fontWeight: 900, color: "#1E251F", marginBottom: "8px" }}>
                         Order Confirmed!
                       </h3>
                       <p style={{ fontSize: "14px", color: "#475569", lineHeight: 1.5, marginBottom: "20px" }}>
@@ -2354,7 +2354,7 @@ export default function ProductsPage() {
                           setIsCartOpen(false);
                           setIsProductModalOpen(false);
                         }}
-                        style={{ width: "100%", padding: "12px", background: "linear-gradient(135deg, #059669 0%, #047857 100%)", color: "#ffffff", borderRadius: "10px", border: "none", fontSize: "14px", fontWeight: 800, cursor: "pointer" }}
+                        style={{ width: "100%", padding: "12px", background: "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)", color: "#ffffff", borderRadius: "10px", border: "none", fontSize: "14px", fontWeight: 800, cursor: "pointer" }}
                       >
                         Continue Shopping
                       </button>
@@ -2366,7 +2366,7 @@ export default function ProductsPage() {
                   {checkoutStep === "cart" ? (
                     <button
                       onClick={() => setCheckoutStep("checkout")}
-                      style={{ width: "100%", padding: "14px", background: "linear-gradient(135deg, #059669 0%, #047857 100%)", color: "#ffffff", borderRadius: "12px", border: "none", fontWeight: 800, fontSize: "15px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", boxShadow: "0 6px 20px rgba(5, 150, 105, 0.25)" }}
+                      style={{ width: "100%", padding: "14px", background: "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)", color: "#ffffff", borderRadius: "12px", border: "none", fontWeight: 800, fontSize: "15px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", boxShadow: "0 6px 20px rgba(21, 128, 61, 0.25)" }}
                     >
                       <span>Proceed to Checkout</span>
                       <span>•</span>
@@ -2383,7 +2383,7 @@ export default function ProductsPage() {
                       </button>
                       <button
                         onClick={() => setCheckoutStep("success")}
-                        style={{ flex: 1, padding: "14px", background: "linear-gradient(135deg, #059669 0%, #047857 100%)", color: "#ffffff", borderRadius: "12px", border: "none", fontWeight: 800, fontSize: "15px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", boxShadow: "0 6px 20px rgba(5, 150, 105, 0.25)" }}
+                        style={{ flex: 1, padding: "14px", background: "linear-gradient(135deg, #15803D 0%, #2D5A27 100%)", color: "#ffffff", borderRadius: "12px", border: "none", fontWeight: 800, fontSize: "15px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", boxShadow: "0 6px 20px rgba(21, 128, 61, 0.25)" }}
                       >
                         <Lock size={15} />
                         <span>Proceed to Pay ₹{finalPrice}.00</span>

@@ -85,19 +85,19 @@ export default function RndPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(16, 185, 129, 0.15)", borderColor: "rgba(16, 185, 129, 0.35)", color: "#10b981" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(124, 168, 50, 0.15)", borderColor: "rgba(124, 168, 50, 0.35)", color: "#7CA832" }}>
               <Microscope size={14} />
               <span>Clinical R&D Hub</span>
-              <span className="pill-dot" style={{ backgroundColor: "#10b981" }} />
+              <span className="pill-dot" style={{ backgroundColor: "#7CA832" }} />
               <span>Evidence-Led Science</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
               Translating molecular science into<br />
-              <em style={{ color: "#10b981" }}>bioavailable nutrition.</em>
+              <em style={{ color: "#7CA832" }}>bioavailable nutrition.</em>
             </h1>
 
-            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e2f2", margin: "14px 0 0" }}>
+            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e8b0", margin: "14px 0 0" }}>
               Solving complex formulation challenges: enhanced cellular uptake, solubility kinetics, and active stabilization.
             </p>
           </motion.div>
@@ -125,10 +125,10 @@ export default function RndPage() {
                 transition={{ delay: idx * 0.1 }}
                 variants={fade}
               >
-                <div style={{ fontSize: "32px", fontWeight: 900, color: "rgba(5, 150, 105, 0.2)", position: "absolute", top: "20px", right: "24px" }}>
+                <div style={{ fontSize: "32px", fontWeight: 900, color: "rgba(21, 128, 61, 0.2)", position: "absolute", top: "20px", right: "24px" }}>
                   {p.step}
                 </div>
-                <div className="icon-box" style={{ background: "rgba(5, 150, 105, 0.1)", color: "#059669" }}>
+                <div className="icon-box" style={{ background: "rgba(21, 128, 61, 0.1)", color: "#15803D" }}>
                   <Icon size={24} />
                 </div>
                 <h3 style={{ fontSize: "18px", fontWeight: 700, color: "var(--ink)", marginBottom: "10px" }}>
@@ -144,7 +144,7 @@ export default function RndPage() {
       </section>
 
       {/* Deep Dive Science Feature */}
-      <section style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #e6f7ee 50%, #f8fafc 100%)", padding: "90px 4.5vw", borderTop: "1px solid #d1fae5", borderBottom: "1px solid #d1fae5" }}>
+      <section style={{ background: "linear-gradient(135deg, #FAF8F5 0%, #F0F4EF 50%, #F5F2EB 100%)", padding: "90px 4.5vw", borderTop: "1px solid #E2E8DF", borderBottom: "1px solid #E2E8DF" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "50px", alignItems: "center" }}>
           <div>
             <p className="eyebrow">Bioavailability Engineering</p>
@@ -155,15 +155,15 @@ export default function RndPage() {
 
             <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "30px" }}>
               <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                <CheckCircle2 color="#059669" size={20} style={{ marginTop: "2px", flexShrink: 0 }} />
+                <CheckCircle2 color="#15803D" size={20} style={{ marginTop: "2px", flexShrink: 0 }} />
                 <span style={{ fontSize: "14px", color: "var(--ink)" }}><strong>Liposomal Micro-Vesicles:</strong> Protects hydrophilic and lipophilic actives with biomimetic phospholipid bilayer membranes.</span>
               </div>
               <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                <CheckCircle2 color="#059669" size={20} style={{ marginTop: "2px", flexShrink: 0 }} />
+                <CheckCircle2 color="#15803D" size={20} style={{ marginTop: "2px", flexShrink: 0 }} />
                 <span style={{ fontSize: "14px", color: "var(--ink)" }}><strong>DRCaps® Gastric Acid Bypass:</strong> Guarantees zero release in the stomach (pH 1.2) with complete dissolution in the duodenum (pH 6.8).</span>
               </div>
               <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                <CheckCircle2 color="#059669" size={20} style={{ marginTop: "2px", flexShrink: 0 }} />
+                <CheckCircle2 color="#15803D" size={20} style={{ marginTop: "2px", flexShrink: 0 }} />
                 <span style={{ fontSize: "14px", color: "var(--ink)" }}><strong>Self-Emulsifying Nano-Suspensions:</strong> Up to 12.5x greater plasma concentration verified via HPLC blood serum analysis.</span>
               </div>
             </div>
@@ -174,18 +174,18 @@ export default function RndPage() {
             </Link>
           </div>
 
-          <div style={{ position: "relative", borderRadius: "24px", overflow: "hidden", boxShadow: "0 16px 40px rgba(5, 150, 105, 0.15)", border: "2px solid #ffffff" }}>
+          <div style={{ position: "relative", borderRadius: "24px", overflow: "hidden", boxShadow: "0 16px 40px rgba(21, 128, 61, 0.15)", border: "2px solid #ffffff" }}>
             <img
               src="https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&w=1200&q=85"
               alt="High precision laboratory analysis"
               style={{ width: "100%", height: "480px", objectFit: "cover" }}
             />
-            <div style={{ position: "absolute", bottom: "24px", left: "24px", right: "24px", background: "linear-gradient(135deg, rgba(6, 36, 25, 0.95) 0%, rgba(6, 78, 59, 0.92) 100%)", border: "1px solid rgba(16, 185, 129, 0.3)", color: "white", padding: "20px", borderRadius: "16px", backdropFilter: "blur(12px)", boxShadow: "0 10px 30px rgba(5, 150, 105, 0.25)" }}>
+            <div style={{ position: "absolute", bottom: "24px", left: "24px", right: "24px", background: "linear-gradient(135deg, rgba(13, 38, 25, 0.95) 0%, rgba(20, 59, 40, 0.92) 100%)", border: "1px solid rgba(124, 168, 50, 0.35)", color: "white", padding: "20px", borderRadius: "16px", backdropFilter: "blur(12px)", boxShadow: "0 10px 30px rgba(21, 128, 61, 0.25)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
-                <Beaker size={18} color="#34d399" />
-                <strong style={{ fontSize: "15px" }}>Veradaco BioMatrix™ Technology</strong>
+                <Beaker size={18} color="#7CA832" />
+                <strong style={{ fontSize: "15px" }}>Varadaco BioMatrix™ Technology</strong>
               </div>
-              <p style={{ fontSize: "12px", color: "#d1e2f2", margin: 0 }}>
+              <p style={{ fontSize: "12px", color: "#d1e8b0", margin: 0 }}>
                 12.5x higher area-under-the-curve (AUC) bioavailability compared to unformulated reference standards.
               </p>
             </div>
@@ -213,7 +213,7 @@ export default function RndPage() {
                 transition={{ delay: i * 0.08, duration: 0.4 }}
                 whileHover={{ y: -6 }}
               >
-                <div className="icon-box" style={{ background: "rgba(5, 150, 105, 0.1)", color: "#059669" }}>
+                <div className="icon-box" style={{ background: "rgba(21, 128, 61, 0.1)", color: "#15803D" }}>
                   <Icon size={24} />
                 </div>
                 <h4 style={{ fontSize: "17px", fontWeight: 700, color: "var(--ink)", marginBottom: "8px" }}>
@@ -229,7 +229,7 @@ export default function RndPage() {
       </section>
 
       {/* Published Whitepapers / Research */}
-      <section style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #e6f7ee 50%, #f8fafc 100%)", padding: "80px 4.5vw", borderTop: "1px solid #d1fae5", borderBottom: "1px solid #d1fae5" }}>
+      <section style={{ background: "linear-gradient(135deg, #FAF8F5 0%, #F0F4EF 50%, #F5F2EB 100%)", padding: "80px 4.5vw", borderTop: "1px solid #E2E8DF", borderBottom: "1px solid #E2E8DF" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: "20px", marginBottom: "40px" }}>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
@@ -254,11 +254,11 @@ export default function RndPage() {
                 whileHover={{ y: -5 }}
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "18px" }}>
-                  <div style={{ width: "44px", height: "44px", borderRadius: "12px", background: "rgba(5, 150, 105, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "#059669", flexShrink: 0 }}>
+                  <div style={{ width: "44px", height: "44px", borderRadius: "12px", background: "rgba(21, 128, 61, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "#15803D", flexShrink: 0 }}>
                     <FileText size={22} />
                   </div>
                   <div>
-                    <span style={{ fontSize: "11px", fontWeight: 700, textTransform: "uppercase", color: "#059669", letterSpacing: "0.05em" }}>
+                    <span style={{ fontSize: "11px", fontWeight: 700, textTransform: "uppercase", color: "#15803D", letterSpacing: "0.05em" }}>
                       {doc.tag} • {doc.date}
                     </span>
                     <h4 style={{ fontSize: "16px", fontWeight: 700, color: "var(--ink)", marginTop: "2px" }}>

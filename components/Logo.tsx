@@ -20,36 +20,36 @@ export function LogoIcon({ size = 32 }: { size?: number }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       style={{ flexShrink: 0 }}
-      aria-label="Veradaco Logo Mark"
+      aria-label="Varadaco Logo Mark"
     >
       <defs>
         {/* Outer squircle gradient background */}
         <linearGradient id="vBgGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#10b981" stopOpacity="0.15" />
-          <stop offset="100%" stopColor="#059669" stopOpacity="0.05" />
+          <stop offset="0%" stopColor="#7CA832" stopOpacity="0.2" />
+          <stop offset="100%" stopColor="#15803D" stopOpacity="0.06" />
         </linearGradient>
 
         {/* Left wing gradient */}
         <linearGradient id="vLeftWing" x1="8" y1="8" x2="20" y2="32" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#047857" />
-          <stop offset="100%" stopColor="#059669" />
+          <stop offset="0%" stopColor="#2D5A27" />
+          <stop offset="100%" stopColor="#15803D" />
         </linearGradient>
 
         {/* Right wing gradient */}
         <linearGradient id="vRightWing" x1="32" y1="8" x2="20" y2="32" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#34d399" />
-          <stop offset="100%" stopColor="#059669" />
+          <stop offset="0%" stopColor="#7CA832" />
+          <stop offset="100%" stopColor="#15803D" />
         </linearGradient>
 
         {/* Center prism / apex gradient */}
         <linearGradient id="vCenterApex" x1="14" y1="20" x2="26" y2="33" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#6ee7b7" />
-          <stop offset="100%" stopColor="#047857" />
+          <stop offset="0%" stopColor="#a3e635" />
+          <stop offset="100%" stopColor="#2D5A27" />
         </linearGradient>
 
         {/* Subtle drop glow */}
         <filter id="vLogoGlow" x="0" y="0" width="40" height="40" filterUnits="userSpaceOnUse">
-          <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#059669" floodOpacity="0.3" />
+          <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#15803D" floodOpacity="0.35" />
         </filter>
       </defs>
 
@@ -86,7 +86,7 @@ export function LogoIcon({ size = 32 }: { size?: number }) {
       />
 
       {/* Scientific Catalyst / Core Light Accent */}
-      <circle cx="20" cy="14" r="2.2" fill="#34d399" />
+      <circle cx="20" cy="14" r="2.2" fill="#7CA832" />
       <circle cx="20" cy="14" r="1" fill="#ffffff" />
     </svg>
   );
@@ -118,12 +118,12 @@ export default function Logo({
   };
 
   const isDark = variant === "dark";
-  const primaryTextColor = isDark ? "#ffffff" : "var(--ink, #062419)";
-  const subtitleColor = isDark ? "#34d399" : "#059669";
+  const primaryTextColor = isDark ? "#ffffff" : "var(--ink, #1E251F)";
+  const subtitleColor = isDark ? "#7CA832" : "#15803D";
 
   const content = (
     <div
-      className={`veradaco-brand-logo ${className}`}
+      className={`varadaco-brand-logo ${className}`}
       style={{
         display: "inline-flex",
         alignItems: "center",
@@ -147,7 +147,7 @@ export default function Logo({
             textTransform: "uppercase",
           }}
         >
-          VERADACO
+          VARADACO
         </span>
         {showSubtitle && (
           <span

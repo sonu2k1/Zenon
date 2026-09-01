@@ -54,8 +54,8 @@ export default function Footer() {
           <div className="footer-contact-col">
             <h5 className="footer-heading">Get in Touch</h5>
             <div className="footer-contact-list">
-              <a href="mailto:hello@veradaco.com" className="footer-contact-item">
-                <Mail size={14} /> hello@veradaco.com
+              <a href="mailto:hello@varadaco.com" className="footer-contact-item">
+                <Mail size={14} /> hello@varadaco.com
               </a>
               <a href="tel:+18008459230" className="footer-contact-item">
                 <Phone size={14} /> +1 (800) 845-9230
@@ -69,7 +69,7 @@ export default function Footer() {
               <Link
                 href="/contact"
                 style={{
-                  background: "#059669",
+                  background: "#15803D",
                   color: "#ffffff",
                   padding: "9px 18px",
                   borderRadius: "100px",
@@ -79,7 +79,7 @@ export default function Footer() {
                   alignItems: "center",
                   gap: "6px",
                   textDecoration: "none",
-                  boxShadow: "0 4px 14px rgba(5, 150, 105, 0.35)",
+                  boxShadow: "0 4px 14px rgba(21, 128, 61, 0.35)",
                   transition: "transform 0.2s ease, background 0.2s ease",
                 }}
               >
@@ -93,7 +93,7 @@ export default function Footer() {
 
         {/* Bottom copyright bar */}
         <div className="footer-bottom-bar">
-          <span>© 2026 Veradaco Industries. All rights reserved.</span>
+          <span>© 2026 Varadaco Industries. All rights reserved.</span>
           <div className="footer-legal-links">
             <Link href="/about">About</Link>
             <Link href="/services">Services</Link>

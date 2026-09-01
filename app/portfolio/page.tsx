@@ -113,19 +113,19 @@ export default function PortfolioPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(16, 185, 129, 0.15)", borderColor: "rgba(16, 185, 129, 0.35)", color: "#10b981" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(124, 168, 50, 0.15)", borderColor: "rgba(124, 168, 50, 0.35)", color: "#7CA832" }}>
               <Sparkles size={14} />
               <span>Nutraceutical Portfolio</span>
-              <span className="pill-dot" style={{ backgroundColor: "#10b981" }} />
+              <span className="pill-dot" style={{ backgroundColor: "#7CA832" }} />
               <span>8 Specialized Categories</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
               Formulations engineered for<br />
-              <em style={{ color: "#10b981" }}>human vitality & longevity.</em>
+              <em style={{ color: "#7CA832" }}>human vitality & longevity.</em>
             </h1>
 
-            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e2f2", margin: "14px 0 0" }}>
+            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e8b0", margin: "14px 0 0" }}>
               Evidence-based nutritional ranges spanning active sports, pediatric growth, microbiome, and standardized phytopharma.
             </p>
           </motion.div>
@@ -154,8 +154,8 @@ export default function PortfolioPage() {
                     alt={cat.title}
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   />
-                  <div style={{ position: "absolute", top: "14px", left: "14px", background: "rgba(6, 36, 25, 0.88)", color: "white", padding: "6px 12px", borderRadius: "100px", fontSize: "11px", fontWeight: 700, display: "flex", alignItems: "center", gap: "6px", backdropFilter: "blur(6px)" }}>
-                    <Icon size={14} color="#34d399" />
+                  <div style={{ position: "absolute", top: "14px", left: "14px", background: "rgba(13, 38, 25, 0.88)", color: "white", padding: "6px 12px", borderRadius: "100px", fontSize: "11px", fontWeight: 700, display: "flex", alignItems: "center", gap: "6px", backdropFilter: "blur(6px)" }}>
+                    <Icon size={14} color="#7CA832" />
                     <span>{cat.title}</span>
                   </div>
                 </div>
@@ -165,7 +165,7 @@ export default function PortfolioPage() {
                     {cat.title}
                   </h3>
 
-                  <p style={{ fontSize: "14px", fontWeight: 600, color: "#059669", marginBottom: "12px", lineHeight: "1.5" }}>
+                  <p style={{ fontSize: "14px", fontWeight: 600, color: "#15803D", marginBottom: "12px", lineHeight: "1.5" }}>
                     {cat.shortDesc}
                   </p>
 
@@ -173,7 +173,7 @@ export default function PortfolioPage() {
                     {cat.desc}
                   </p>
 
-                  <div style={{ background: "#f0fdf4", padding: "12px 14px", borderRadius: "10px", fontSize: "12px", marginBottom: "20px" }}>
+                  <div style={{ background: "#EBF3E6", padding: "12px 14px", borderRadius: "10px", fontSize: "12px", marginBottom: "20px" }}>
                     <div style={{ fontWeight: 700, color: "var(--ink)", marginBottom: "4px" }}>Key Actives:</div>
                     <div style={{ color: "#334155" }}>{cat.keyIngredients.join(", ")}</div>
                   </div>
@@ -181,7 +181,7 @@ export default function PortfolioPage() {
                   <div style={{ marginTop: "auto" }}>
                     <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "18px" }}>
                       {cat.formats.map((fmt) => (
-                        <span key={fmt} style={{ background: "rgba(5, 150, 105, 0.1)", color: "#059669", padding: "3px 8px", borderRadius: "6px", fontSize: "11px", fontWeight: 600 }}>
+                        <span key={fmt} style={{ background: "rgba(21, 128, 61, 0.1)", color: "#15803D", padding: "3px 8px", borderRadius: "6px", fontSize: "11px", fontWeight: 600 }}>
                           {fmt}
                         </span>
                       ))}

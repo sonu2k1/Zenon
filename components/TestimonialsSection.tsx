@@ -195,7 +195,7 @@ export default function TestimonialsSection() {
                   <h4>{item.name}</h4>
                   <div className="testimonial-stars">
                     {[...Array(item.stars)].map((_, i) => (
-                      <Star key={i} size={13} fill="#f59e0b" color="#f59e0b" />
+                      <Star key={i} size={13} fill="#E8A324" color="#E8A324" />
                     ))}
                   </div>
                 </div>
@@ -226,7 +226,7 @@ export default function TestimonialsSection() {
                   <h4>{item.name}</h4>
                   <div className="testimonial-stars">
                     {[...Array(item.stars)].map((_, i) => (
-                      <Star key={i} size={13} fill="#f59e0b" color="#f59e0b" />
+                      <Star key={i} size={13} fill="#E8A324" color="#E8A324" />
                     ))}
                   </div>
                 </div>
@@ -246,7 +246,7 @@ export default function TestimonialsSection() {
           onClick={prevCard}
           className="video-nav-arrow"
           aria-label="Previous story"
-          style={{ borderColor: "#059669", color: "#059669" }}
+          style={{ borderColor: "#15803D", color: "#15803D" }}
         >
           <ChevronLeft size={22} />
         </button>
@@ -312,7 +312,7 @@ export default function TestimonialsSection() {
                 {isCenter && (
                   <div style={{ position: "absolute", bottom: "16px", left: "16px", right: "16px", color: "white", pointerEvents: "none" }}>
                     <div style={{ fontSize: "15px", fontWeight: 800 }}>{card.name}</div>
-                    <div style={{ fontSize: "12px", color: "#a7f3d0", fontWeight: 600 }}>{card.role}</div>
+                    <div style={{ fontSize: "12px", color: "#d1e8b0", fontWeight: 600 }}>{card.role}</div>
                   </div>
                 )}
               </motion.div>
@@ -324,7 +324,7 @@ export default function TestimonialsSection() {
           onClick={nextCard}
           className="video-nav-arrow"
           aria-label="Next story"
-          style={{ borderColor: "#059669", color: "#059669" }}
+          style={{ borderColor: "#15803D", color: "#15803D" }}
         >
           <ChevronRight size={22} />
         </button>
@@ -341,7 +341,7 @@ export default function TestimonialsSection() {
               height: "6px",
               width: activeIndex === idx ? "20px" : "6px",
               borderRadius: "10px",
-              backgroundColor: activeIndex === idx ? "#059669" : "#cbd5e1",
+              backgroundColor: activeIndex === idx ? "#15803D" : "#D5E0D5",
               border: "none",
               cursor: "pointer",
               transition: "all 0.3s ease",

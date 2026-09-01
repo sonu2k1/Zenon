@@ -21,7 +21,7 @@ const serviceList = [
     ],
     image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=80",
     icon: Tag,
-    color: "#059669",
+    color: "#15803D",
     badge: "Turnkey Ready",
   },
   {
@@ -37,7 +37,7 @@ const serviceList = [
     ],
     image: "https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&w=900&q=80",
     icon: FileCheck,
-    color: "#10b981",
+    color: "#7CA832",
     badge: "100% Compliant",
   },
   {
@@ -53,7 +53,7 @@ const serviceList = [
     ],
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80",
     icon: Factory,
-    color: "#047857",
+    color: "#2D5A27",
     badge: "WHO-GMP Certified",
   },
   {
@@ -69,7 +69,7 @@ const serviceList = [
     ],
     image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=900&q=80",
     icon: Package,
-    color: "#10b981",
+    color: "#E8A324",
     badge: "High Barrier Protection",
   },
 ];
@@ -103,19 +103,19 @@ export default function ServicesPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(16, 185, 129, 0.15)", borderColor: "rgba(16, 185, 129, 0.35)", color: "#10b981" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(124, 168, 50, 0.15)", borderColor: "rgba(124, 168, 50, 0.35)", color: "#7CA832" }}>
               <Layers size={14} />
               <span>Full-Service Contract Manufacturing</span>
-              <span className="pill-dot" style={{ backgroundColor: "#10b981" }} />
+              <span className="pill-dot" style={{ backgroundColor: "#7CA832" }} />
               <span>Concept to Shelf</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
               End-to-end solutions for<br />
-              <em style={{ color: "#10b981" }}>global health leaders.</em>
+              <em style={{ color: "#7CA832" }}>global health leaders.</em>
             </h1>
 
-            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e2f2", margin: "14px 0 0" }}>
+            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e8b0", margin: "14px 0 0" }}>
               Private labelling, WHO-GMP CRAMS manufacturing, regulatory dossiers, and smart dosage packaging.
             </p>
           </motion.div>
@@ -146,7 +146,7 @@ export default function ServicesPage() {
                 </div>
 
                 <div className="service-detail-content">
-                  <span style={{ fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", color: "#059669" }}>
+                  <span style={{ fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", color: "#15803D" }}>
                     Service Stream 0{idx + 1}
                   </span>
                   <h3 style={{ fontSize: "28px", fontWeight: 700, color: "var(--ink)", margin: "8px 0 12px" }}>
@@ -162,7 +162,7 @@ export default function ServicesPage() {
                   <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                     {service.features.map((feat) => (
                       <div key={feat} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                        <CheckCircle2 size={18} color="#059669" style={{ marginTop: "2px", flexShrink: 0 }} />
+                        <CheckCircle2 size={18} color="#15803D" style={{ marginTop: "2px", flexShrink: 0 }} />
                         <span style={{ fontSize: "13px", color: "var(--ink)", lineHeight: "1.5", fontWeight: 500 }}>
                           {feat}
                         </span>
@@ -177,7 +177,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Capabilities Section */}
-      <section style={{ background: "#f0fdf4", padding: "90px 4.5vw", borderTop: "1px solid var(--line)" }}>
+      <section style={{ background: "#F0F4EF", padding: "90px 4.5vw", borderTop: "1px solid var(--line)" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto 50px" }}>
             <p className="eyebrow" style={{ justifyContent: "center" }}>Facility Strengths</p>
@@ -198,7 +198,7 @@ export default function ServicesPage() {
                 transition={{ delay: i * 0.08, duration: 0.4 }}
                 whileHover={{ y: -6 }}
               >
-                <div className="icon-box" style={{ background: "rgba(5, 150, 105, 0.12)", color: "#059669" }}>
+                <div className="icon-box" style={{ background: "rgba(21, 128, 61, 0.12)", color: "#15803D" }}>
                   <Sparkles size={24} />
                 </div>
                 <h4 style={{ fontSize: "18px", fontWeight: 700, color: "var(--ink)", marginBottom: "8px" }}>

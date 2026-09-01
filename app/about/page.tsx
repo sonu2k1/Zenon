@@ -15,7 +15,7 @@ const awards = [
     issuer: "Global Nutraceutical & Life Sciences Forum",
     desc: "Awarded for exceptional batch uniformity, automated cleanroom scaling, and zero-defect quality control across 500+ formulations.",
     badge: "Winner 2025",
-    color: "#2b5292",
+    color: "#3B592D",
   },
   {
     year: "2024",
@@ -23,7 +23,7 @@ const awards = [
     issuer: "CPhI World Formulation Summit",
     desc: "Recognized for breakthrough research in self-emulsifying liposomal delivery and targeted enteric acid-resistant capsule technology.",
     badge: "Gold Trophy",
-    color: "#059669",
+    color: "#15803D",
   },
   {
     year: "2024",
@@ -31,7 +31,7 @@ const awards = [
     issuer: "International Trade & Commerce Council",
     desc: "Honoring consistent export quality, regulatory dossier approval speed, and supply chain reliability across 30+ international markets.",
     badge: "Global Honor",
-    color: "#10b981",
+    color: "#7CA832",
   },
   {
     year: "2023",
@@ -39,7 +39,7 @@ const awards = [
     issuer: "Pharmaceutical Standards Confederation",
     desc: "Certified for maintaining strict adherence to Class 100,000 cleanroom environments, ICH stability assays, and ISO 22000 hygiene standards.",
     badge: "Excellence Mark",
-    color: "#047857",
+    color: "#2D5A27",
   },
 ];
 
@@ -115,19 +115,19 @@ export default function AboutPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(16, 185, 129, 0.15)", borderColor: "rgba(16, 185, 129, 0.35)", color: "#10b981" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(124, 168, 50, 0.15)", borderColor: "rgba(124, 168, 50, 0.35)", color: "#7CA832" }}>
               <Users size={14} />
-              <span>About Veradaco Industries</span>
-              <span className="pill-dot" style={{ backgroundColor: "#10b981" }} />
+              <span>About Varadaco Industries</span>
+              <span className="pill-dot" style={{ backgroundColor: "#7CA832" }} />
               <span>Since 2004</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
               Pioneering science-led<br />
-              <em style={{ color: "#10b981" }}>health & nutraceuticals.</em>
+              <em style={{ color: "#7CA832" }}>health & nutraceuticals.</em>
             </h1>
 
-            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e2f2", margin: "14px 0 0" }}>
+            <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e8b0", margin: "14px 0 0" }}>
               Two decades of excellence in evidence-based formulations, molecular bioavailability, and global WHO-GMP manufacturing.
             </p>
           </motion.div>
@@ -143,26 +143,26 @@ export default function AboutPage() {
               WHO ARE <em>WE?</em>
             </h2>
             <p style={{ color: "#475569", fontSize: "16px", lineHeight: "1.75", marginBottom: "18px" }}>
-              Veradaco Industries is a full-service pharmaceutical-grade contract manufacturer and formulation innovator. Founded in 2004, we have dedicated over two decades to decoding the relationship between bioavailable phytonutrients, micro-encapsulated actives, and human cellular vitality.
+              Varadaco Industries is a full-service pharmaceutical-grade contract manufacturer and formulation innovator. Founded in 2004, we have dedicated over two decades to decoding the relationship between bioavailable phytonutrients, micro-encapsulated actives, and human cellular vitality.
             </p>
             <p style={{ color: "#475569", fontSize: "15px", lineHeight: "1.75", marginBottom: "26px" }}>
               From initial molecular formulation, organoleptic sensory optimization, and clinical assay testing to high-speed WHO-GMP cleanroom packaging, we empower the world’s leading healthcare brands to bring safe, compliant, and efficacious products to market.
             </p>
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "16px", marginBottom: "30px" }}>
-              <div style={{ background: "#f8fafc", padding: "16px 20px", borderRadius: "12px", border: "1px solid #e2e8f0" }}>
+              <div style={{ background: "#FCFBF9", padding: "16px 20px", borderRadius: "12px", border: "1px solid #E2E8DF" }}>
                 <strong style={{ display: "block", fontSize: "28px", color: "var(--ink)", fontWeight: 900 }}>20+</strong>
                 <span style={{ fontSize: "12px", color: "#64748b", fontWeight: 600 }}>Years of Innovation</span>
               </div>
-              <div style={{ background: "#f8fafc", padding: "16px 20px", borderRadius: "12px", border: "1px solid #e2e8f0" }}>
-                <strong style={{ display: "block", fontSize: "28px", color: "#059669", fontWeight: 900 }}>500+</strong>
+              <div style={{ background: "#FCFBF9", padding: "16px 20px", borderRadius: "12px", border: "1px solid #E2E8DF" }}>
+                <strong style={{ display: "block", fontSize: "28px", color: "#15803D", fontWeight: 900 }}>500+</strong>
                 <span style={{ fontSize: "12px", color: "#64748b", fontWeight: 600 }}>Proven Formulations</span>
               </div>
-              <div style={{ background: "#f8fafc", padding: "16px 20px", borderRadius: "12px", border: "1px solid #e2e8f0" }}>
-                <strong style={{ display: "block", fontSize: "28px", color: "#10b981", fontWeight: 900 }}>30+</strong>
+              <div style={{ background: "#FCFBF9", padding: "16px 20px", borderRadius: "12px", border: "1px solid #E2E8DF" }}>
+                <strong style={{ display: "block", fontSize: "28px", color: "#7CA832", fontWeight: 900 }}>30+</strong>
                 <span style={{ fontSize: "12px", color: "#64748b", fontWeight: 600 }}>Countries Exported</span>
               </div>
-              <div style={{ background: "#f8fafc", padding: "16px 20px", borderRadius: "12px", border: "1px solid #e2e8f0" }}>
+              <div style={{ background: "#FCFBF9", padding: "16px 20px", borderRadius: "12px", border: "1px solid #E2E8DF" }}>
                 <strong style={{ display: "block", fontSize: "28px", color: "var(--ink)", fontWeight: 900 }}>100+</strong>
                 <span style={{ fontSize: "12px", color: "#64748b", fontWeight: 600 }}>Global Brand Clients</span>
               </div>
@@ -248,7 +248,7 @@ export default function AboutPage() {
       </section>
 
       {/* 5. VISION */}
-      <section style={{ background: "#f0fdf4", padding: "85px 4.5vw", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" }} id="vision">
+      <section style={{ background: "#F0F4EF", padding: "85px 4.5vw", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" }} id="vision">
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto 40px" }}>
             <p className="eyebrow" style={{ justifyContent: "center" }}>5. Long-Term Benchmark</p>
@@ -258,35 +258,35 @@ export default function AboutPage() {
             <div className="trust-underline" />
           </div>
 
-          <div className="card-panel" style={{ background: "linear-gradient(135deg, #052e20 0%, #064e3b 100%)", color: "white", padding: "48px 42px", boxShadow: "0 16px 40px rgba(6, 36, 25, 0.15)" }}>
+          <div className="card-panel" style={{ background: "linear-gradient(135deg, #0D2619 0%, #143B28 100%)", color: "white", padding: "48px 42px", boxShadow: "0 16px 40px rgba(13, 38, 25, 0.15)" }}>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "40px", alignItems: "center" }}>
               <div>
-                <div className="icon-box" style={{ background: "rgba(255,255,255,0.12)", color: "#10b981", width: "60px", height: "60px", marginBottom: "18px" }}>
+                <div className="icon-box" style={{ background: "rgba(255,255,255,0.12)", color: "#7CA832", width: "60px", height: "60px", marginBottom: "18px" }}>
                   <Eye size={30} />
                 </div>
                 <h3 style={{ fontSize: "28px", fontWeight: 800, marginBottom: "14px", color: "#ffffff" }}>
                   Pioneering Tomorrow’s Bioactive Nutrition
                 </h3>
-                <p style={{ color: "#d1e2f2", lineHeight: "1.75", fontSize: "16px" }}>
+                <p style={{ color: "#d1e8b0", lineHeight: "1.75", fontSize: "16px" }}>
                   To be recognized globally as the gold-standard life science co-creator, establishing new frontiers in cellular absorption, standardized natural bioactives, and clinical nutrition that enhances longevity worldwide.
                 </p>
               </div>
 
               <div style={{ background: "rgba(255,255,255,0.06)", padding: "30px", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.12)" }}>
-                <h4 style={{ fontSize: "15px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "#10b981", marginBottom: "16px" }}>
+                <h4 style={{ fontSize: "15px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "#7CA832", marginBottom: "16px" }}>
                   Key Strategic Benchmarks:
                 </h4>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "14px", color: "#e2e8f0" }}>
                   <span style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                    <CheckCircle2 size={18} color="#34d399" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={18} color="#7CA832" style={{ flexShrink: 0, marginTop: "2px" }} />
                     Pioneer next-generation liposomal, sub-micron, and enteric delivery systems.
                   </span>
                   <span style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                    <CheckCircle2 size={18} color="#34d399" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={18} color="#7CA832" style={{ flexShrink: 0, marginTop: "2px" }} />
                     Empower 200+ global brands with clinically validated turnkey science.
                   </span>
                   <span style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                    <CheckCircle2 size={18} color="#34d399" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={18} color="#7CA832" style={{ flexShrink: 0, marginTop: "2px" }} />
                     Promote zero-carbon green manufacturing across all production suites.
                   </span>
                 </div>
@@ -323,16 +323,16 @@ export default function AboutPage() {
               whileHover={{ y: -6 }}
             >
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "10px" }}>
-                <MapPin size={20} color="#059669" />
+                <MapPin size={20} color="#15803D" />
                 <h3 style={{ fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>{reg.region}</h3>
               </div>
-              <div style={{ fontSize: "13px", fontWeight: 700, color: "#059669", marginBottom: "8px" }}>
+              <div style={{ fontSize: "13px", fontWeight: 700, color: "#15803D", marginBottom: "8px" }}>
                 {reg.countries}
               </div>
               <p style={{ fontSize: "13px", color: "#475569", lineHeight: "1.6", marginBottom: "14px" }}>
                 <strong>Key Focus:</strong> {reg.focus}
               </p>
-              <div style={{ background: "#f0fdf4", padding: "6px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 700, color: "#059669", width: "fit-content", border: "1px solid #d1fae5" }}>
+              <div style={{ background: "#EBF3E6", padding: "6px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 700, color: "#15803D", width: "fit-content", border: "1px solid #D5E0D5" }}>
                 {reg.stat}
               </div>
             </motion.div>
@@ -344,17 +344,17 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          style={{ background: "linear-gradient(135deg, #052e20 0%, #064e3b 100%)", border: "1px solid rgba(16, 185, 129, 0.25)", borderRadius: "20px", padding: "40px 6vw", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "24px", boxShadow: "0 16px 40px rgba(6, 36, 25, 0.15)" }}
+          style={{ background: "linear-gradient(135deg, #0D2619 0%, #143B28 100%)", border: "1px solid rgba(124, 168, 50, 0.25)", borderRadius: "20px", padding: "40px 6vw", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "24px", boxShadow: "0 16px 40px rgba(13, 38, 25, 0.15)" }}
         >
           <div>
             <h3 style={{ fontSize: "22px", fontWeight: 800, marginBottom: "8px" }}>
               Expanding into New International Territories?
             </h3>
-            <p style={{ color: "#d1e2f2", fontSize: "14px", maxWidth: "600px" }}>
+            <p style={{ color: "#d1e8b0", fontSize: "14px", maxWidth: "600px" }}>
               Our dedicated export and regulatory compliance department prepares full country dossiers (CoA, FSC, GMP Certificates) for seamless local health ministry approval.
             </p>
           </div>
-          <Link href="/contact?inquiry=export" className="button button-light" style={{ background: "white", color: "#059669" }}>
+          <Link href="/contact?inquiry=export" className="button button-light" style={{ background: "white", color: "#15803D" }}>
             Inquire About Export
             <ArrowRight size={16} />
           </Link>
@@ -362,7 +362,7 @@ export default function AboutPage() {
       </section>
 
       {/* 7. MISSION */}
-      <section style={{ background: "#f8fafc", padding: "85px 4.5vw", borderBottom: "1px solid var(--line)" }} id="mission">
+      <section style={{ background: "#FAF8F5", padding: "85px 4.5vw", borderBottom: "1px solid var(--line)" }} id="mission">
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto 40px" }}>
             <p className="eyebrow" style={{ justifyContent: "center" }}>7. Operational Commitment</p>
@@ -378,11 +378,11 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            style={{ background: "linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%)", border: "2px solid #059669", padding: "48px 42px", boxShadow: "0 16px 40px rgba(5, 150, 105, 0.12)" }}
+            style={{ background: "linear-gradient(135deg, #ffffff 0%, #F5F8F3 100%)", border: "2px solid #15803D", padding: "48px 42px", boxShadow: "0 16px 40px rgba(21, 128, 61, 0.12)" }}
           >
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "40px", alignItems: "center" }}>
               <div>
-                <div className="icon-box" style={{ background: "#059669", color: "white", width: "60px", height: "60px", marginBottom: "18px" }}>
+                <div className="icon-box" style={{ background: "#15803D", color: "white", width: "60px", height: "60px", marginBottom: "18px" }}>
                   <Target size={30} />
                 </div>
                 <h3 style={{ fontSize: "28px", fontWeight: 800, marginBottom: "14px", color: "var(--ink)" }}>
@@ -393,21 +393,21 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div style={{ background: "#ffffff", padding: "30px", borderRadius: "16px", border: "1px solid #cbd5e1" }}>
-                <h4 style={{ fontSize: "15px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "#059669", marginBottom: "16px" }}>
+              <div style={{ background: "#ffffff", padding: "30px", borderRadius: "16px", border: "1px solid #E2E8DF" }}>
+                <h4 style={{ fontSize: "15px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "#15803D", marginBottom: "16px" }}>
                   Core Operational Commitments:
                 </h4>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "14px", color: "#334155" }}>
                   <span style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                    <CheckCircle2 size={18} color="#059669" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={18} color="#15803D" style={{ flexShrink: 0, marginTop: "2px" }} />
                     100% computerized batch traceability and active standardization.
                   </span>
                   <span style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                    <CheckCircle2 size={18} color="#059669" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={18} color="#15803D" style={{ flexShrink: 0, marginTop: "2px" }} />
                     Comprehensive end-to-end partnership from molecule to finished shelf.
                   </span>
                   <span style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                    <CheckCircle2 size={18} color="#059669" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={18} color="#15803D" style={{ flexShrink: 0, marginTop: "2px" }} />
                     Rigorous third-party lab validation for safety, dissolution & stability.
                   </span>
                 </div>
@@ -441,7 +441,7 @@ export default function AboutPage() {
                 variants={fade}
                 whileHover={{ y: -6 }}
               >
-                <div className="icon-box" style={{ background: "rgba(5, 150, 105, 0.1)", color: "#059669" }}>
+                <div className="icon-box" style={{ background: "rgba(21, 128, 61, 0.1)", color: "#15803D" }}>
                   <Icon size={24} />
                 </div>
                 <h4 style={{ fontSize: "18px", fontWeight: 700, color: "var(--ink)", marginBottom: "10px" }}>
