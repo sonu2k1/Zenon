@@ -13,9 +13,9 @@ const fade = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
 const heroSlides = [
   {
     id: "rnd",
-    theme: "cyan",
-    accentColor: "#38bdf8",
-    glowColor: "#0284c7",
+    theme: "emerald",
+    accentColor: "#34d399",
+    glowColor: "#059669",
     tag: "Clinical R&D",
     titlePrefix: "Science-driven nutrition.",
     titleAccent: "Built for better health.",
@@ -32,9 +32,9 @@ const heroSlides = [
   },
   {
     id: "botanicals",
-    theme: "sky",
-    accentColor: "#60a5fa",
-    glowColor: "#2563eb",
+    theme: "botanical",
+    accentColor: "#a3e635",
+    glowColor: "#16a34a",
     tag: "Botanical Science",
     titlePrefix: "Nature's purest actives.",
     titleAccent: "Validated by science.",
@@ -51,9 +51,9 @@ const heroSlides = [
   },
   {
     id: "bioavailability",
-    theme: "ice",
-    accentColor: "#93c5fd",
-    glowColor: "#3b82f6",
+    theme: "mint",
+    accentColor: "#6ee7b7",
+    glowColor: "#059669",
     tag: "Bioavailability",
     titlePrefix: "Maximum absorption.",
     titleAccent: "Targeted delivery.",
@@ -70,9 +70,9 @@ const heroSlides = [
   },
   {
     id: "formulations",
-    theme: "blue",
-    accentColor: "#38bdf8",
-    glowColor: "#0284c7",
+    theme: "forest",
+    accentColor: "#10b981",
+    glowColor: "#047857",
     tag: "Custom Blends",
     titlePrefix: "Your unique formula.",
     titleAccent: "Scaled to perfection.",
@@ -89,9 +89,9 @@ const heroSlides = [
   },
   {
     id: "manufacturing",
-    theme: "royal",
-    accentColor: "#60a5fa",
-    glowColor: "#1d4ed8",
+    theme: "jade",
+    accentColor: "#34d399",
+    glowColor: "#065f46",
     tag: "GMP Scale",
     titlePrefix: "Global manufacturing.",
     titleAccent: "Zero compromise.",
@@ -181,7 +181,7 @@ const services = [
     desc: "Veradaco is a leading full-service private label manufacturer. Whether you are a startup or an established enterprise, we scale custom formulations for your brand.",
     href: "/products",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#0066cc" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#059669" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 6L38 22L24 36L8 20L22 6Z" />
         <circle cx="18" cy="16" r="2.5" />
         <path d="M20 28C22 30 26 30 28 26C30 22 28 18 24 20" />
@@ -194,7 +194,7 @@ const services = [
     desc: "Ensure all necessary global licensing and compliance, working closely with regulatory authorities like US FDA, FSSAI, AYUSH, and EFSA.",
     href: "/about",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#0066cc" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#059669" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M27 8L36 17L32 21L23 12L27 8Z" />
         <path d="M19 16L30 27" />
         <path d="M24 21L10 35L7 32L21 18" />
@@ -208,7 +208,7 @@ const services = [
     desc: "Veradaco is a trusted contract research & manufacturing partner, specializing in pharmaceutical-grade cleanroom scaling and active bioactives.",
     href: "/rnd",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#0066cc" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#059669" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M20 6H28V12H20V6Z" />
         <path d="M24 12V20" />
         <path d="M12 28H20V40H12V28Z" />
@@ -225,7 +225,7 @@ const services = [
     desc: "High-barrier Alu-Alu blister packaging, automated softgel bottling, and nitrogen-flushed single-serve stick pack delivery formats.",
     href: "/products",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#0066cc" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#059669" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M10 16L24 8L38 16L24 24L10 16Z" />
         <path d="M10 16V34L24 42V24" />
         <path d="M38 16V34L24 42" />
@@ -689,7 +689,7 @@ export default function Home() {
             <p className="cta-banner-desc">From initial molecular discovery to full WHO-GMP commercial scale.</p>
           </div>
           <div className="cta-banner-actions">
-            <Link href="/contact" className="button button-dark" style={{ background: "#0066cc", borderColor: "#0066cc" }}>
+            <Link href="/contact" className="button button-dark" style={{ background: "#059669", borderColor: "#059669" }}>
               Request Formulation Consultation
               <ArrowRight size={17} />
             </Link>

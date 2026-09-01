@@ -97,16 +97,16 @@ export default function ContactPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(56, 189, 248, 0.15)", borderColor: "rgba(56, 189, 248, 0.35)", color: "#38bdf8" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(16, 185, 129, 0.15)", borderColor: "rgba(16, 185, 129, 0.35)", color: "#10b981" }}>
               <MessageSquare size={14} />
               <span>Partner With Veradaco</span>
-              <span className="pill-dot" style={{ backgroundColor: "#38bdf8" }} />
+              <span className="pill-dot" style={{ backgroundColor: "#10b981" }} />
               <span>Global Client Inquiries</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
               Let’s engineer your next<br />
-              <em style={{ color: "#38bdf8" }}>breakthrough formulation.</em>
+              <em style={{ color: "#10b981" }}>breakthrough formulation.</em>
             </h1>
 
             <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e2f2", margin: "14px 0 0" }}>
@@ -135,7 +135,7 @@ export default function ContactPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 style={{ textAlign: "center", padding: "40px 10px" }}
               >
-                <div style={{ width: "64px", height: "64px", borderRadius: "50%", background: "rgba(0, 102, 204, 0.12)", color: "#0066cc", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
+                <div style={{ width: "64px", height: "64px", borderRadius: "50%", background: "rgba(5, 150, 105, 0.12)", color: "#059669", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
                   <CheckCircle2 size={36} />
                 </div>
                 <h3 style={{ fontSize: "24px", fontWeight: 700, color: "var(--ink)", marginBottom: "12px" }}>
@@ -254,7 +254,7 @@ export default function ContactPage() {
                 </button>
 
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", marginTop: "16px", fontSize: "12px", color: "#64748b" }}>
-                  <ShieldCheck size={14} color="#0066cc" />
+                  <ShieldCheck size={14} color="#059669" />
                   <span>Strict NDA and data confidentiality guaranteed.</span>
                 </div>
               </form>
@@ -286,10 +286,10 @@ export default function ContactPage() {
                   whileHover={{ y: -5 }}
                 >
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
-                    <MapPin size={18} color="#0066cc" />
+                    <MapPin size={18} color="#059669" />
                     <h4 style={{ fontSize: "17px", fontWeight: 700, color: "var(--ink)" }}>{office.city}</h4>
                   </div>
-                  <div style={{ fontSize: "12px", fontWeight: 700, color: "#0066cc", marginBottom: "8px" }}>
+                  <div style={{ fontSize: "12px", fontWeight: 700, color: "#059669", marginBottom: "8px" }}>
                     {office.region}
                   </div>
                   <p style={{ fontSize: "13px", color: "#64748b", marginBottom: "12px" }}>
@@ -297,11 +297,11 @@ export default function ContactPage() {
                   </p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", fontSize: "13px", color: "var(--ink)", fontWeight: 600 }}>
                     <span style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                      <Phone size={14} color="#0066cc" />
+                      <Phone size={14} color="#059669" />
                       {office.phone}
                     </span>
                     <span style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                      <Mail size={14} color="#0066cc" />
+                      <Mail size={14} color="#059669" />
                       {office.email}
                     </span>
                   </div>
@@ -313,7 +313,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section style={{ background: "linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 50%, #f8fafc 100%)", padding: "90px 4.5vw", borderTop: "1px solid #d0e1f9", borderBottom: "1px solid #d0e1f9" }}>
+      <section style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #e6f7ee 50%, #f8fafc 100%)", padding: "90px 4.5vw", borderTop: "1px solid #d1fae5", borderBottom: "1px solid #d1fae5" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <p className="eyebrow" style={{ justifyContent: "center" }}>Frequently Asked Questions</p>
@@ -330,20 +330,20 @@ export default function ContactPage() {
                     padding: "22px 28px",
                     cursor: "pointer",
                     background: "#ffffff",
-                    border: isOpen ? "1.5px solid #0066cc" : "1.5px solid #dbeafe",
+                    border: isOpen ? "1.5px solid #059669" : "1.5px solid #d1fae5",
                     borderRadius: "16px",
-                    boxShadow: isOpen ? "0 10px 28px rgba(0, 102, 204, 0.12)" : "0 4px 16px rgba(0, 102, 204, 0.04)",
+                    boxShadow: isOpen ? "0 10px 28px rgba(5, 150, 105, 0.12)" : "0 4px 16px rgba(5, 150, 105, 0.04)",
                     transition: "all 0.25s ease",
                   }}
                   onClick={() => setOpenFaq(isOpen ? null : idx)}
                 >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "16px" }}>
-                    <h4 style={{ fontSize: "16px", fontWeight: 700, color: isOpen ? "#0066cc" : "#071e33", transition: "color 0.2s ease" }}>
+                    <h4 style={{ fontSize: "16px", fontWeight: 700, color: isOpen ? "#059669" : "#062419", transition: "color 0.2s ease" }}>
                       {faq.q}
                     </h4>
                     <ChevronDown
                       size={18}
-                      color={isOpen ? "#0066cc" : "#0284c7"}
+                      color={isOpen ? "#059669" : "#10b981"}
                       style={{
                         transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
                         transition: "transform 0.25s ease",

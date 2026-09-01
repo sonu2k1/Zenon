@@ -25,31 +25,31 @@ export function LogoIcon({ size = 32 }: { size?: number }) {
       <defs>
         {/* Outer squircle gradient background */}
         <linearGradient id="vBgGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#0284c7" stopOpacity="0.12" />
-          <stop offset="100%" stopColor="#0066cc" stopOpacity="0.04" />
+          <stop offset="0%" stopColor="#10b981" stopOpacity="0.15" />
+          <stop offset="100%" stopColor="#059669" stopOpacity="0.05" />
         </linearGradient>
 
         {/* Left wing gradient */}
         <linearGradient id="vLeftWing" x1="8" y1="8" x2="20" y2="32" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#0052cc" />
-          <stop offset="100%" stopColor="#0284c7" />
+          <stop offset="0%" stopColor="#047857" />
+          <stop offset="100%" stopColor="#059669" />
         </linearGradient>
 
         {/* Right wing gradient */}
         <linearGradient id="vRightWing" x1="32" y1="8" x2="20" y2="32" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#38bdf8" />
-          <stop offset="100%" stopColor="#0066cc" />
+          <stop offset="0%" stopColor="#34d399" />
+          <stop offset="100%" stopColor="#059669" />
         </linearGradient>
 
         {/* Center prism / apex gradient */}
         <linearGradient id="vCenterApex" x1="14" y1="20" x2="26" y2="33" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#00d2ff" />
-          <stop offset="100%" stopColor="#0052cc" />
+          <stop offset="0%" stopColor="#6ee7b7" />
+          <stop offset="100%" stopColor="#047857" />
         </linearGradient>
 
         {/* Subtle drop glow */}
         <filter id="vLogoGlow" x="0" y="0" width="40" height="40" filterUnits="userSpaceOnUse">
-          <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#0066cc" floodOpacity="0.25" />
+          <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#059669" floodOpacity="0.3" />
         </filter>
       </defs>
 
@@ -86,7 +86,7 @@ export function LogoIcon({ size = 32 }: { size?: number }) {
       />
 
       {/* Scientific Catalyst / Core Light Accent */}
-      <circle cx="20" cy="14" r="2.2" fill="#38bdf8" />
+      <circle cx="20" cy="14" r="2.2" fill="#34d399" />
       <circle cx="20" cy="14" r="1" fill="#ffffff" />
     </svg>
   );
@@ -118,8 +118,8 @@ export default function Logo({
   };
 
   const isDark = variant === "dark";
-  const primaryTextColor = isDark ? "#ffffff" : "var(--ink, #071e33)";
-  const subtitleColor = isDark ? "#38bdf8" : "#0066cc";
+  const primaryTextColor = isDark ? "#ffffff" : "var(--ink, #062419)";
+  const subtitleColor = isDark ? "#34d399" : "#059669";
 
   const content = (
     <div

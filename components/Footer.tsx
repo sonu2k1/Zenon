@@ -69,7 +69,7 @@ export default function Footer() {
               <Link
                 href="/contact"
                 style={{
-                  background: "#0066cc",
+                  background: "#059669",
                   color: "#ffffff",
                   padding: "9px 18px",
                   borderRadius: "100px",
@@ -79,7 +79,7 @@ export default function Footer() {
                   alignItems: "center",
                   gap: "6px",
                   textDecoration: "none",
-                  boxShadow: "0 4px 14px rgba(0, 102, 204, 0.35)",
+                  boxShadow: "0 4px 14px rgba(5, 150, 105, 0.35)",
                   transition: "transform 0.2s ease, background 0.2s ease",
                 }}
               >

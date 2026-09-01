@@ -1,2 +1,22 @@
 import type { Config } from "tailwindcss";
-export default { content: ["./app/**/*.{ts,tsx}"], theme: { extend: { colors: { ink: "#102f35", moss: "#106e63", cloud: "#f7f8f4", lime: "#d6ed64" }, fontFamily: { sans: ["var(--font-manrope)", "sans-serif"] } } }, plugins: [] } satisfies Config;
+
+export default {
+  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        ink: "#062419",
+        moss: "#059669",
+        forest: "#047857",
+        mint: "#10b981",
+        cloud: "#ffffff",
+        ice: "#f0fdf4",
+        lime: "#84cc16",
+      },
+      fontFamily: {
+        sans: ["var(--font-manrope)", "sans-serif"],
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config;

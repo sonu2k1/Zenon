@@ -23,7 +23,7 @@ const awards = [
     issuer: "CPhI World Formulation Summit",
     desc: "Recognized for breakthrough research in self-emulsifying liposomal delivery and targeted enteric acid-resistant capsule technology.",
     badge: "Gold Trophy",
-    color: "#0066cc",
+    color: "#059669",
   },
   {
     year: "2024",
@@ -31,7 +31,7 @@ const awards = [
     issuer: "International Trade & Commerce Council",
     desc: "Honoring consistent export quality, regulatory dossier approval speed, and supply chain reliability across 30+ international markets.",
     badge: "Global Honor",
-    color: "#0284c7",
+    color: "#10b981",
   },
   {
     year: "2023",
@@ -39,7 +39,7 @@ const awards = [
     issuer: "Pharmaceutical Standards Confederation",
     desc: "Certified for maintaining strict adherence to Class 100,000 cleanroom environments, ICH stability assays, and ISO 22000 hygiene standards.",
     badge: "Excellence Mark",
-    color: "#2563eb",
+    color: "#047857",
   },
 ];
 
@@ -115,16 +115,16 @@ export default function AboutPage() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(56, 189, 248, 0.15)", borderColor: "rgba(56, 189, 248, 0.35)", color: "#38bdf8" }}>
+            <div className="hero-tag-pill" style={{ backgroundColor: "rgba(16, 185, 129, 0.15)", borderColor: "rgba(16, 185, 129, 0.35)", color: "#10b981" }}>
               <Users size={14} />
               <span>About Veradaco Industries</span>
-              <span className="pill-dot" style={{ backgroundColor: "#38bdf8" }} />
+              <span className="pill-dot" style={{ backgroundColor: "#10b981" }} />
               <span>Since 2004</span>
             </div>
 
             <h1 style={{ maxWidth: "880px" }}>
               Pioneering science-led<br />
-              <em style={{ color: "#38bdf8" }}>health & nutraceuticals.</em>
+              <em style={{ color: "#10b981" }}>health & nutraceuticals.</em>
             </h1>
 
             <p className="hero-text" style={{ maxWidth: "620px", fontSize: "16px", color: "#d1e2f2", margin: "14px 0 0" }}>
@@ -155,11 +155,11 @@ export default function AboutPage() {
                 <span style={{ fontSize: "12px", color: "#64748b", fontWeight: 600 }}>Years of Innovation</span>
               </div>
               <div style={{ background: "#f8fafc", padding: "16px 20px", borderRadius: "12px", border: "1px solid #e2e8f0" }}>
-                <strong style={{ display: "block", fontSize: "28px", color: "#0066cc", fontWeight: 900 }}>500+</strong>
+                <strong style={{ display: "block", fontSize: "28px", color: "#059669", fontWeight: 900 }}>500+</strong>
                 <span style={{ fontSize: "12px", color: "#64748b", fontWeight: 600 }}>Proven Formulations</span>
               </div>
               <div style={{ background: "#f8fafc", padding: "16px 20px", borderRadius: "12px", border: "1px solid #e2e8f0" }}>
-                <strong style={{ display: "block", fontSize: "28px", color: "#0284c7", fontWeight: 900 }}>30+</strong>
+                <strong style={{ display: "block", fontSize: "28px", color: "#10b981", fontWeight: 900 }}>30+</strong>
                 <span style={{ fontSize: "12px", color: "#64748b", fontWeight: 600 }}>Countries Exported</span>
               </div>
               <div style={{ background: "#f8fafc", padding: "16px 20px", borderRadius: "12px", border: "1px solid #e2e8f0" }}>
@@ -174,15 +174,15 @@ export default function AboutPage() {
             </Link>
           </div>
 
-          <div style={{ position: "relative", borderRadius: "24px", overflow: "hidden", boxShadow: "0 16px 40px rgba(7, 30, 51, 0.12)" }}>
+          <div style={{ position: "relative", borderRadius: "24px", overflow: "hidden", boxShadow: "0 16px 40px rgba(6, 36, 25, 0.12)" }}>
             <img
               src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=85"
               alt="High-tech life sciences manufacturing facility"
               style={{ width: "100%", height: "500px", objectFit: "cover" }}
             />
-            <div style={{ position: "absolute", bottom: "24px", left: "24px", right: "24px", background: "rgba(7, 30, 51, 0.92)", color: "white", padding: "20px 24px", borderRadius: "16px", backdropFilter: "blur(10px)" }}>
+            <div style={{ position: "absolute", bottom: "24px", left: "24px", right: "24px", background: "rgba(6, 36, 25, 0.92)", color: "white", padding: "20px 24px", borderRadius: "16px", backdropFilter: "blur(10px)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
-                <ShieldCheck size={20} color="#38bdf8" />
+                <ShieldCheck size={20} color="#34d399" />
                 <strong style={{ fontSize: "16px" }}>WHO-GMP & ISO 22000 Certified Plant</strong>
               </div>
               <p style={{ fontSize: "12px", color: "#d1e2f2", margin: 0, lineHeight: "1.5" }}>
@@ -248,7 +248,7 @@ export default function AboutPage() {
       </section>
 
       {/* 5. VISION */}
-      <section style={{ background: "#f0f7ff", padding: "85px 4.5vw", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" }} id="vision">
+      <section style={{ background: "#f0fdf4", padding: "85px 4.5vw", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" }} id="vision">
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto 40px" }}>
             <p className="eyebrow" style={{ justifyContent: "center" }}>5. Long-Term Benchmark</p>
@@ -258,10 +258,10 @@ export default function AboutPage() {
             <div className="trust-underline" />
           </div>
 
-          <div className="card-panel" style={{ background: "linear-gradient(135deg, #071526 0%, #003366 100%)", color: "white", padding: "48px 42px", boxShadow: "0 16px 40px rgba(7, 30, 51, 0.15)" }}>
+          <div className="card-panel" style={{ background: "linear-gradient(135deg, #052e20 0%, #064e3b 100%)", color: "white", padding: "48px 42px", boxShadow: "0 16px 40px rgba(6, 36, 25, 0.15)" }}>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "40px", alignItems: "center" }}>
               <div>
-                <div className="icon-box" style={{ background: "rgba(255,255,255,0.12)", color: "#38bdf8", width: "60px", height: "60px", marginBottom: "18px" }}>
+                <div className="icon-box" style={{ background: "rgba(255,255,255,0.12)", color: "#10b981", width: "60px", height: "60px", marginBottom: "18px" }}>
                   <Eye size={30} />
                 </div>
                 <h3 style={{ fontSize: "28px", fontWeight: 800, marginBottom: "14px", color: "#ffffff" }}>
@@ -273,20 +273,20 @@ export default function AboutPage() {
               </div>
 
               <div style={{ background: "rgba(255,255,255,0.06)", padding: "30px", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.12)" }}>
-                <h4 style={{ fontSize: "15px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "#38bdf8", marginBottom: "16px" }}>
+                <h4 style={{ fontSize: "15px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "#10b981", marginBottom: "16px" }}>
                   Key Strategic Benchmarks:
                 </h4>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "14px", color: "#e2e8f0" }}>
                   <span style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                    <CheckCircle2 size={18} color="#38bdf8" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={18} color="#34d399" style={{ flexShrink: 0, marginTop: "2px" }} />
                     Pioneer next-generation liposomal, sub-micron, and enteric delivery systems.
                   </span>
                   <span style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                    <CheckCircle2 size={18} color="#38bdf8" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={18} color="#34d399" style={{ flexShrink: 0, marginTop: "2px" }} />
                     Empower 200+ global brands with clinically validated turnkey science.
                   </span>
                   <span style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                    <CheckCircle2 size={18} color="#38bdf8" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={18} color="#34d399" style={{ flexShrink: 0, marginTop: "2px" }} />
                     Promote zero-carbon green manufacturing across all production suites.
                   </span>
                 </div>
@@ -323,16 +323,16 @@ export default function AboutPage() {
               whileHover={{ y: -6 }}
             >
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "10px" }}>
-                <MapPin size={20} color="#0066cc" />
+                <MapPin size={20} color="#059669" />
                 <h3 style={{ fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>{reg.region}</h3>
               </div>
-              <div style={{ fontSize: "13px", fontWeight: 700, color: "#0066cc", marginBottom: "8px" }}>
+              <div style={{ fontSize: "13px", fontWeight: 700, color: "#059669", marginBottom: "8px" }}>
                 {reg.countries}
               </div>
               <p style={{ fontSize: "13px", color: "#475569", lineHeight: "1.6", marginBottom: "14px" }}>
                 <strong>Key Focus:</strong> {reg.focus}
               </p>
-              <div style={{ background: "#f0f7ff", padding: "6px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 700, color: "#0066cc", width: "fit-content", border: "1px solid #dbeafe" }}>
+              <div style={{ background: "#f0fdf4", padding: "6px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 700, color: "#059669", width: "fit-content", border: "1px solid #d1fae5" }}>
                 {reg.stat}
               </div>
             </motion.div>
@@ -344,7 +344,7 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          style={{ background: "linear-gradient(135deg, #071526 0%, #003366 100%)", border: "1px solid rgba(56, 189, 248, 0.25)", borderRadius: "20px", padding: "40px 6vw", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "24px", boxShadow: "0 16px 40px rgba(7, 30, 51, 0.15)" }}
+          style={{ background: "linear-gradient(135deg, #052e20 0%, #064e3b 100%)", border: "1px solid rgba(16, 185, 129, 0.25)", borderRadius: "20px", padding: "40px 6vw", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "24px", boxShadow: "0 16px 40px rgba(6, 36, 25, 0.15)" }}
         >
           <div>
             <h3 style={{ fontSize: "22px", fontWeight: 800, marginBottom: "8px" }}>
@@ -354,7 +354,7 @@ export default function AboutPage() {
               Our dedicated export and regulatory compliance department prepares full country dossiers (CoA, FSC, GMP Certificates) for seamless local health ministry approval.
             </p>
           </div>
-          <Link href="/contact?inquiry=export" className="button button-light" style={{ background: "white", color: "#0066cc" }}>
+          <Link href="/contact?inquiry=export" className="button button-light" style={{ background: "white", color: "#059669" }}>
             Inquire About Export
             <ArrowRight size={16} />
           </Link>
@@ -378,11 +378,11 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            style={{ background: "linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%)", border: "2px solid #0066cc", padding: "48px 42px", boxShadow: "0 16px 40px rgba(0, 102, 204, 0.12)" }}
+            style={{ background: "linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%)", border: "2px solid #059669", padding: "48px 42px", boxShadow: "0 16px 40px rgba(5, 150, 105, 0.12)" }}
           >
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "40px", alignItems: "center" }}>
               <div>
-                <div className="icon-box" style={{ background: "#0066cc", color: "white", width: "60px", height: "60px", marginBottom: "18px" }}>
+                <div className="icon-box" style={{ background: "#059669", color: "white", width: "60px", height: "60px", marginBottom: "18px" }}>
                   <Target size={30} />
                 </div>
                 <h3 style={{ fontSize: "28px", fontWeight: 800, marginBottom: "14px", color: "var(--ink)" }}>
@@ -394,20 +394,20 @@ export default function AboutPage() {
               </div>
 
               <div style={{ background: "#ffffff", padding: "30px", borderRadius: "16px", border: "1px solid #cbd5e1" }}>
-                <h4 style={{ fontSize: "15px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "#0066cc", marginBottom: "16px" }}>
+                <h4 style={{ fontSize: "15px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "#059669", marginBottom: "16px" }}>
                   Core Operational Commitments:
                 </h4>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "14px", color: "#334155" }}>
                   <span style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                    <CheckCircle2 size={18} color="#0066cc" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={18} color="#059669" style={{ flexShrink: 0, marginTop: "2px" }} />
                     100% computerized batch traceability and active standardization.
                   </span>
                   <span style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                    <CheckCircle2 size={18} color="#0066cc" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={18} color="#059669" style={{ flexShrink: 0, marginTop: "2px" }} />
                     Comprehensive end-to-end partnership from molecule to finished shelf.
                   </span>
                   <span style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                    <CheckCircle2 size={18} color="#0066cc" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={18} color="#059669" style={{ flexShrink: 0, marginTop: "2px" }} />
                     Rigorous third-party lab validation for safety, dissolution & stability.
                   </span>
                 </div>
@@ -441,7 +441,7 @@ export default function AboutPage() {
                 variants={fade}
                 whileHover={{ y: -6 }}
               >
-                <div className="icon-box" style={{ background: "rgba(0, 102, 204, 0.1)", color: "#0066cc" }}>
+                <div className="icon-box" style={{ background: "rgba(5, 150, 105, 0.1)", color: "#059669" }}>
                   <Icon size={24} />
                 </div>
                 <h4 style={{ fontSize: "18px", fontWeight: 700, color: "var(--ink)", marginBottom: "10px" }}>

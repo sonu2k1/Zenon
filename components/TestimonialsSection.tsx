@@ -246,7 +246,7 @@ export default function TestimonialsSection() {
           onClick={prevCard}
           className="video-nav-arrow"
           aria-label="Previous story"
-          style={{ borderColor: "#0066cc", color: "#0066cc" }}
+          style={{ borderColor: "#059669", color: "#059669" }}
         >
           <ChevronLeft size={22} />
         </button>
@@ -275,7 +275,7 @@ export default function TestimonialsSection() {
                   aspectRatio: "9 / 16",
                   borderRadius: "24px",
                   overflow: "hidden",
-                  boxShadow: isCenter ? "0 24px 60px rgba(16, 47, 53, 0.3)" : "0 12px 32px rgba(16, 47, 53, 0.15)",
+                  boxShadow: isCenter ? "0 24px 60px rgba(6, 36, 25, 0.35)" : "0 12px 32px rgba(6, 36, 25, 0.18)",
                   border: isCenter ? "3.5px solid #ffffff" : "1.5px solid rgba(255, 255, 255, 0.8)",
                   cursor: "pointer",
                   backgroundColor: "#ffffff",
@@ -303,7 +303,7 @@ export default function TestimonialsSection() {
                     position: "absolute",
                     inset: 0,
                     background: isCenter
-                      ? "linear-gradient(0deg, rgba(16, 47, 53, 0.85) 0%, rgba(16, 47, 53, 0.2) 50%, transparent 80%)"
+                      ? "linear-gradient(0deg, rgba(6, 36, 25, 0.9) 0%, rgba(6, 36, 25, 0.25) 50%, transparent 80%)"
                       : "rgba(0, 0, 0, 0.25)",
                     transition: "background 0.3s ease",
                     pointerEvents: "none",
@@ -312,7 +312,7 @@ export default function TestimonialsSection() {
                 {isCenter && (
                   <div style={{ position: "absolute", bottom: "16px", left: "16px", right: "16px", color: "white", pointerEvents: "none" }}>
                     <div style={{ fontSize: "15px", fontWeight: 800 }}>{card.name}</div>
-                    <div style={{ fontSize: "12px", color: "#93c5fd", fontWeight: 600 }}>{card.role}</div>
+                    <div style={{ fontSize: "12px", color: "#a7f3d0", fontWeight: 600 }}>{card.role}</div>
                   </div>
                 )}
               </motion.div>
@@ -324,7 +324,7 @@ export default function TestimonialsSection() {
           onClick={nextCard}
           className="video-nav-arrow"
           aria-label="Next story"
-          style={{ borderColor: "#0066cc", color: "#0066cc" }}
+          style={{ borderColor: "#059669", color: "#059669" }}
         >
           <ChevronRight size={22} />
         </button>
@@ -341,7 +341,7 @@ export default function TestimonialsSection() {
               height: "6px",
               width: activeIndex === idx ? "20px" : "6px",
               borderRadius: "10px",
-              backgroundColor: activeIndex === idx ? "#0066cc" : "#cbd5e1",
+              backgroundColor: activeIndex === idx ? "#059669" : "#cbd5e1",
               border: "none",
               cursor: "pointer",
               transition: "all 0.3s ease",

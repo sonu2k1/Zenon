@@ -44,7 +44,7 @@ export const clientLogos = [
         <div style={{ width: "24px", height: "24px", borderRadius: "50%", background: "#0066b2", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: "13px", fontStyle: "italic" }}>
           m
         </div>
-        <span style={{ fontSize: "20px", fontWeight: 900, color: "#003366", letterSpacing: "-0.03em" }}>
+        <span style={{ fontSize: "20px", fontWeight: 900, color: "#111827", letterSpacing: "-0.03em" }}>
           Mankind<span style={{ color: "#0066b2" }}>///</span>
         </span>
       </div>
@@ -179,8 +179,8 @@ export const certLogos = [
   {
     name: "WHO-GMP",
     component: (
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", color: "#0066b2", textAlign: "center" }}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0066b2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", color: "#059669", textAlign: "center" }}>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="10" />
           <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
           <path d="M2 12h20" />
