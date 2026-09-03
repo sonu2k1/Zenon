@@ -7,7 +7,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TrustSections from "@/components/TrustSections";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import AshwagandhaOverviewSection from "@/components/AshwagandhaOverviewSection";
 
 const fade = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
 
@@ -638,9 +637,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      {/* STEP 1: WHY ASHWAGANDHA & INGREDIENT OVERVIEW (MATCHING SCREENSHOT) */}
-      <AshwagandhaOverviewSection />
 
       <section className="quality section" id="quality">
         <motion.div initial={{ opacity: 0, x: -25 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
