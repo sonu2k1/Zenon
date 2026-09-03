@@ -72,7 +72,7 @@ export default function AshwagandhaOverviewSection() {
               return (
                 <Link
                   key={step.id}
-                  href="/builder"
+                  href="/products"
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
@@ -208,7 +208,7 @@ export default function AshwagandhaOverviewSection() {
                 Ready to formulate with clinical Withania somnifera?
               </span>
               <Link
-                href="/builder"
+                href="/products"
                 style={{
                   color: "#15803D",
                   fontSize: "14px",
@@ -219,7 +219,7 @@ export default function AshwagandhaOverviewSection() {
                   textDecoration: "none",
                 }}
               >
-                Configure in NutraBuild Studio <ArrowRight size={15} />
+                View Formulation Journey & Details <ArrowRight size={15} />
               </Link>
             </div>
           </div>

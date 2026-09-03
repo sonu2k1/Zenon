@@ -12,7 +12,6 @@ export const navItems = [
   { name: "Services", href: "/services" },
   { name: "Portfolio", href: "/portfolio" },
   { name: "Products", href: "/products" },
-  { name: "NutraBuild Studio", href: "/builder" },
   { name: "R&D", href: "/rnd" },
   { name: "Contact Us", href: "/contact" },
 ];
