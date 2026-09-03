@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TrustSections from "@/components/TrustSections";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import AshwagandhaOverviewSection from "@/components/AshwagandhaOverviewSection";
 
 const fade = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
 
@@ -638,43 +639,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="science" id="rnd">
-        <motion.div className="science-image" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1600&q=85" alt="Scientist working in a laboratory" />
-        </motion.div>
-        <motion.div className="science-copy" initial={{ opacity: 0, x: 25 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.15 }}>
-          <p className="eyebrow light">R&D and ingredient innovation</p>
-          <h2>Where science<br />meets <em>nutrition.</em></h2>
-          <p>Our multidisciplinary teams connect the rigor of research with the human realities of daily wellness.</p>
-          <div className="science-points">
-            <span><Check />Bioavailability first</span>
-            <span><Check />Evidence-led development</span>
-            <span><Check />Sensory excellence</span>
-          </div>
-          <Button dark={false}>Explore our R&D</Button>
-        </motion.div>
-        <motion.div className="floating-card anim-float" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.35, duration: 0.5 }}>
-          <Beaker />
-          <div>
-            <b>R&D 02</b>
-            <small>Ingredient interaction study</small>
-          </div>
-        </motion.div>
-      </section>
-
-      <section className="facility">
-        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=85" alt="Modern production facility" />
-        <motion.div className="facility-overlay" initial={{ opacity: 0, y: 25 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-          <p className="eyebrow light">Built to perform</p>
-          <h2>Manufacturing at<br /><em>global standards.</em></h2>
-          <p>Integrated capabilities for dependable quality, fast-moving markets, and brands ready to grow.</p>
-          <div>
-            {["Scalable production", "Batch traceability", "Smart quality systems"].map((x) => (
-              <span key={x}><Check size={16} />{x}</span>
-            ))}
-          </div>
-        </motion.div>
-      </section>
+      {/* STEP 1: WHY ASHWAGANDHA & INGREDIENT OVERVIEW (MATCHING SCREENSHOT) */}
+      <AshwagandhaOverviewSection />
 
       <section className="quality section" id="quality">
         <motion.div initial={{ opacity: 0, x: -25 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
@@ -814,33 +780,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      <section className="section insights" id="insights">
-        <div className="section-heading">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
-            <p className="eyebrow">Latest perspectives</p>
-            <h2>Ideas that move<br /><em>wellness forward.</em></h2>
-          </motion.div>
-          <a className="text-link" href="#contact">
-            Read all insights <ArrowRight size={16} />
-          </a>
-        </div>
-        <div className="insight-grid">
-          {["The Future of Nutraceuticals", "Personalized Nutrition: A More Human Formula", "Gut Health & the New Microbiome Economy"].map((x, i) => (
-            <motion.article
-              key={x}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.12, duration: 0.5 }}
-              whileHover={{ y: -6 }}
-            >
-              <span>Perspective / 0{i + 1}</span>
-              <h3>{x}</h3>
-              <a href="#contact"><ArrowRight /></a>
-            </motion.article>
-          ))}
-        </div>
-      </section>
+
 
       {/* OUR VALUABLE CLIENTS & CERTIFICATIONS SECTIONS */}
       <TrustSections />

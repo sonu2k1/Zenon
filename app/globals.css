@@ -3136,3 +3136,16 @@ em {
     grid-template-columns: 1fr;
   }
 }
+
+/* NutraBuild Formulation Simulator Responsive */
+@media (max-width: 960px) {
+  .formulation-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .summary-launch-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .ashwagandha-overview-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
